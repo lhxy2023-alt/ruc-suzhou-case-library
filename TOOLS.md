@@ -29,6 +29,7 @@ browser-use install
   - `NO_PROXY=localhost,127.0.0.1,::1`
   - `no_proxy=localhost,127.0.0.1,::1`
 - If `uv tool install --reinstall browser-use` is run later, re-apply the wrapper patch if CDP failures return
+- Google sign-in / account-chooser flows may block browser automation with “This browser or app may not be secure”; when that happens, complete the sensitive login/admin confirmation step manually in a normal browser session
 
 **Common Operations:**
 ```bash
