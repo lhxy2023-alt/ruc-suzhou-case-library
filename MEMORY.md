@@ -13,6 +13,7 @@
 - 所有 OpenClaw 命令前必须加上 `pnpm`
 - 当需要用户接手浏览器完成扫码、登录、验证码、安全确认等步骤时，先把对应浏览器窗口切到最前台，再提示用户操作
 - 以后凡是我创建或写入的飞书文档，默认都要赋予陶方正管理权限
+- 如果一个工作时长过久，每 10 分钟主动反馈一次进度
 [Things you've discovered about how they like to work]
 
 ### Important Dates
