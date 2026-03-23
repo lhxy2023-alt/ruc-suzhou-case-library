@@ -77,13 +77,25 @@ def update_record(base_url, token, app_token, table_id, record_id, fields):
     return res
 
 
+def normalize_value(value):
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        return "true" if value else "false"
+    if isinstance(value, (list, tuple)):
+        return " / ".join(str(v) for v in value)
+    if isinstance(value, dict):
+        return json.dumps(value, ensure_ascii=False)
+    return str(value)
+
+
 def normalize_record(record, field_mapping):
     result = {}
     for feishu_field, source_key in field_mapping.items():
         value = record.get(source_key)
         if value is None:
             continue
-        result[feishu_field] = value
+        result[feishu_field] = normalize_value(value)
     return result
 
 
