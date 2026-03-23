@@ -56,6 +56,17 @@ http://localhost:8000/project-library/
    - 微信小程序
    - 更完整的案例数据库
 
+## 如何改示例数据
+
+演示数据都写在 `app.js` 顶部的 `cases` 数组里；复制一条案例对象再改内容，就是最快的扩充方式。
+
+最适合先扩的字段有：
+
+- `backgroundTags`：最容易先加，能快速补足学生特征、信任来源、诊断标签
+- `routeType` / `finalPath`：最适合先扩路径类型，方便把“考研 / 申请 / 待分流”讲清楚
+- `destination`：适合补具体学校或项目去向，让案例更像真实成交结果
+- `summary` / `diagnosis` / `recommendation`：适合后续慢慢补充，用来增强顾问视角和转化表达
+
 ## 下一步最值得补什么
 
 优先级建议：
