@@ -1,0 +1,33 @@
+[
+  {
+    "case_id": "offer-001",
+    "title": "人大中法｜数学背景斩获港校金融方向 offer",
+    "student_name_internal": "示例同学A",
+    "student_name_public": "A同学",
+    "application_season": "26Fall",
+    "undergrad_school": "中国人民大学中法学院",
+    "undergrad_major": "数学与应用数学",
+    "gpa": "3.66",
+    "language_score": "雅思7.0",
+    "gmat_gre": "",
+    "experience": "2段实习",
+    "destination_region": "中国香港",
+    "offer_school": "香港大学",
+    "offer_program": "金融",
+    "program_type": "授课型硕士",
+    "final_destination": "香港大学金融",
+    "offer_count": 1,
+    "scholarship": "带奖 150000 RMB",
+    "highlights": "数学背景、GPA稳定、目标明确",
+    "strategy": "主申港校金融，同时兼顾匹配度与奖学金机会",
+    "timeline": "待补充",
+    "description": "示例案例",
+    "is_published": true,
+    "sort_order": 100,
+    "display_tags": ["港校", "金融", "奖学金"],
+    "marketing_status": "待宣传",
+    "source_channel": "中法项目",
+    "owner": "陶方正",
+    "notes": "示例数据"
+  }
+]
