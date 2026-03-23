@@ -1,8 +1,8 @@
 {
   "app_id": "cli_xxx",
   "app_secret": "xxx",
-  "app_token": "bascxxxxxxxx",
-  "table_id": "tblxxxxxxxx",
+  "app_token": "RaubbCK5NagOFzsG7qXcKgt2nyc",
+  "table_id": "tblAqSho7IYEQUeY",
   "base_url": "https://open.feishu.cn/open-apis",
   "unique_key_field": "案例ID",
   "field_mapping": {

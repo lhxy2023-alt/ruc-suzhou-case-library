@@ -43,14 +43,22 @@ def list_fields(base_url, token, app_token, table_id):
 
 def list_records(base_url, token, app_token, table_id, field_names=None):
     url = f"{base_url}/bitable/v1/apps/{app_token}/tables/{table_id}/records?page_size=500"
-    if field_names:
-        import urllib.parse
-        params = urllib.parse.urlencode([("field_names", name) for name in field_names])
-        url = f"{url}&{params}"
+    # Some Bitable endpoints are picky about field_names encoding; omit filtering for robustness.
     res = http_json(url, headers={"Authorization": f"Bearer {token}"})
     if res.get("code") != 0:
         raise RuntimeError(f"list records failed: {res}")
-    return res.get("data", {}).get("items", [])
+    return res.get("data", {}).get("items") or []
+
+
+def create_field(base_url, token, app_token, table_id, field_name, field_type=1, property=None):
+    url = f"{base_url}/bitable/v1/apps/{app_token}/tables/{table_id}/fields"
+    payload = {"field_name": field_name, "type": field_type}
+    if property is not None:
+        payload["property"] = property
+    res = http_json(url, method="POST", headers={"Authorization": f"Bearer {token}"}, payload=payload)
+    if res.get("code") != 0:
+        raise RuntimeError(f"create field failed: {res}")
+    return res
 
 
 def create_record(base_url, token, app_token, table_id, fields):
@@ -88,6 +96,7 @@ def main():
     parser.add_argument("--config", required=True)
     parser.add_argument("--data", required=True)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--ensure-fields", action="store_true")
     args = parser.parse_args()
 
     cfg = load_json(args.config)
@@ -101,6 +110,15 @@ def main():
     token = get_tenant_access_token(cfg["base_url"], cfg["app_id"], cfg["app_secret"])
     fields = list_fields(cfg["base_url"], token, cfg["app_token"], cfg["table_id"])
     field_names = {f['field_name'] for f in fields}
+
+    if args.ensure_fields:
+        missing_fields = [name for name in cfg["field_mapping"].keys() if name not in field_names]
+        for name in missing_fields:
+            create_field(cfg["base_url"], token, cfg["app_token"], cfg["table_id"], name, field_type=1)
+            print(f"created field: {name}")
+        fields = list_fields(cfg["base_url"], token, cfg["app_token"], cfg["table_id"])
+        field_names = {f['field_name'] for f in fields}
+
     unique_field = cfg["unique_key_field"]
     if unique_field not in field_names:
         raise SystemExit(f"unique key field not found in table: {unique_field}")
