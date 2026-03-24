@@ -1315,17 +1315,6 @@ const studentCardTemplates = [
   "可继续聊申请规划、时间安排以及准备过程中踩过的坑。",
 ];
 
-const timelineBySeason = {
-  "25Fall": {
-    submitMonths: ["2024.10", "2024.11", "2024.12"],
-    admitMonths: ["2025.01", "2025.02", "2025.03", "2025.04"],
-  },
-  "26Fall": {
-    submitMonths: ["2025.10", "2025.11", "2025.12"],
-    admitMonths: ["2026.01", "2026.02", "2026.03", "2026.04"],
-  },
-};
-
 function getOfferRegion(offerSchool) {
   return offerRegionMap[offerSchool] || "其他";
 }
@@ -1352,24 +1341,6 @@ function buildStudentCard(studentNameMasked, studentCases) {
     copy: studentCardTemplates[hash % studentCardTemplates.length],
     contactLabel: "咨询该同学",
   };
-}
-
-function buildMockTimeline(item) {
-  const config = timelineBySeason[item.applicationSeason] || timelineBySeason["25Fall"];
-  const submitMonth = config.submitMonths[item.sourceRow % config.submitMonths.length];
-  const admitMonth = config.admitMonths[item.sourceRow % config.admitMonths.length];
-  const submitDay = String((item.sourceRow % 18) + 8).padStart(2, "0");
-  const admitDay = String((item.sourceRow % 20) + 5).padStart(2, "0");
-
-  return {
-    submittedAt: `${submitMonth}.${submitDay}`,
-    admissionAt: `${admitMonth}.${admitDay}`,
-  };
-}
-
-function buildMockRound(item) {
-  const rounds = ["第一轮", "第二轮", "常规轮次"];
-  return rounds[item.sourceRow % rounds.length];
 }
 
 function buildStudentCards(items) {
@@ -1407,20 +1378,19 @@ function buildDetailSections(item) {
 }
 
 const baseCases = rawOffers.map((item) => {
-  const timeline = buildMockTimeline(item);
-
   return {
     ...item,
-    ...timeline,
     listTitle: `${item.offerSchool}${item.offerProgram}offer`,
     logoText: item.offerSchool.slice(0, 2),
     offerRegion: getOfferRegion(item.offerSchool),
     undergradSchoolLabel: getSchoolDisplayName(item.undergradSchool),
     languageScoreText: buildLanguageScoreText(item),
+    submittedAt: item.submittedAt || null,
+    admissionAt: item.admissionAt || null,
     internships: null,
     research: null,
     notes: item.description,
-    applicationRound: buildMockRound(item),
+    applicationRound: item.applicationRound || null,
   };
 });
 

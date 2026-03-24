@@ -23,14 +23,16 @@ function renderIdentityValue(item) {
 
 function renderInfoRows(item) {
   const rows = [
-    { label: "学生姓名", value: renderIdentityValue(item) },
+    item.studentNameMasked
+      ? { label: "学生姓名", value: renderIdentityValue(item) }
+      : null,
     ...item.detailSections
       .filter((section) => !["投递时间", "录取时间"].includes(section.label))
       .map((section) => ({
         label: section.label,
         value: `<span>${section.value}</span>`,
       })),
-  ];
+  ].filter(Boolean);
 
   return rows
     .map(
@@ -107,8 +109,8 @@ function renderStudentCard(card) {
 
 function renderFloatingConsult(item) {
   return `
-    <aside class="detail-floating-contact">
-      <div class="detail-floating-contact__copy">
+    <aside class="floating-contact">
+      <div class="floating-contact__copy">
         <strong>案例咨询</strong>
         <span>${item.studentCard ? "可继续了解申请节奏与准备重点" : "咨询入口与二维码后续接入"}</span>
       </div>

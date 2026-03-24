@@ -165,5 +165,12 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
         ${renderListContent({ cases, articles, state })}
       </div>
     </main>
+    <aside class="floating-contact floating-contact--home">
+      <div class="floating-contact__copy">
+        <strong>联系我们</strong>
+        <span>想了解案例匹配、申请规划或合作方式，可直接联系顾问。</span>
+      </div>
+      <button class="primary-btn" type="button">立即联系</button>
+    </aside>
   `;
 }

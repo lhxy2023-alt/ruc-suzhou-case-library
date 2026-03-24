@@ -5,7 +5,7 @@
 .news-card__head,
 .detail-summary__meta,
 .student-card__actions,
-.detail-floating-contact {
+.floating-contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,7 +31,7 @@
 .news-card__foot,
 .news-card__head span:last-child,
 .student-card p,
-.detail-floating-contact__copy span,
+.floating-contact__copy span,
 .sheet__section strong {
   color: var(--muted);
 }
@@ -484,13 +484,13 @@
   margin-top: 14px;
 }
 
-.detail-floating-contact {
+.floating-contact {
   position: fixed;
   left: 50%;
   bottom: calc(14px + env(safe-area-inset-bottom));
   transform: translateX(-50%);
   width: min(calc(100% - 24px), calc(var(--phone-width) - 24px));
-  padding: 10px 12px;
+  padding: 12px;
   background: rgba(255, 251, 248, 0.96);
   border: 1px solid rgba(159, 47, 47, 0.12);
   border-radius: 18px;
@@ -499,12 +499,14 @@
   z-index: 6;
 }
 
-.detail-floating-contact__copy {
+.floating-contact__copy {
   display: grid;
   gap: 2px;
+  flex: 1;
+  min-width: 0;
 }
 
-.detail-floating-contact__copy strong {
+.floating-contact__copy strong {
   font-size: 13px;
 }
 
@@ -513,13 +515,13 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .detail-floating-contact,
+  .floating-contact,
   .student-card__actions {
     display: grid;
     gap: 10px;
   }
 
-  .detail-floating-contact .primary-btn {
+  .floating-contact .primary-btn {
     width: 100%;
   }
 }
