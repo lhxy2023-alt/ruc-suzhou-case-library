@@ -300,36 +300,11 @@
   padding-bottom: 0;
 }
 
-.detail-summary {
+.detail-sheet {
   display: grid;
   gap: 18px;
-  background: linear-gradient(180deg, rgba(255, 248, 244, 0.98) 0%, rgba(255, 255, 255, 0.96) 100%);
-}
-
-.detail-summary__head {
-  display: grid;
-  gap: 10px;
-  padding: 18px;
-  margin: -16px -16px 0;
-  background: linear-gradient(180deg, #c95e55 0%, #9b3432 100%);
-  color: #fff8f5;
-  border-radius: 22px 22px 18px 18px;
-}
-
-.detail-summary__meta {
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.detail-summary__meta .pill {
-  color: #fff7f3;
-  background: rgba(255, 255, 255, 0.14);
-}
-
-.detail-summary__student,
-.detail-summary__offer {
-  font-size: 14px;
-  line-height: 1.65;
+  padding-top: 18px;
+  background: rgba(255, 252, 249, 0.96);
 }
 
 .detail-info-list {
@@ -339,17 +314,11 @@
 
 .detail-info-row {
   display: grid;
-  grid-template-columns: 88px minmax(0, 1fr);
+  grid-template-columns: 84px minmax(0, 1fr);
   gap: 12px;
-  align-items: start;
+  align-items: baseline;
   padding: 12px 0;
   border-top: 1px solid rgba(114, 44, 35, 0.08);
-}
-
-.student-card__copy {
-  display: grid;
-  gap: 10px;
-  margin-top: 14px;
 }
 
 .detail-info-row:first-child {
@@ -365,7 +334,7 @@
 .detail-info-row__value,
 .student-card__copy p {
   font-size: 14px;
-  line-height: 1.65;
+  line-height: 1.75;
 }
 
 .detail-info-row__label {
@@ -373,11 +342,69 @@
 }
 
 .detail-info-row__value {
+  min-width: 0;
   color: #4d3732;
 }
 
+.detail-info-row__value span {
+  display: block;
+}
+
+.detail-identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.detail-identity__name {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.detail-identity__meta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.detail-timeline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.detail-timeline__item {
+  display: grid;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(114, 44, 35, 0.1);
+  background: #fff8f4;
+}
+
+.detail-timeline__label {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.detail-timeline__value {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
 .student-card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 248, 243, 0.94) 100%);
+  padding-top: 18px;
+  background: rgba(255, 252, 249, 0.94);
+}
+
+.student-card__copy {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
 }
 
 .student-card__actions {
@@ -482,6 +509,10 @@
 }
 
 @media (max-width: 767px) {
+  .detail-timeline {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .detail-floating-contact,
   .student-card__actions {
     display: grid;

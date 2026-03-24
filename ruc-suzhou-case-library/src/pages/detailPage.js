@@ -1,28 +1,84 @@
+function buildIdentityMeta(item) {
+  return [item.applicationSeason].filter(Boolean);
+}
+
+function renderIdentityValue(item) {
+  const meta = buildIdentityMeta(item);
+
+  return `
+    <div class="detail-identity">
+      <span class="detail-identity__name">${item.studentNameMasked}</span>
+      ${
+        meta.length
+          ? `
+            <div class="detail-identity__meta">
+              ${meta.map((value) => `<span>${value}</span>`).join("")}
+            </div>
+          `
+          : ""
+      }
+    </div>
+  `;
+}
+
+function renderInfoRows(item) {
+  const rows = [
+    { label: "学生姓名", value: renderIdentityValue(item) },
+    ...item.detailSections
+      .filter((section) => !["投递时间", "录取时间"].includes(section.label))
+      .map((section) => ({
+        label: section.label,
+        value: `<span>${section.value}</span>`,
+      })),
+  ];
+
+  return rows
+    .map(
+      (row) => `
+        <div class="detail-info-row">
+          <span class="detail-info-row__label">${row.label}</span>
+          <div class="detail-info-row__value">${row.value}</div>
+        </div>
+      `,
+    )
+    .join("");
+}
+
+function renderTimeline(item) {
+  const entries = [
+    { label: "提交申请", value: item.submittedAt },
+    { label: "收到录取", value: item.admissionAt },
+  ].filter((entry) => entry.value);
+
+  if (!entries.length) {
+    return "";
+  }
+
+  return `
+    <div class="detail-timeline">
+      ${entries
+        .map(
+          (entry) => `
+            <div class="detail-timeline__item">
+              <span class="detail-timeline__label">${entry.label}</span>
+              <strong class="detail-timeline__value">${entry.value}</strong>
+            </div>
+          `,
+        )
+        .join("")}
+    </div>
+  `;
+}
+
 function renderInfoSection(item) {
   return `
-    <section class="detail-section detail-card detail-summary">
-      <div class="detail-summary__head">
-        <div class="detail-summary__meta">
-          <span class="pill pill--season">${item.applicationSeason}</span>
-          <span class="pill">${item.undergradSchoolLabel}</span>
-        </div>
-        <p class="detail-summary__student">${item.studentNameMasked}</p>
-        <p class="detail-summary__offer">${item.offerSchool} ${item.offerProgram}</p>
-      </div>
+    <section class="detail-section detail-card detail-sheet">
       <div class="section-title section-title--detail">
         <h2>录取详情</h2>
       </div>
+      ${renderTimeline(item)}
       <div class="detail-info-list">
-        ${item.detailSections
-          .map(
-            (section) => `
-              <div class="detail-info-row">
-                <span class="detail-info-row__label">${section.label}</span>
-                <span class="detail-info-row__value">${section.value}</span>
-              </div>
-            `,
-          )
-          .join("")}
+        ${renderInfoRows(item)}
       </div>
     </section>
   `;
@@ -37,7 +93,7 @@ function renderStudentCard(card) {
     <section class="detail-section detail-card student-card">
       <div class="section-title">
         <h2>学生名片</h2>
-        <p>如需进一步了解申请准备，可通过下方入口继续咨询。</p>
+        <p>这部分保留为留白说明与后续联系入口，不重复展示案例主信息。</p>
       </div>
       <div class="student-card__copy">
         <p>${card.copy}</p>
