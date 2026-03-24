@@ -1,16 +1,24 @@
-import { formatDate } from "../utils/formatters.js";
+function metaLine(label, value) {
+  if (!value) {
+    return "";
+  }
+
+  return `
+    <div class="meta-line">
+      <span class="meta-label">${label}</span>
+      <span>${value}</span>
+    </div>
+  `;
+}
 
 function renderCaseCard(item) {
-  const background = [item.undergraduateSchool, item.undergraduateMajor, item.gpaOrAverage]
-    .filter(Boolean)
-    .join(" / ");
-  const tags = [...item.badgeLabels, item.applicantType].filter(Boolean).slice(0, 4);
+  const background = [item.undergradSchool, item.undergradMajor, item.gpa].filter(Boolean).join(" / ");
 
   return `
     <button class="case-card" data-action="open-case" data-case-id="${item.id}">
       <div class="case-card__meta-top">
-        <span class="case-card__result">${item.pathType}</span>
-        <span class="case-card__date">${formatDate(item.offerDate)}</span>
+        <span class="case-card__result">${item.applicationSeason}</span>
+        <span class="case-card__date">${item.studentNameMasked}</span>
       </div>
       <div class="case-card__headline">
         <div class="school-logo">${item.logoText}</div>
@@ -21,37 +29,23 @@ function renderCaseCard(item) {
         <span class="disclosure">详情</span>
       </div>
       <div class="case-card__summary">
-        <strong>${item.title}</strong>
-        <span>${item.languageScores}</span>
-      </div>
-      <div class="tag-row tag-row--tight">
-        ${tags.map((tag) => `<span class="pill pill--accent">${tag}</span>`).join("")}
+        <strong>${item.listTitle}</strong>
+        ${item.scoreList.length ? `<span>${item.scoreList.join(" / ")}</span>` : ""}
       </div>
       <div class="meta-stack meta-stack--compact">
-        <div class="meta-line">
-          <span class="meta-label">学生背景</span>
-          <span>${background}</span>
-        </div>
-        <div class="meta-line">
-          <span class="meta-label">背景亮点</span>
-          <span>${item.experienceSummary}</span>
-        </div>
-        <div class="meta-line">
-          <span class="meta-label">适合人群</span>
-          <span>${buildCaseFit(item)}</span>
-        </div>
+        ${metaLine("学生背景", background)}
+        ${metaLine("录取结果", `${item.offerSchool} / ${item.offerProgram}`)}
+        ${metaLine("项目说明", item.description)}
       </div>
     </button>
   `;
 }
 
 function renderFilterSummary(state) {
-  const active = Object.entries(state.filters)
-    .filter(([, value]) => value !== "全部")
-    .map(([, value]) => value);
+  const active = Object.values(state.filters).filter((value) => value !== "全部");
 
   if (!active.length) {
-    return `<div class="filter-summary">默认展示全部案例，可按地区、专业、背景和路径快速缩小范围。</div>`;
+    return `<div class="filter-summary">当前展示 25Fall / 26Fall 全部真实 offer，可按申请季、本科学校、本科专业和录取院校筛选。</div>`;
   }
 
   return `<div class="filter-summary">已筛选：${active.map((item) => `<span class="pill">${item}</span>`).join("")}</div>`;
@@ -72,8 +66,7 @@ function renderArticleCard(item) {
 }
 
 export function renderListPage({ cases, articles, state, filterGroups }) {
-  const featuredCases = cases.filter((item) => item.featured).slice(0, 3);
-  const hotTags = ["25Fall", "26Fall", "431双线", "港新保底", "国际汉硕", "商科留学"];
+  const featuredCases = cases.slice(0, 3);
   const tabs = [
     { id: "cases", label: "案例" },
     { id: "articles", label: "资讯" },
@@ -83,15 +76,15 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
     <header class="hero">
       <div class="status-bar status-bar--product">
         <span>i乐湖案例库</span>
-        <span>近 30 天持续更新</span>
+        <span>真实 Base 口径</span>
       </div>
       <label class="search-box">
         <span class="search-box__icon">搜</span>
-        <input id="searchInput" type="search" value="${state.query}" placeholder="搜索学校、项目、路径关键词" />
+        <input id="searchInput" type="search" value="${state.query}" placeholder="搜索学校、专业、成绩、录取项目" />
       </label>
       <div class="search-note">
-        <span>${cases.length || 12} 条在库案例</span>
-        <span>热门方向：金融 / 商科 / 国际汉教 / AI</span>
+        <span>${cases.length} 条真实 offer</span>
+        <span>数据来源：25Fall / 26Fall 飞书多维表格</span>
       </div>
       <nav class="top-tabs" aria-label="顶部导航">
         ${tabs
@@ -108,10 +101,10 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
       </nav>
       <section class="hero-strip">
         <div>
-          <strong>优先看同背景上岸路径</strong>
-          <p>人大中法、法语背景、中外合办都可以直接筛到对应案例。</p>
+          <strong>按真实字段看案例</strong>
+          <p>优先看本科学校、本科专业、GPA/均分、语言成绩和录取结果，不再沿用旧 demo 口径。</p>
         </div>
-        <span class="hero-strip__badge">案例持续补充中</span>
+        <span class="hero-strip__badge">空字段不展示</span>
       </section>
     </header>
 
@@ -126,7 +119,7 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
                 data-filter-id="${group.id}"
               >
                 ${group.label}
-                <span>${resolveFilterValue(group, state)}</span>
+                <span>${state.filters[group.field]}</span>
               </button>
             `,
           )
@@ -139,14 +132,16 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
             <section class="ops-panel">
               <div class="ops-panel__row">
                 <div>
-                  <p class="ops-panel__label">本周热门标签</p>
+                  <p class="ops-panel__label">当前前台主字段</p>
                   <div class="tag-row tag-row--tight">
-                    ${hotTags.map((tag) => `<span class="pill">${tag}</span>`).join("")}
+                    ${["申请季", "本科学校", "本科专业", "GPA/均分", "语言成绩", "录取院校", "录取专业"]
+                      .map((tag) => `<span class="pill">${tag}</span>`)
+                      .join("")}
                   </div>
                 </div>
                 <div class="ops-panel__stat">
                   <strong>${cases.length}</strong>
-                  <span>当前可看案例</span>
+                  <span>当前可看 offer</span>
                 </div>
               </div>
               <div class="ops-panel__featured">
@@ -181,44 +176,11 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
       }
       <section class="footer-cta footer-cta--list">
         <div>
-          <p class="footer-cta__eyebrow">升学诊断</p>
-          <h3>不知道该冲刺、双线还是保底？先领一版同背景方案。</h3>
+          <p class="footer-cta__eyebrow">案例说明</p>
+          <h3>前台仅展示真实 offer 与轻量派生字段，后台运营字段默认不出现在这里。</h3>
         </div>
-        <button class="primary-btn">添加顾问领取方案</button>
+        <button class="primary-btn">联系顾问获取同背景案例</button>
       </section>
     </main>
   `;
-}
-
-function buildCaseFit(item) {
-  if (item.pathType === "双线") {
-    return "适合想冲高排名，同时又想控制申请风险的同学";
-  }
-  if (item.pathType === "港新保底") {
-    return "适合中段绩点、希望结果稳一点的学生";
-  }
-  if (item.category === "国际汉教") {
-    return "适合不想考数学、重视语言与表达优势的学生";
-  }
-  if (item.category === "AI" || item.category === "计算机") {
-    return "适合想把课程项目和技术经历做强叙事的同学";
-  }
-  return "适合想优先看同背景申请结果与准备节奏的学生";
-}
-
-function resolveFilterValue(group, state) {
-  if (group.id === "region") {
-    return state.filters.region;
-  }
-  if (group.id === "category") {
-    return state.filters.category;
-  }
-  if (group.id === "background") {
-    return state.filters.undergraduateBackgroundTag;
-  }
-  if (group.id === "more") {
-    const items = [state.filters.intake, state.filters.pathType, state.filters.tags].filter((item) => item !== "全部");
-    return items[0] || "更多";
-  }
-  return "全部";
 }

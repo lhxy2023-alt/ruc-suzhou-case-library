@@ -5,11 +5,9 @@ export const state = {
   openFilterId: null,
   previewImage: null,
   filters: {
-    region: "全部",
-    category: "全部",
-    undergraduateBackgroundTag: "全部",
-    intake: "全部",
-    pathType: "全部",
-    tags: "全部",
+    applicationSeason: "全部",
+    undergradSchool: "全部",
+    undergradMajor: "全部",
+    offerSchool: "全部",
   },
 };

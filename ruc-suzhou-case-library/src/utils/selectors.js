@@ -1,42 +1,25 @@
-import { includesTag } from "./formatters.js";
-
 export function filterCases(cases, state) {
   const query = state.query.trim().toLowerCase();
 
   return cases.filter((item) => {
-    const matchesQuery =
-      !query || item.searchText.toLowerCase().includes(query);
-    const matchesRegion =
-      state.filters.region === "全部" || item.region === state.filters.region;
-    const matchesCategory =
-      state.filters.category === "全部" ||
-      item.category === state.filters.category;
-    const matchesBackground =
-      state.filters.undergraduateBackgroundTag === "全部" ||
-      item.undergraduateBackgroundTag === state.filters.undergraduateBackgroundTag;
-    const matchesIntake =
-      state.filters.intake === "全部" || item.intake === state.filters.intake;
-    const matchesPath =
-      state.filters.pathType === "全部" ||
-      item.pathType === state.filters.pathType;
-    const matchesTag = includesTag(item.experienceTags, state.filters.tags);
+    const matchesQuery = !query || item.searchText.toLowerCase().includes(query);
+    const matchesSeason =
+      state.filters.applicationSeason === "全部" ||
+      item.applicationSeason === state.filters.applicationSeason;
+    const matchesSchool =
+      state.filters.undergradSchool === "全部" ||
+      item.undergradSchool === state.filters.undergradSchool;
+    const matchesMajor =
+      state.filters.undergradMajor === "全部" ||
+      item.undergradMajor === state.filters.undergradMajor;
+    const matchesOffer =
+      state.filters.offerSchool === "全部" ||
+      item.offerSchool === state.filters.offerSchool;
 
-    return (
-      matchesQuery &&
-      matchesRegion &&
-      matchesCategory &&
-      matchesBackground &&
-      matchesIntake &&
-      matchesPath &&
-      matchesTag
-    );
+    return matchesQuery && matchesSeason && matchesSchool && matchesMajor && matchesOffer;
   });
 }
 
 export function findCase(cases, caseId) {
   return cases.find((item) => item.id === caseId) || null;
-}
-
-export function findMentor(mentors, mentorId) {
-  return mentors.find((item) => item.id === mentorId) || null;
 }

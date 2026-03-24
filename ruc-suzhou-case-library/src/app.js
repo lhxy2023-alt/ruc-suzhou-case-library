@@ -1,16 +1,10 @@
-import {
-  articles,
-  cases,
-  documents,
-  filterGroups,
-  mentors,
-} from "./data/index.js";
+import { articles, cases, filterGroups } from "./data/index.js";
 import { renderFilterPanel } from "./components/filterPanel.js";
 import { renderPreviewModal } from "./components/previewModal.js";
 import { renderShell } from "./components/shell.js";
 import { renderDetailPage } from "./pages/detailPage.js";
 import { renderListPage } from "./pages/listPage.js";
-import { findCase, findMentor, filterCases } from "./utils/selectors.js";
+import { findCase, filterCases } from "./utils/selectors.js";
 import { state } from "./utils/state.js";
 
 const root = document.getElementById("app");
@@ -18,16 +12,13 @@ const root = document.getElementById("app");
 function render() {
   const filtered = filterCases(cases, state);
   const currentCase = findCase(cases, state.selectedCaseId);
-  const currentMentor = currentCase ? findMentor(mentors, currentCase.advisorId) : null;
-  const currentDocs = currentCase
-    ? documents.filter((doc) => currentCase.relatedPdf.includes(doc.id))
-    : [];
   const relatedCases = currentCase
     ? cases
         .filter(
           (item) =>
             item.id !== currentCase.id &&
-            (item.category === currentCase.category || item.pathType === currentCase.pathType),
+            (item.undergradMajor === currentCase.undergradMajor ||
+              item.offerSchool === currentCase.offerSchool),
         )
         .slice(0, 3)
     : [];
@@ -36,8 +27,6 @@ function render() {
   const body = currentCase
     ? renderDetailPage({
         item: currentCase,
-        mentor: currentMentor,
-        documents: currentDocs,
         relatedCases,
       })
     : renderListPage({ cases: filtered, articles, state, filterGroups });
@@ -84,12 +73,10 @@ function bindEvents() {
   root.querySelectorAll("[data-action='reset-filters']").forEach((button) => {
     button.addEventListener("click", () => {
       state.filters = {
-        region: "全部",
-        category: "全部",
-        undergraduateBackgroundTag: "全部",
-        intake: "全部",
-        pathType: "全部",
-        tags: "全部",
+        applicationSeason: "全部",
+        undergradSchool: "全部",
+        undergradMajor: "全部",
+        offerSchool: "全部",
       };
       render();
     });
@@ -106,13 +93,6 @@ function bindEvents() {
   root.querySelectorAll("[data-action='back-to-list']").forEach((button) => {
     button.addEventListener("click", () => {
       state.selectedCaseId = null;
-      render();
-    });
-  });
-
-  root.querySelectorAll("[data-action='preview-image']").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.previewImage = { title: button.dataset.previewTitle };
       render();
     });
   });
