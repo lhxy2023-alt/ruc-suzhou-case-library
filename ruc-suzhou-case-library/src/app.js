@@ -3,43 +3,77 @@ import { renderFilterPanel } from "./components/filterPanel.js";
 import { renderPreviewModal } from "./components/previewModal.js";
 import { renderShell } from "./components/shell.js";
 import { renderDetailPage } from "./pages/detailPage.js";
-import { renderListPage } from "./pages/listPage.js";
+import { renderListContent, renderListPage } from "./pages/listPage.js";
 import { findCase, filterCases } from "./utils/selectors.js";
 import { state } from "./utils/state.js";
 
 const root = document.getElementById("app");
+let isComposing = false;
+
+function getFilteredCases() {
+  return filterCases(cases, state);
+}
+
+function updateListResults() {
+  if (state.selectedCaseId || state.activeTab !== "cases") {
+    return;
+  }
+
+  const filtered = getFilteredCases();
+  const resultMeta = root.querySelector("#resultMeta");
+  const listContent = root.querySelector("#listContent");
+
+  if (resultMeta) {
+    resultMeta.textContent = `${filtered.length} 个案例`;
+  }
+
+  if (listContent) {
+    listContent.innerHTML = renderListContent({ cases: filtered, articles, state });
+    bindListActionEvents();
+  }
+}
 
 function render() {
-  const filtered = filterCases(cases, state);
   const currentCase = findCase(cases, state.selectedCaseId);
-  const relatedCases = currentCase
-    ? cases
-        .filter(
-          (item) =>
-            item.id !== currentCase.id &&
-            (item.undergradMajor === currentCase.undergradMajor ||
-              item.offerSchool === currentCase.offerSchool),
-        )
-        .slice(0, 3)
-    : [];
   const currentFilterGroup = filterGroups.find((item) => item.id === state.openFilterId) || null;
 
   const body = currentCase
     ? renderDetailPage({
-        item: currentCase,
-        relatedCases,
-      })
-    : renderListPage({ cases: filtered, articles, state, filterGroups });
+      item: currentCase,
+    })
+    : renderListPage({ cases: getFilteredCases(), articles, state, filterGroups });
 
   root.innerHTML = renderShell(body) + renderFilterPanel(currentFilterGroup, state) + renderPreviewModal(state.previewImage);
 
   bindEvents();
 }
 
+function bindListActionEvents() {
+  root.querySelectorAll("[data-action='open-case']").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.selectedCaseId = button.dataset.caseId;
+      state.openFilterId = null;
+      render();
+    });
+  });
+}
+
 function bindEvents() {
-  root.querySelector("#searchInput")?.addEventListener("input", (event) => {
+  const searchInput = root.querySelector("#searchInput");
+  searchInput?.addEventListener("compositionstart", () => {
+    isComposing = true;
+  });
+  searchInput?.addEventListener("compositionend", (event) => {
+    isComposing = false;
     state.query = event.target.value;
-    render();
+    updateListResults();
+  });
+  searchInput?.addEventListener("input", (event) => {
+    if (isComposing) {
+      return;
+    }
+    state.query = event.target.value;
+    updateListResults();
   });
 
   root.querySelectorAll("[data-action='switch-tab']").forEach((button) => {
@@ -63,6 +97,14 @@ function bindEvents() {
     });
   });
 
+  root.querySelectorAll("[data-action='set-school-major']").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.filters.undergradSchool = button.dataset.school;
+      state.filters.undergradMajor = button.dataset.major;
+      render();
+    });
+  });
+
   root.querySelectorAll("[data-action='close-filter']").forEach((button) => {
     button.addEventListener("click", () => {
       state.openFilterId = null;
@@ -76,19 +118,13 @@ function bindEvents() {
         applicationSeason: "全部",
         undergradSchool: "全部",
         undergradMajor: "全部",
-        offerSchool: "全部",
+        offerRegion: "全部",
       };
       render();
     });
   });
 
-  root.querySelectorAll("[data-action='open-case']").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.selectedCaseId = button.dataset.caseId;
-      state.openFilterId = null;
-      render();
-    });
-  });
+  bindListActionEvents();
 
   root.querySelectorAll("[data-action='back-to-list']").forEach((button) => {
     button.addEventListener("click", () => {

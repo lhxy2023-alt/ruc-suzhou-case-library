@@ -1278,23 +1278,146 @@ function buildScoreList(item) {
   return [item.ielts, item.toefl, item.greGmat].filter(Boolean);
 }
 
+const offerRegionMap = {
+  escp: "法国",
+  esses: "法国",
+  "伦敦政治经济学院": "英国",
+  "剑桥大学": "英国",
+  "南洋理工大学": "新加坡",
+  "博科尼大学": "意大利",
+  "哥伦比亚大学": "美国",
+  "墨尔本大学": "澳大利亚",
+  "帝国理工学院": "英国",
+  "康奈尔大学": "美国",
+  "悉尼大学": "澳大利亚",
+  "新加坡国立大学": "新加坡",
+  "杜克大学": "美国",
+  "澳国立": "澳大利亚",
+  "纽约大学": "美国",
+  "芝加哥大学": "美国",
+  "香港中文大学": "中国香港",
+  "香港中文大学深圳校区": "中国内地",
+  "香港城市大学": "中国香港",
+  "香港大学": "中国香港",
+  "香港理工大学": "中国香港",
+  "香港科技大学": "中国香港",
+};
+
+const schoolDisplayMap = {
+  人大中法: "中法学院",
+  "中国人民大学财政金融学院": "财政金融学院",
+  中央财经大学: "中央财经大学",
+};
+
+const studentCardTemplates = [
+  "愿意和学弟学妹聊申请定位、选校节奏与准备重点。",
+  "可分享自己的申请准备节奏与背景提升经验。",
+  "可交流项目选择、文书准备与录取后的真实体验。",
+];
+
+function getOfferRegion(offerSchool) {
+  return offerRegionMap[offerSchool] || "其他";
+}
+
+function getSchoolDisplayName(undergradSchool) {
+  return schoolDisplayMap[undergradSchool] || undergradSchool;
+}
+
+function buildLanguageScoreText(item) {
+  return buildScoreList(item).join(" / ") || null;
+}
+
+function hashText(value) {
+  return Array.from(value).reduce((total, char) => total + char.charCodeAt(0), 0);
+}
+
+function buildStudentCard(studentNameMasked, studentCases) {
+  const hash = hashText(studentNameMasked);
+  if (hash % 3 !== 0) {
+    return null;
+  }
+
+  const firstCase = studentCases[0];
+  const regionSet = [...new Set(studentCases.map((item) => item.offerRegion))];
+
+  return {
+    name: studentNameMasked,
+    major: firstCase.undergradMajor,
+    school: getSchoolDisplayName(firstCase.undergradSchool),
+    seasonTags: [...new Set(studentCases.map((item) => item.applicationSeason))],
+    routeCount: studentCases.length,
+    regionSummary: regionSet.join(" / "),
+    note: studentCardTemplates[hash % studentCardTemplates.length],
+  };
+}
+
+function buildStudentCards(items) {
+  const grouped = items.reduce((result, item) => {
+    if (!result[item.studentNameMasked]) {
+      result[item.studentNameMasked] = [];
+    }
+    result[item.studentNameMasked].push(item);
+    return result;
+  }, {});
+
+  return Object.fromEntries(
+    Object.entries(grouped).map(([studentNameMasked, studentCases]) => [
+      studentNameMasked,
+      buildStudentCard(studentNameMasked, studentCases),
+    ]),
+  );
+}
+
 function buildDetailSections(item) {
   return [
-    { label: "申请季", value: item.applicationSeason },
-    { label: "匿名学生", value: item.studentNameMasked },
-    { label: "本科学校", value: item.undergradSchool },
-    { label: "本科专业", value: item.undergradMajor },
-    { label: "GPA/均分", value: item.gpa },
-    { label: "雅思", value: item.ielts },
-    { label: "托福", value: item.toefl },
-    { label: "GRE/GMAT", value: item.greGmat },
-    { label: "录取院校", value: item.offerSchool },
+    { label: "录取学校", value: item.offerSchool },
     { label: "录取专业", value: item.offerProgram },
+    { label: "本科专业", value: item.undergradMajor },
+    { label: "绩点或均分", value: item.gpa },
+    { label: "语言成绩与标化", value: item.languageScoreText },
+    { label: "申请轮次", value: item.applicationRound },
+    { label: "录取时间", value: item.admissionAt },
   ].filter((section) => section.value);
 }
 
-export const cases = rawOffers.map((item) => ({
+const baseCases = rawOffers.map((item) => ({
+  ...item,
+  listTitle: `${item.offerSchool}${item.offerProgram}offer`,
+  logoText: item.offerSchool.slice(0, 2),
+  offerRegion: getOfferRegion(item.offerSchool),
+  undergradSchoolLabel: getSchoolDisplayName(item.undergradSchool),
+  languageScoreText: buildLanguageScoreText(item),
+  internships: null,
+  research: null,
+  notes: null,
+  applicationRound: null,
+  admissionAt: null,
+}));
+
+const studentCards = buildStudentCards(baseCases);
+
+export const cases = baseCases.map((item) => ({
   ...item,
   scoreList: buildScoreList(item),
-  detailSections: buildDetailSections(item),
+  studentCard: studentCards[item.studentNameMasked] || null,
+  detailSections: buildDetailSections({
+    ...item,
+    scoreList: buildScoreList(item),
+  }),
+  searchText: [
+    item.applicationSeason,
+    item.studentNameMasked,
+    item.undergradSchool,
+    getSchoolDisplayName(item.undergradSchool),
+    item.undergradMajor,
+    item.gpa,
+    item.ielts,
+    item.toefl,
+    item.greGmat,
+    item.offerSchool,
+    item.offerProgram,
+    getOfferRegion(item.offerSchool),
+  ]
+    .filter(Boolean)
+    .join(" "),
 }));

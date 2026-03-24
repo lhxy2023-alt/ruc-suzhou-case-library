@@ -36,6 +36,10 @@ input {
   width: 100%;
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
 h1,
 h2,
 h3,

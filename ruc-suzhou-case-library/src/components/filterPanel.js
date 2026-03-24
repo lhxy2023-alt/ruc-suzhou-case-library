@@ -29,7 +29,23 @@ export function renderFilterPanel(group, state) {
                   <div class="sheet__section">
                     <strong>${section.title}</strong>
                     <div class="sheet__options">
-                      ${section.options.map((option) => renderOption(section.field, option, state.filters[section.field])).join("")}
+                      ${section.options
+                        .map(
+                          (option) => `
+                            <button
+                              class="option-chip ${
+                                state.filters.undergradSchool === section.schoolValue &&
+                                state.filters.undergradMajor === option
+                                  ? "is-selected"
+                                  : ""
+                              }"
+                              data-action="set-school-major"
+                              data-school="${section.schoolValue}"
+                              data-major="${option}"
+                            >${option}</button>
+                          `,
+                        )
+                        .join("")}
                     </div>
                   </div>
                 `,

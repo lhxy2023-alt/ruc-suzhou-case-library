@@ -12,11 +12,11 @@ export function filterCases(cases, state) {
     const matchesMajor =
       state.filters.undergradMajor === "全部" ||
       item.undergradMajor === state.filters.undergradMajor;
-    const matchesOffer =
-      state.filters.offerSchool === "全部" ||
-      item.offerSchool === state.filters.offerSchool;
+    const matchesRegion =
+      state.filters.offerRegion === "全部" ||
+      item.offerRegion === state.filters.offerRegion;
 
-    return matchesQuery && matchesSeason && matchesSchool && matchesMajor && matchesOffer;
+    return matchesQuery && matchesSeason && matchesSchool && matchesMajor && matchesRegion;
   });
 }
 

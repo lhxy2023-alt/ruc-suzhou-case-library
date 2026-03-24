@@ -1,132 +1,94 @@
-function renderInfoGrid(item) {
+function renderInfoSection(item) {
   return `
-    <section class="detail-section detail-section--grid">
-      ${item.detailSections
-        .map(
-          (section) => `
-            <article class="info-card">
-              <span>${section.label}</span>
-              <strong>${section.value}</strong>
-            </article>
-          `,
-        )
-        .join("")}
+    <section class="detail-section detail-card">
+      <div class="section-title">
+        <h2>录取详情</h2>
+      </div>
+      <div class="detail-info-list">
+        ${item.detailSections
+          .map(
+            (section) => `
+              <div class="detail-info-row">
+                <span>${section.label}</span>
+                <strong>${section.value}</strong>
+              </div>
+            `,
+          )
+          .join("")}
+      </div>
     </section>
   `;
 }
 
-function renderScoreSection(item) {
-  if (!item.scoreList.length) {
+function renderTextSection(title, value) {
+  if (!value) {
     return "";
   }
 
   return `
-    <section class="detail-section">
+    <section class="detail-section detail-card">
       <div class="section-title">
-        <h2>语言与标化</h2>
-        <p>只展示该条真实 offer 记录里实际填写的成绩字段。</p>
+        <h2>${title}</h2>
       </div>
-      <div class="tag-row">
-        ${item.scoreList.map((score) => `<span class="pill pill--accent">${score}</span>`).join("")}
-      </div>
+      <article class="detail-paragraph">${value}</article>
     </section>
   `;
 }
 
-function renderDescriptionSection(item) {
-  if (!item.description) {
+function renderStudentCard(card) {
+  if (!card) {
     return "";
   }
 
   return `
-    <section class="detail-section">
+    <section class="detail-section detail-card student-card">
       <div class="section-title">
-        <h2>案例说明 / 项目说明</h2>
-        <p>该字段直接来自真实 Base 原始记录，未做业务扩写。</p>
+        <h2>学生名片</h2>
+        <p>乐湖会协助学弟学妹与已录取学长学姐建立沟通桥梁。</p>
       </div>
-      <article class="insight-card">
-        <strong>${item.description}</strong>
-      </article>
-    </section>
-  `;
-}
-
-function renderRelatedCases(relatedCases) {
-  return `
-    <section class="detail-section">
-      <div class="section-title">
-        <h2>同类真实 offer</h2>
-        <p>优先补充同专业或同录取院校的真实记录。</p>
+      <div class="student-card__body">
+        <div class="student-card__avatar">${card.name.slice(0, 1)}</div>
+        <div class="student-card__copy">
+          <div class="student-card__head">
+            <strong>${card.name}</strong>
+            <span class="pill pill--accent">开放咨询</span>
+          </div>
+          <p>${card.school} / ${card.major}</p>
+          <p>${card.seasonTags.join(" / ")} · ${card.regionSummary}</p>
+          <p>${card.note}</p>
+        </div>
       </div>
-      <div class="related-list">
-        ${
-          relatedCases.length
-            ? relatedCases
-                .map(
-                  (caseItem) => `
-                    <button class="related-card" data-action="open-case" data-case-id="${caseItem.id}">
-                      <strong>${caseItem.offerSchool}</strong>
-                      <span>${caseItem.offerProgram}</span>
-                      <em>${caseItem.applicationSeason} · ${caseItem.undergradMajor}</em>
-                    </button>
-                  `,
-                )
-                .join("")
-            : `<div class="empty-card">暂无更接近的同类记录。</div>`
-        }
+      <div class="student-card__foot">
+        <span>该同学当前共有 ${card.routeCount} 条 offer 展示在案例库中。</span>
+        <button class="ghost-btn" type="button">咨询入口待接入</button>
       </div>
     </section>
   `;
 }
 
-export function renderDetailPage({ item, relatedCases }) {
+export function renderDetailPage({ item }) {
   return `
     <main class="detail-page">
-      <header class="detail-hero">
+      <header class="detail-hero detail-hero--offer">
         <button class="ghost-btn" data-action="back-to-list">返回</button>
-        <div class="detail-hero__copy">
-          <p class="eyebrow">${item.applicationSeason} · ${item.studentNameMasked}</p>
-          <h1>${item.offerSchool} · ${item.offerProgram}</h1>
-          <div class="tag-row">
-            <span class="pill pill--accent">${item.undergradSchool}</span>
-            <span class="pill pill--accent">${item.undergradMajor}</span>
-            <span class="pill pill--accent">${item.gpa}</span>
+        <div class="detail-hero__main">
+          <div class="detail-hero__logo" aria-hidden="true">${item.logoText}</div>
+          <div class="detail-hero__copy">
+            <div class="detail-hero__meta">
+              <h1>${item.studentNameMasked}</h1>
+              <span class="pill pill--season">${item.applicationSeason}</span>
+            </div>
+            <p>${item.offerSchool}</p>
+            <strong>${item.offerProgram}</strong>
           </div>
         </div>
       </header>
 
-      <section class="detail-section detail-summary">
-        <div class="detail-summary__result">
-          <span class="pill pill--accent">${item.applicationSeason}</span>
-          <strong>${item.listTitle}</strong>
-          <p>当前详情页仅围绕真实 offer 记录展示，未再补写申请故事、时间线或顾问话术。</p>
-        </div>
-        <div class="detail-summary__cta">
-          <p class="detail-summary__eyebrow">数据来源</p>
-          <h2>飞书多维表格真实记录</h2>
-          <p>可展示字段来自 25Fall / 26Fall 重建后的真实 offer 数据；空字段自动隐藏，后台字段不前台展示。</p>
-          <div class="detail-summary__actions">
-            <button class="primary-btn">领取同背景案例</button>
-            <button class="ghost-btn">咨询案例筛选规则</button>
-          </div>
-        </div>
-      </section>
-
-      ${renderInfoGrid(item)}
-      ${renderScoreSection(item)}
-      ${renderDescriptionSection(item)}
-      ${renderRelatedCases(relatedCases)}
-
-      <section class="footer-cta footer-cta--detail">
-        <div>
-          <p class="footer-cta__eyebrow">当前记录</p>
-          <h3>${item.studentNameMasked} 的这条 ${item.applicationSeason} offer 已按真实字段完成前台映射。</h3>
-        </div>
-        <div class="footer-cta__actions">
-          <button class="ghost-btn" data-action="back-to-list">继续看案例</button>
-          <button class="primary-btn">咨询同类案例</button>
-        </div>
-      </section>
+      ${renderInfoSection(item)}
+      ${renderTextSection("实习", item.internships)}
+      ${renderTextSection("科研", item.research)}
+      ${renderTextSection("备注", item.notes)}
+      ${renderStudentCard(item.studentCard)}
     </main>
   `;
 }

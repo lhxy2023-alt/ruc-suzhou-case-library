@@ -4,6 +4,29 @@ function optionsFor(field) {
   return ["全部", ...new Set(cases.map((item) => item[field]).filter(Boolean))];
 }
 
+function buildSchoolMajorSections() {
+  const schools = [...new Set(cases.map((item) => item.undergradSchool).filter(Boolean))];
+
+  return schools.map((school) => {
+    const majors = [
+      "全部",
+      ...new Set(
+        cases
+          .filter((item) => item.undergradSchool === school)
+          .map((item) => item.undergradMajor)
+          .filter(Boolean),
+      ),
+    ];
+
+    return {
+      title: cases.find((item) => item.undergradSchool === school)?.undergradSchoolLabel || school,
+      schoolValue: school,
+      field: "undergradMajor",
+      options: majors,
+    };
+  });
+}
+
 export const filterGroups = [
   {
     id: "season",
@@ -12,21 +35,15 @@ export const filterGroups = [
     options: optionsFor("applicationSeason"),
   },
   {
-    id: "school",
-    label: "本科学校",
-    field: "undergradSchool",
-    options: optionsFor("undergradSchool"),
-  },
-  {
-    id: "major",
-    label: "本科专业",
+    id: "program",
+    label: "院校专业",
     field: "undergradMajor",
-    options: optionsFor("undergradMajor"),
+    sections: buildSchoolMajorSections(),
   },
   {
-    id: "offer",
-    label: "录取院校",
-    field: "offerSchool",
-    options: optionsFor("offerSchool"),
+    id: "region",
+    label: "国家（地区）",
+    field: "offerRegion",
+    options: optionsFor("offerRegion"),
   },
 ];
