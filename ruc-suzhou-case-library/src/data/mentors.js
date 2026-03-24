@@ -6,7 +6,7 @@ export const mentors = [
     avatarText: "陈",
     intro: "7 年港新商科与英港混申经验，擅长把人大中法学生的课程结构与实习经历重新包装成高可信叙事。",
     highlights: ["主带港新商科", "双线规划", "文书定位"],
-    wechatLabel: "添加企微咨询",
+    wechatLabel: "添加顾问咨询",
     quickQuestions: ["我适合港新保底吗？", "双线申请怎么排时间？"],
   },
   {
@@ -16,7 +16,7 @@ export const mentors = [
     avatarText: "刘",
     intro: "长期负责北大金融 431、人大国际汉硕与双线升学策略，熟悉人大中法学生的数学、法语与绩点差异。",
     highlights: ["431 规划", "汉硕择校", "时间线管理"],
-    wechatLabel: "微信沟通方案",
+    wechatLabel: "咨询升学方案",
     quickQuestions: ["绩点一般还能冲 431 吗？", "汉硕和申请怎么二选一？"],
   },
   {
@@ -26,7 +26,7 @@ export const mentors = [
     avatarText: "孙",
     intro: "负责计算机、AI、数据科学相关案例，擅长把课程设计、科研和实习转换为技术项目亮点。",
     highlights: ["CS / AI", "科研背景提升", "技术项目包装"],
-    wechatLabel: "领取规划建议",
+    wechatLabel: "获取项目建议",
     quickQuestions: ["法语背景转 AI 可行吗？", "项目经历不多怎么补？"],
   },
 ];

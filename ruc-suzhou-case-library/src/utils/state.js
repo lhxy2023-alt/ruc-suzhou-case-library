@@ -1,6 +1,6 @@
 export const state = {
   activeTab: "cases",
-  query: "中国人民大学（苏州）",
+  query: "",
   selectedCaseId: null,
   openFilterId: null,
   previewImage: null,

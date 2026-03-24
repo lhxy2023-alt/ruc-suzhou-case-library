@@ -21,11 +21,11 @@
 
 .hero,
 .detail-page {
-  padding: 20px 18px 28px;
+  padding: 18px 18px 28px;
 }
 
 .page-body {
-  padding: 0 18px 28px;
+  padding: 0 18px calc(108px + env(safe-area-inset-bottom));
 }
 
 .card-list,
@@ -43,6 +43,10 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
+}
+
+.detail-page {
+  padding-bottom: calc(120px + env(safe-area-inset-bottom));
 }
 
 @media (min-width: 768px) {

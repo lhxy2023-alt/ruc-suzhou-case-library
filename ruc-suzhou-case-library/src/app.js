@@ -22,10 +22,24 @@ function render() {
   const currentDocs = currentCase
     ? documents.filter((doc) => currentCase.relatedPdf.includes(doc.id))
     : [];
+  const relatedCases = currentCase
+    ? cases
+        .filter(
+          (item) =>
+            item.id !== currentCase.id &&
+            (item.category === currentCase.category || item.pathType === currentCase.pathType),
+        )
+        .slice(0, 3)
+    : [];
   const currentFilterGroup = filterGroups.find((item) => item.id === state.openFilterId) || null;
 
   const body = currentCase
-    ? renderDetailPage({ item: currentCase, mentor: currentMentor, documents: currentDocs })
+    ? renderDetailPage({
+        item: currentCase,
+        mentor: currentMentor,
+        documents: currentDocs,
+        relatedCases,
+      })
     : renderListPage({ cases: filtered, articles, state, filterGroups });
 
   root.innerHTML = renderShell(body) + renderFilterPanel(currentFilterGroup, state) + renderPreviewModal(state.previewImage);
