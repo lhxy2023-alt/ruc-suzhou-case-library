@@ -1,7 +1,15 @@
 function renderInfoSection(item) {
   return `
-    <section class="detail-section detail-card">
-      <div class="section-title">
+    <section class="detail-section detail-card detail-summary">
+      <div class="detail-summary__head">
+        <div class="detail-summary__meta">
+          <span class="pill pill--season">${item.applicationSeason}</span>
+          <span class="pill">${item.undergradSchoolLabel}</span>
+        </div>
+        <p class="detail-summary__student">${item.studentNameMasked}</p>
+        <p class="detail-summary__offer">${item.offerSchool} ${item.offerProgram}</p>
+      </div>
+      <div class="section-title section-title--detail">
         <h2>录取详情</h2>
       </div>
       <div class="detail-info-list">
@@ -9,28 +17,13 @@ function renderInfoSection(item) {
           .map(
             (section) => `
               <div class="detail-info-row">
-                <span>${section.label}</span>
-                <strong>${section.value}</strong>
+                <span class="detail-info-row__label">${section.label}</span>
+                <span class="detail-info-row__value">${section.value}</span>
               </div>
             `,
           )
           .join("")}
       </div>
-    </section>
-  `;
-}
-
-function renderTextSection(title, value) {
-  if (!value) {
-    return "";
-  }
-
-  return `
-    <section class="detail-section detail-card">
-      <div class="section-title">
-        <h2>${title}</h2>
-      </div>
-      <article class="detail-paragraph">${value}</article>
     </section>
   `;
 }
@@ -44,51 +37,40 @@ function renderStudentCard(card) {
     <section class="detail-section detail-card student-card">
       <div class="section-title">
         <h2>学生名片</h2>
-        <p>乐湖会协助学弟学妹与已录取学长学姐建立沟通桥梁。</p>
+        <p>如需进一步了解申请准备，可通过下方入口继续咨询。</p>
       </div>
-      <div class="student-card__body">
-        <div class="student-card__avatar">${card.name.slice(0, 1)}</div>
-        <div class="student-card__copy">
-          <div class="student-card__head">
-            <strong>${card.name}</strong>
-            <span class="pill pill--accent">开放咨询</span>
-          </div>
-          <p>${card.school} / ${card.major}</p>
-          <p>${card.seasonTags.join(" / ")} · ${card.regionSummary}</p>
-          <p>${card.note}</p>
-        </div>
+      <div class="student-card__copy">
+        <p>${card.copy}</p>
       </div>
-      <div class="student-card__foot">
-        <span>该同学当前共有 ${card.routeCount} 条 offer 展示在案例库中。</span>
-        <button class="ghost-btn" type="button">咨询入口待接入</button>
+      <div class="student-card__actions">
+        <button class="primary-btn" type="button">${card.contactLabel}</button>
       </div>
     </section>
+  `;
+}
+
+function renderFloatingConsult(item) {
+  return `
+    <aside class="detail-floating-contact">
+      <div class="detail-floating-contact__copy">
+        <strong>案例咨询</strong>
+        <span>${item.studentCard ? "可继续了解申请节奏与准备重点" : "咨询入口与二维码后续接入"}</span>
+      </div>
+      <button class="primary-btn" type="button">${item.studentCard ? "立即咨询" : "咨询入口待接入"}</button>
+    </aside>
   `;
 }
 
 export function renderDetailPage({ item }) {
   return `
     <main class="detail-page">
-      <header class="detail-hero detail-hero--offer">
+      <header class="detail-hero">
         <button class="ghost-btn" data-action="back-to-list">返回</button>
-        <div class="detail-hero__main">
-          <div class="detail-hero__logo" aria-hidden="true">${item.logoText}</div>
-          <div class="detail-hero__copy">
-            <div class="detail-hero__meta">
-              <h1>${item.studentNameMasked}</h1>
-              <span class="pill pill--season">${item.applicationSeason}</span>
-            </div>
-            <p>${item.offerSchool}</p>
-            <strong>${item.offerProgram}</strong>
-          </div>
-        </div>
       </header>
 
       ${renderInfoSection(item)}
-      ${renderTextSection("实习", item.internships)}
-      ${renderTextSection("科研", item.research)}
-      ${renderTextSection("备注", item.notes)}
       ${renderStudentCard(item.studentCard)}
+      ${renderFloatingConsult(item)}
     </main>
   `;
 }

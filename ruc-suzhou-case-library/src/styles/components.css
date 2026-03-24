@@ -3,12 +3,9 @@
 .section-header,
 .sheet__head,
 .news-card__head,
-.detail-hero__main,
-.detail-hero__meta,
-.student-card__body,
-.student-card__head,
-.student-card__foot,
-.floating-contact {
+.detail-summary__meta,
+.student-card__actions,
+.detail-floating-contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,14 +26,12 @@
 
 .hero-brand__eyebrow,
 .result-meta,
-.detail-info-row span,
 .section-header p,
 .news-card p,
 .news-card__foot,
 .news-card__head span:last-child,
-.student-card__copy p,
-.student-card__foot span,
-.floating-contact__copy span,
+.student-card p,
+.detail-floating-contact__copy span,
 .sheet__section strong {
   color: var(--muted);
 }
@@ -67,8 +62,7 @@
 }
 
 .search-box__icon,
-.case-card__icon,
-.floating-contact__qr {
+.case-card__icon {
   width: 28px;
   height: 28px;
   display: inline-flex;
@@ -168,6 +162,11 @@
   margin-bottom: 4px;
 }
 
+.section-title--detail h2 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
 .section-count,
 .news-card__head span:last-child {
   font-size: 12px;
@@ -239,9 +238,7 @@
   align-items: start;
 }
 
-.school-badge,
-.detail-hero__logo,
-.student-card__avatar {
+.school-badge {
   width: 56px;
   height: 56px;
   display: inline-flex;
@@ -299,67 +296,93 @@
   gap: 14px;
 }
 
-.detail-hero--offer {
+.detail-hero {
+  padding-bottom: 0;
+}
+
+.detail-summary {
   display: grid;
-  gap: 16px;
+  gap: 18px;
+  background: linear-gradient(180deg, rgba(255, 248, 244, 0.98) 0%, rgba(255, 255, 255, 0.96) 100%);
 }
 
-.detail-hero__main {
-  align-items: flex-start;
-}
-
-.detail-hero__copy {
+.detail-summary__head {
   display: grid;
-  gap: 4px;
+  gap: 10px;
+  padding: 18px;
+  margin: -16px -16px 0;
+  background: linear-gradient(180deg, #c95e55 0%, #9b3432 100%);
+  color: #fff8f5;
+  border-radius: 22px 22px 18px 18px;
 }
 
-.detail-hero__copy h1 {
-  font-size: 28px;
-  line-height: 1.2;
+.detail-summary__meta {
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.detail-hero__copy p {
-  color: var(--muted);
-  line-height: 1.5;
+.detail-summary__meta .pill {
+  color: #fff7f3;
+  background: rgba(255, 255, 255, 0.14);
 }
 
-.detail-hero__copy strong {
-  font-size: 20px;
-  line-height: 1.45;
+.detail-summary__student,
+.detail-summary__offer {
+  font-size: 14px;
+  line-height: 1.65;
 }
 
 .detail-info-list {
   display: grid;
-  gap: 14px;
+  gap: 0;
 }
 
 .detail-info-row {
   display: grid;
-  gap: 6px;
-}
-
-.detail-info-row strong,
-.detail-paragraph {
-  line-height: 1.65;
-}
-
-.detail-paragraph {
-  color: #4d3732;
-}
-
-.student-card__body {
-  align-items: flex-start;
-  margin-top: 14px;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  padding: 12px 0;
+  border-top: 1px solid rgba(114, 44, 35, 0.08);
 }
 
 .student-card__copy {
   display: grid;
-  gap: 4px;
+  gap: 10px;
+  margin-top: 14px;
 }
 
-.student-card__foot {
+.detail-info-row:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.detail-info-row:last-child {
+  padding-bottom: 0;
+}
+
+.detail-info-row__label,
+.detail-info-row__value,
+.student-card__copy p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.detail-info-row__label {
+  color: var(--muted);
+}
+
+.detail-info-row__value {
+  color: #4d3732;
+}
+
+.student-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 248, 243, 0.94) 100%);
+}
+
+.student-card__actions {
   margin-top: 14px;
-  align-items: center;
+  justify-content: flex-start;
 }
 
 .ghost-btn {
@@ -434,14 +457,14 @@
   margin-top: 14px;
 }
 
-.floating-contact {
-  position: sticky;
-  left: 12px;
-  right: 12px;
+.detail-floating-contact {
+  position: fixed;
+  left: 50%;
   bottom: calc(14px + env(safe-area-inset-bottom));
-  margin: 12px;
+  transform: translateX(-50%);
+  width: min(calc(100% - 24px), calc(var(--phone-width) - 24px));
   padding: 10px 12px;
-  background: rgba(255, 251, 248, 0.88);
+  background: rgba(255, 251, 248, 0.96);
   border: 1px solid rgba(159, 47, 47, 0.12);
   border-radius: 18px;
   box-shadow: 0 10px 24px rgba(84, 28, 22, 0.12);
@@ -449,18 +472,23 @@
   z-index: 6;
 }
 
-.floating-contact__copy {
+.detail-floating-contact__copy {
   display: grid;
   gap: 2px;
 }
 
-.floating-contact__copy strong {
+.detail-floating-contact__copy strong {
   font-size: 13px;
 }
 
 @media (max-width: 767px) {
-  .student-card__foot {
+  .detail-floating-contact,
+  .student-card__actions {
     display: grid;
     gap: 10px;
+  }
+
+  .detail-floating-contact .primary-btn {
+    width: 100%;
   }
 }

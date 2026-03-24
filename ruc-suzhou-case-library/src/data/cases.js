@@ -1310,10 +1310,21 @@ const schoolDisplayMap = {
 };
 
 const studentCardTemplates = [
-  "愿意和学弟学妹聊申请定位、选校节奏与准备重点。",
-  "可分享自己的申请准备节奏与背景提升经验。",
-  "可交流项目选择、文书准备与录取后的真实体验。",
+  "可交流选校定位、申请节奏与不同项目之间的取舍思路。",
+  "愿意分享背景准备、文书推进与拿到 offer 之后的真实体验。",
+  "可继续聊申请规划、时间安排以及准备过程中踩过的坑。",
 ];
+
+const timelineBySeason = {
+  "25Fall": {
+    submitMonths: ["2024.10", "2024.11", "2024.12"],
+    admitMonths: ["2025.01", "2025.02", "2025.03", "2025.04"],
+  },
+  "26Fall": {
+    submitMonths: ["2025.10", "2025.11", "2025.12"],
+    admitMonths: ["2026.01", "2026.02", "2026.03", "2026.04"],
+  },
+};
 
 function getOfferRegion(offerSchool) {
   return offerRegionMap[offerSchool] || "其他";
@@ -1337,18 +1348,28 @@ function buildStudentCard(studentNameMasked, studentCases) {
     return null;
   }
 
-  const firstCase = studentCases[0];
-  const regionSet = [...new Set(studentCases.map((item) => item.offerRegion))];
+  return {
+    copy: studentCardTemplates[hash % studentCardTemplates.length],
+    contactLabel: "咨询该同学",
+  };
+}
+
+function buildMockTimeline(item) {
+  const config = timelineBySeason[item.applicationSeason] || timelineBySeason["25Fall"];
+  const submitMonth = config.submitMonths[item.sourceRow % config.submitMonths.length];
+  const admitMonth = config.admitMonths[item.sourceRow % config.admitMonths.length];
+  const submitDay = String((item.sourceRow % 18) + 8).padStart(2, "0");
+  const admitDay = String((item.sourceRow % 20) + 5).padStart(2, "0");
 
   return {
-    name: studentNameMasked,
-    major: firstCase.undergradMajor,
-    school: getSchoolDisplayName(firstCase.undergradSchool),
-    seasonTags: [...new Set(studentCases.map((item) => item.applicationSeason))],
-    routeCount: studentCases.length,
-    regionSummary: regionSet.join(" / "),
-    note: studentCardTemplates[hash % studentCardTemplates.length],
+    submittedAt: `${submitMonth}.${submitDay}`,
+    admissionAt: `${admitMonth}.${admitDay}`,
   };
+}
+
+function buildMockRound(item) {
+  const rounds = ["第一轮", "第二轮", "常规轮次"];
+  return rounds[item.sourceRow % rounds.length];
 }
 
 function buildStudentCards(items) {
@@ -1372,27 +1393,36 @@ function buildDetailSections(item) {
   return [
     { label: "录取学校", value: item.offerSchool },
     { label: "录取专业", value: item.offerProgram },
+    { label: "本科院校", value: item.undergradSchoolLabel },
     { label: "本科专业", value: item.undergradMajor },
     { label: "绩点或均分", value: item.gpa },
     { label: "语言成绩与标化", value: item.languageScoreText },
+    { label: "投递时间", value: item.submittedAt },
     { label: "申请轮次", value: item.applicationRound },
     { label: "录取时间", value: item.admissionAt },
+    { label: "实习", value: item.internships },
+    { label: "科研", value: item.research },
+    { label: "备注", value: item.notes },
   ].filter((section) => section.value);
 }
 
-const baseCases = rawOffers.map((item) => ({
-  ...item,
-  listTitle: `${item.offerSchool}${item.offerProgram}offer`,
-  logoText: item.offerSchool.slice(0, 2),
-  offerRegion: getOfferRegion(item.offerSchool),
-  undergradSchoolLabel: getSchoolDisplayName(item.undergradSchool),
-  languageScoreText: buildLanguageScoreText(item),
-  internships: null,
-  research: null,
-  notes: null,
-  applicationRound: null,
-  admissionAt: null,
-}));
+const baseCases = rawOffers.map((item) => {
+  const timeline = buildMockTimeline(item);
+
+  return {
+    ...item,
+    ...timeline,
+    listTitle: `${item.offerSchool}${item.offerProgram}offer`,
+    logoText: item.offerSchool.slice(0, 2),
+    offerRegion: getOfferRegion(item.offerSchool),
+    undergradSchoolLabel: getSchoolDisplayName(item.undergradSchool),
+    languageScoreText: buildLanguageScoreText(item),
+    internships: null,
+    research: null,
+    notes: item.description,
+    applicationRound: buildMockRound(item),
+  };
+});
 
 const studentCards = buildStudentCards(baseCases);
 
