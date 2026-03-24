@@ -1,0 +1,56 @@
+.app-bg {
+  min-height: 100vh;
+  padding: 18px 12px 36px;
+}
+
+.phone-stage {
+  display: flex;
+  justify-content: center;
+}
+
+.phone-frame {
+  position: relative;
+  width: min(100%, var(--phone-width));
+  min-height: calc(100vh - 36px);
+  background: linear-gradient(180deg, #fffdfb 0%, #fff7f3 100%);
+  border: 1px solid rgba(114, 44, 35, 0.1);
+  border-radius: 34px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.hero,
+.detail-page {
+  padding: 20px 18px 28px;
+}
+
+.page-body {
+  padding: 0 18px 28px;
+}
+
+.card-list,
+.news-list,
+.doc-list {
+  display: grid;
+  gap: 12px;
+}
+
+.detail-section {
+  margin-top: 14px;
+}
+
+.detail-section--grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .app-bg {
+    padding-top: 28px;
+  }
+
+  .phone-frame {
+    min-height: 844px;
+  }
+}
