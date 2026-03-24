@@ -10,9 +10,9 @@
 [Important background that affects how you help them]
 
 ### Preferences Learned
-- 所有 OpenClaw 命令前必须加上 `pnpm`
+- 以后写代码或给命令时，不需要在 `openclaw` 前面加 `pnpm`；优先直接使用全局 `openclaw` 命令
 - 当需要用户接手浏览器完成扫码、登录、验证码、安全确认等步骤时，先把对应浏览器窗口切到最前台，再提示用户操作
-- 以后凡是我创建或写入的飞书文档，默认都要赋予陶方正管理权限
+- 以后凡是我创建或写入的飞书文档，默认都要赋予陶方正管理权限（full_access）
 - 如果一个工作时长过久，每 10 分钟主动反馈一次进度
 - 用户要求：凡是我下载的东西，不要放到临时文件夹；要放到电脑重启后依旧存在的持久目录
 [Things you've discovered about how they like to work]
@@ -38,7 +38,10 @@
 [Important decisions and their reasoning]
 
 ### Things to Remember
-[Anything else important for continuity]
+- 后续关于公司业务、渠道、组织、项目和历史演进的讨论，默认建立在 2026-03-21 这次系统梳理的基础上继续推进。
+- 公司业务链条目前按三段理解：运营获客 → 销售 → 交付。
+- 运营获客当前已明确三类并列渠道：i修远（社群/圈层/新生触达）、i乐湖（官方宣传/案例背书/申请教育/高信任转化）、乐湖华研小红书（院外北大金融431公域获客/节点热点/课程转化）。
+- 两份主文档的固定维护规则：第一份按用户叙述顺序沉淀原始事实，第二份在第一份基础上做结构化提炼；两份文档都保持最新版，过时内容直接覆盖。
 
 ---
 
