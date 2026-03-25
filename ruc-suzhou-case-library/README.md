@@ -131,6 +131,11 @@ ruc-suzhou-case-library/src/data/generated/frontendData.js
 - `articles.sectionTitle`
 - `articles.sectionDescription`
 
+更完整的后台维护规范见：
+
+- `ruc-suzhou-case-library/BACKEND_GUIDE.md`
+- `ruc-suzhou-case-library/FIELD_MAPPING.md`
+
 ## 当前限制
 
 - 现在是“改表后重新导出一次”的模式，不是自动实时刷新
