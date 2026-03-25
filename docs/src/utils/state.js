@@ -1,6 +1,7 @@
 export const state = {
   activeTab: "cases",
   query: "",
+  searchFocused: false,
   selectedCaseId: null,
   openFilterId: null,
   filterPanelStyle: null,

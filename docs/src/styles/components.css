@@ -524,6 +524,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 16px;
+  max-height: min(calc(100vh - 32px), 640px);
+  overflow: auto;
   z-index: 9;
 }
 
@@ -547,9 +549,9 @@
 
 .contact-modal__qr-card {
   display: grid;
-  gap: 10px;
+  gap: 8px;
   justify-items: center;
-  padding: 12px;
+  padding: 10px;
   border-radius: 18px;
   border: 1px solid rgba(114, 44, 35, 0.1);
   background: rgba(255, 255, 255, 0.92);
@@ -559,7 +561,8 @@
 .contact-modal__qr-image {
   width: 100%;
   aspect-ratio: 1;
-  padding: 8px;
+  max-width: 160px;
+  padding: 6px;
   border-radius: 14px;
   background: #fff;
   border: 1px solid rgba(114, 44, 35, 0.08);
@@ -624,5 +627,39 @@
 
   .contact-modal__grid {
     grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .contact-modal {
+    top: calc(16px + env(safe-area-inset-top));
+    transform: translateX(-50%);
+    width: min(calc(100% - 24px), 360px);
+    max-height: calc(100vh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    padding: 14px;
+  }
+
+  .contact-modal .modal__head {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .contact-modal__description {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .contact-modal__qr-card {
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .contact-modal__qr-image {
+    max-width: 128px;
+    padding: 4px;
+  }
+
+  .contact-modal__qr-card strong {
+    font-size: 12px;
   }
 }

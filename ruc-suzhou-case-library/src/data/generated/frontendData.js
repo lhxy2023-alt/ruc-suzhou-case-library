@@ -3460,7 +3460,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.7",
     "ielts": null,
-    "toefl": "105",
+    "toefl": "托福105",
     "greGmat": "GRE330",
     "offerSchool": "杜克大学",
     "offerProgram": "金融科技",
@@ -3482,10 +3482,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
-      "105",
+      "托福105",
       "GRE330"
     ],
-    "languageScoreText": "105 / GRE330",
+    "languageScoreText": "托福105 / GRE330",
     "tags": [
       {
         "label": "25fall",
@@ -3524,7 +3524,7 @@ export const cases = [
         "value": "GRE330"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 105 GRE330 杜克大学 金融科技 美国"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE330 杜克大学 金融科技 美国"
   },
   {
     "id": "25fall_019",
@@ -3542,7 +3542,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.7",
     "ielts": null,
-    "toefl": "105",
+    "toefl": "托福105",
     "greGmat": "GRE330",
     "offerSchool": "纽约大学",
     "offerProgram": "金融工程",
@@ -3564,10 +3564,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
-      "105",
+      "托福105",
       "GRE330"
     ],
-    "languageScoreText": "105 / GRE330",
+    "languageScoreText": "托福105 / GRE330",
     "tags": [
       {
         "label": "25fall",
@@ -3606,7 +3606,7 @@ export const cases = [
         "value": "GRE330"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 105 GRE330 纽约大学 金融工程 美国"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE330 纽约大学 金融工程 美国"
   },
   {
     "id": "25fall_020",
@@ -3624,7 +3624,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.7",
     "ielts": null,
-    "toefl": "105",
+    "toefl": "托福105",
     "greGmat": "GRE330",
     "offerSchool": "康奈尔大学",
     "offerProgram": "运筹与信息工程",
@@ -3646,10 +3646,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
-      "105",
+      "托福105",
       "GRE330"
     ],
-    "languageScoreText": "105 / GRE330",
+    "languageScoreText": "托福105 / GRE330",
     "tags": [
       {
         "label": "25fall",
@@ -3688,7 +3688,7 @@ export const cases = [
         "value": "GRE330"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 105 GRE330 康奈尔大学 运筹与信息工程 美国"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE330 康奈尔大学 运筹与信息工程 美国"
   },
   {
     "id": "25fall_021",
@@ -3706,7 +3706,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.7",
     "ielts": null,
-    "toefl": "105",
+    "toefl": "托福105",
     "greGmat": "GRE330",
     "offerSchool": "哥伦比亚大学",
     "offerProgram": "统计学",
@@ -3728,10 +3728,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
-      "105",
+      "托福105",
       "GRE330"
     ],
-    "languageScoreText": "105 / GRE330",
+    "languageScoreText": "托福105 / GRE330",
     "tags": [
       {
         "label": "25fall",
@@ -3770,7 +3770,7 @@ export const cases = [
         "value": "GRE330"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 105 GRE330 哥伦比亚大学 统计学 美国"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE330 哥伦比亚大学 统计学 美国"
   },
   {
     "id": "25fall_022",
