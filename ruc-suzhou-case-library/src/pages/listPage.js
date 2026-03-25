@@ -86,6 +86,34 @@ function renderSchoolBadge(item) {
   return `<div class="school-badge" aria-hidden="true">${item.logoText}</div>`;
 }
 
+function renderLineIcon(type) {
+  if (type === "academic") {
+    return `
+      <span class="case-card__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9.5 12 5l9 4.5-9 4.5L3 9.5Z" />
+          <path d="M7.5 11.8V15c0 .9 2 2.5 4.5 2.5s4.5-1.6 4.5-2.5v-3.2" />
+          <path d="M19 10v4.2" />
+          <circle cx="19" cy="15.8" r=".9" fill="currentColor" stroke="none" />
+        </svg>
+      </span>
+    `;
+  }
+
+  return `
+    <span class="case-card__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="5.5" y="4.5" width="13" height="15" rx="2.5" />
+        <path d="M8.5 9h7" />
+        <path d="M8.5 12h7" />
+        <path d="M8.5 15h4.5" />
+        <path d="M15.8 14.5v2.5" />
+        <path d="M14.6 15.7h2.4" />
+      </svg>
+    </span>
+  `;
+}
+
 function renderCaseCard(item) {
   const scoreLine = buildScoreLine(item);
 
@@ -100,14 +128,14 @@ function renderCaseCard(item) {
       </div>
       <div class="case-card__content">
         <div class="case-card__line">
-          <span class="case-card__icon">学</span>
+          ${renderLineIcon("academic")}
           <span>${buildBackgroundLine(item)}</span>
         </div>
         ${
           scoreLine
             ? `
               <div class="case-card__line">
-                <span class="case-card__icon">分</span>
+                ${renderLineIcon("score")}
                 <span>${scoreLine}</span>
               </div>
             `
