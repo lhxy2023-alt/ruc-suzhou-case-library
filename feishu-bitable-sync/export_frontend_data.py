@@ -14,48 +14,25 @@ OUTPUT_DIR = WORKSPACE / "ruc-suzhou-case-library" / "src" / "data" / "generated
 OUTPUT_FILE = OUTPUT_DIR / "frontendData.js"
 LOCAL_SNAPSHOT_PATH = WORKSPACE / "feishu-bitable-sync" / "data" / "rebuilt-offers.json"
 
-ARTICLE_SEED = [
-    {
-        "id": "article-1",
-        "title": "26Fall 人大中法金融学生，为什么越来越适合双线申请？",
-        "category": "申请策略",
-        "summary": "从绩点、语言和实习节奏看，单押统考的风险正在变高，双线路径更稳。",
-        "publishDate": "2026-03-18",
-        "readTime": "5 分钟",
-    },
-    {
-        "id": "article-2",
-        "title": "国际汉教方向怎么判断：考研优先，还是先做海外申请？",
-        "category": "项目解读",
-        "summary": "拆分不想考数学、想保留体制内机会、想尽快上岸三种常见诉求。",
-        "publishDate": "2026-03-15",
-        "readTime": "4 分钟",
-    },
-    {
-        "id": "article-3",
-        "title": "港新保底不是降级，而是控制 431 冲刺失败的系统风险",
-        "category": "保底逻辑",
-        "summary": "用过往案例解释什么情况下港新保底最有价值，什么情况下反而没必要。",
-        "publishDate": "2026-03-11",
-        "readTime": "6 分钟",
-    },
-    {
-        "id": "article-4",
-        "title": "中外合办背景申请 AI / 计算机，招生官到底看什么？",
-        "category": "技术申请",
-        "summary": "课程、项目、科研、语言和推荐信的权重拆解，适合转码和 AI 学生。",
-        "publishDate": "2026-03-08",
-        "readTime": "7 分钟",
-    },
-    {
-        "id": "article-5",
-        "title": "25Fall 录取复盘：人大中法商科案例最常见的三类失分点",
-        "category": "复盘",
-        "summary": "文书叙事松散、实习没有结果导向、语言准备拖延，仍然是最常见问题。",
-        "publishDate": "2026-03-05",
-        "readTime": "5 分钟",
-    },
-]
+ARTICLE_SEED = []
+
+
+def build_placeholder_qr_data_url(label):
+    svg = f"""
+    <svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+      <rect width="320" height="320" rx="28" fill="#fffdfb"/>
+      <rect x="26" y="26" width="268" height="268" rx="20" fill="#ffffff" stroke="#dcc8bf" stroke-width="8"/>
+      <path d="M56 56h54v54H56zM210 56h54v54h-54zM56 210h54v54H56z" fill="#241a17"/>
+      <path d="M72 72h22v22H72zM226 72h22v22h-22zM72 226h22v22H72z" fill="#fffdfb"/>
+      <path d="M140 62h20v20h-20zM170 62h18v18h-18zM140 94h18v18h-18zM166 98h14v14h-14zM194 96h16v16h-16zM136 132h16v16h-16zM164 130h22v22h-22zM196 132h16v16h-16zM134 166h18v18h-18zM164 166h14v14h-14zM194 164h20v20h-20zM138 194h20v20h-20zM170 194h16v16h-16zM198 196h14v14h-14zM226 166h22v22h-22zM228 198h18v18h-18zM164 228h20v20h-20zM194 228h18v18h-18z" fill="#241a17"/>
+      <text x="160" y="292" text-anchor="middle" font-size="20" font-family="Arial, sans-serif" fill="#8f2625">{label}</text>
+    </svg>
+    """.strip()
+    return f"data:image/svg+xml;charset=UTF-8,{urllib.parse.quote(svg)}"
+
+
+DEFAULT_WECHAT_QR = build_placeholder_qr_data_url("微信二维码待替换")
+DEFAULT_WENJUANXING_QR = build_placeholder_qr_data_url("问卷星二维码待替换")
 
 DEFAULT_PAGE_CONFIG = {
     "home.heroEyebrow": "i乐湖",
@@ -68,11 +45,17 @@ DEFAULT_PAGE_CONFIG = {
     "detail.contactDescriptionWithCard": "可继续了解申请节奏与准备重点",
     "detail.contactDescriptionWithoutCard": "咨询入口与二维码后续接入",
     "detail.contactButtonTextWithCard": "立即咨询",
-    "detail.contactButtonTextWithoutCard": "咨询入口待接入",
+    "detail.contactButtonTextWithoutCard": "立即咨询",
     "detail.studentCardTitle": "学生名片",
     "detail.studentCardDescription": "这部分保留为留白说明与后续联系入口，不重复展示案例主信息。",
     "articles.sectionTitle": "乐湖专访",
     "articles.sectionDescription": "后续用于承接 i乐湖 公众号内的学员专访内容。",
+    "contact.modalTitle": "联系顾问",
+    "contact.modalDescription": "可扫码添加微信，或填写问卷星表单。",
+    "contact.wechatQrLabel": "微信二维码",
+    "contact.wechatQrImage": DEFAULT_WECHAT_QR,
+    "contact.wenjuanxingQrLabel": "问卷星二维码",
+    "contact.wenjuanxingQrImage": DEFAULT_WENJUANXING_QR,
 }
 
 COLLEGE_DISPLAY_MAP = {
@@ -176,6 +159,14 @@ def first_non_empty(fields, *names):
     return None
 
 
+def first_present_field(fields, *names):
+    for name in names:
+        value = normalize_scalar(fields.get(name))
+        if value:
+            return {"label": name, "value": value}
+    return None
+
+
 def normalize_bool(value):
     text = (normalize_scalar(value) or "").strip().lower()
     return text in {"1", "true", "yes", "y", "是", "开启", "open", "on"}
@@ -257,7 +248,7 @@ def build_student_card(row, anonymous_mode):
     copy = custom_copy or STUDENT_CARD_TEMPLATES[hash_text(student_seed) % len(STUDENT_CARD_TEMPLATES)]
     return {
         "copy": copy,
-        "contactLabel": "咨询该同学",
+        "contactLabel": "与我咨询",
     }
 
 
@@ -269,22 +260,25 @@ def build_language_score_text(item):
     return " / ".join(build_score_list(item)) or None
 
 
-def build_detail_sections(item):
+def build_detail_sections(fields):
     sections = [
-        {"label": "录取学校", "value": item.get("offerSchool")},
-        {"label": "录取专业", "value": item.get("offerProgram")},
-        {"label": "本科学院", "value": item.get("undergradCollegeLabel")},
-        {"label": "本科专业", "value": item.get("undergradMajor")},
-        {"label": "绩点或均分", "value": item.get("gpa")},
-        {"label": "语言成绩与标化", "value": item.get("languageScoreText")},
-        {"label": "申请轮次", "value": item.get("applicationRound")},
-        {"label": "录取时间", "value": item.get("admissionAt")},
-        {"label": "实习", "value": item.get("internships")},
-        {"label": "科研", "value": item.get("research")},
-        {"label": "最终去向", "value": item.get("finalDestination")},
-        {"label": "备注", "value": item.get("notes")},
+        first_present_field(fields, "录取学校", "录取院校"),
+        first_present_field(fields, "录取专业"),
+        first_present_field(fields, "本科学院", "本科院校", "本科学校"),
+        first_present_field(fields, "本科专业"),
+        first_present_field(fields, "GPA/均分"),
+        first_present_field(fields, "雅思"),
+        first_present_field(fields, "托福"),
+        first_present_field(fields, "GRE/GMAT", "GMAT/GRE"),
+        first_present_field(fields, "申请时间"),
+        first_present_field(fields, "申请轮次"),
+        first_present_field(fields, "录取时间"),
+        first_present_field(fields, "实习经历", "实习"),
+        first_present_field(fields, "科研经历", "科研"),
+        first_present_field(fields, "最终去向说明", "最终去向"),
+        first_present_field(fields, "备注"),
     ]
-    return [section for section in sections if section["value"]]
+    return [section for section in sections if section]
 
 
 def slugify(value):
@@ -331,6 +325,7 @@ def build_case_item(record, index):
         "internships": first_non_empty(fields, "实习经历", "实习"),
         "research": first_non_empty(fields, "科研经历", "科研"),
         "applicationRound": first_non_empty(fields, "申请轮次"),
+        "applicationAt": first_non_empty(fields, "申请时间"),
         "admissionAt": first_non_empty(fields, "录取时间"),
         "notes": first_non_empty(fields, "备注"),
         "finalDestination": first_non_empty(fields, "最终去向说明", "最终去向"),
@@ -345,7 +340,7 @@ def build_case_item(record, index):
     item["tags"] = [{"label": season, "type": "season"}, *({"label": tag, "type": "default"} for tag in display_tags)]
     item["listTitle"] = build_offer_title(offer_school, offer_program)
     item["logoText"] = build_logo_text(offer_school)
-    item["detailSections"] = build_detail_sections(item)
+    item["detailSections"] = build_detail_sections(fields)
     item["searchText"] = " ".join(
         str(value)
         for value in [
@@ -411,7 +406,7 @@ def build_filter_groups(cases):
             if value and value not in seen:
                 seen.add(value)
                 values.append(value)
-        return ["全部", *values]
+        return ["不限", *values]
 
     colleges = []
     seen_colleges = set()
@@ -455,7 +450,7 @@ def build_filter_groups(cases):
             "label": "国家（地区）",
             "field": "offerRegions",
             "multiple": True,
-            "options": [value for value in unique_values("offerRegion") if value != "全部"],
+            "options": [value for value in unique_values("offerRegion") if value != "不限"],
         },
     ]
 

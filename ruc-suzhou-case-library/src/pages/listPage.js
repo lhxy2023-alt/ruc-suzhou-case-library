@@ -1,9 +1,18 @@
 import { pageConfig } from "../data/index.js";
 
+function hasActiveFilters(state) {
+  return (
+    state.filters.applicationSeason !== "不限" ||
+    state.filters.undergradCollege !== "不限" ||
+    state.filters.undergradMajor !== "不限" ||
+    state.filters.offerRegions.length > 0
+  );
+}
+
 function buildProgramFilterLabel(state, filterGroups) {
   const group = filterGroups.find((item) => item.id === "program");
 
-  if (state.filters.undergradCollege === "全部") {
+  if (state.filters.undergradCollege === "不限") {
     return group?.label || "学院专业";
   }
 
@@ -12,7 +21,7 @@ function buildProgramFilterLabel(state, filterGroups) {
     return group?.label || "学院专业";
   }
 
-  if (state.filters.undergradMajor === "全部") {
+  if (state.filters.undergradMajor === "不限") {
     return college.label;
   }
 
@@ -44,7 +53,7 @@ function buildFilterChipLabel(group, state, filterGroups) {
   if (group.id === "region") {
     return buildRegionFilterLabel(state);
   }
-  return state.filters[group.field] === "全部" ? group.label : state.filters[group.field];
+  return state.filters[group.field] === "不限" ? group.label : state.filters[group.field];
 }
 
 function renderTagList(tags = []) {
@@ -70,31 +79,28 @@ function renderCaseCard(item) {
 
   return `
     <button class="case-card" data-action="open-case" data-case-id="${item.id}">
-      <div class="case-card__top">
-        <h3>${item.listTitle}</h3>
-        <div class="case-card__identity">
-          <strong>${item.studentDisplayName}</strong>
+      <div class="case-card__head">
+        <div class="school-badge" aria-hidden="true">${item.logoText}</div>
+        <div class="case-card__title-group">
+          <h3>${item.listTitle}</h3>
           ${renderTagList(item.tags)}
         </div>
       </div>
-      <div class="case-card__body">
-        <div class="school-badge" aria-hidden="true">${item.logoText}</div>
-        <div class="case-card__content">
-          <div class="case-card__line">
-            <span class="case-card__icon">学</span>
-            <span>${buildBackgroundLine(item)}</span>
-          </div>
-          ${
-            scoreLine
-              ? `
-                <div class="case-card__line">
-                  <span class="case-card__icon">分</span>
-                  <span>${scoreLine}</span>
-                </div>
-              `
-              : ""
-          }
+      <div class="case-card__content">
+        <div class="case-card__line">
+          <span class="case-card__icon">学</span>
+          <span>${buildBackgroundLine(item)}</span>
         </div>
+        ${
+          scoreLine
+            ? `
+              <div class="case-card__line">
+                <span class="case-card__icon">分</span>
+                <span>${scoreLine}</span>
+              </div>
+            `
+            : ""
+        }
       </div>
     </button>
   `;
@@ -117,15 +123,10 @@ function renderArticleCard(item) {
 export function renderListContent({ cases, articles, state }) {
   if (state.activeTab === "articles") {
     return `
-      <section class="section-header">
+      <section class="section-header section-header--empty">
         <div>
           <h2>${pageConfig["articles.sectionTitle"] || "乐湖专访"}</h2>
-          <p>${pageConfig["articles.sectionDescription"] || "后续用于承接 i乐湖 公众号内的学员专访内容。"}</p>
         </div>
-        <span class="section-count">${articles.length} 篇</span>
-      </section>
-      <section class="news-list">
-        ${articles.map(renderArticleCard).join("")}
       </section>
     `;
   }
@@ -138,6 +139,7 @@ export function renderListContent({ cases, articles, state }) {
 }
 
 export function renderListPage({ cases, articles, state, filterGroups }) {
+  const showReset = hasActiveFilters(state);
   const tabs = [
     { id: "cases", label: "案例" },
     { id: "articles", label: "专访" },
@@ -193,6 +195,13 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
                   `,
                 )
                 .join("")}
+              ${
+                showReset
+                  ? `
+                    <button class="ghost-btn filter-reset-btn" data-action="reset-filters" type="button">重置</button>
+                  `
+                  : ""
+              }
             </section>
             <div class="result-meta" id="resultMeta">${cases.length} 个案例</div>
           `
@@ -207,7 +216,7 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
         <strong>${pageConfig["home.contactTitle"] || "联系我们"}</strong>
         <span>${pageConfig["home.contactDescription"] || "想了解案例匹配、申请规划或合作方式，可直接联系顾问。"}</span>
       </div>
-      <button class="primary-btn" type="button">${pageConfig["home.contactButtonText"] || "立即联系"}</button>
+      <button class="primary-btn" type="button" data-action="open-contact-modal">${pageConfig["home.contactButtonText"] || "立即联系"}</button>
     </aside>
   `;
 }

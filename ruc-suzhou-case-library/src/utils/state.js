@@ -3,11 +3,13 @@ export const state = {
   query: "",
   selectedCaseId: null,
   openFilterId: null,
+  filterPanelStyle: null,
   previewImage: null,
+  contactModalOpen: false,
   filters: {
-    applicationSeason: "全部",
-    undergradCollege: "全部",
-    undergradMajor: "全部",
+    applicationSeason: "不限",
+    undergradCollege: "不限",
+    undergradMajor: "不限",
     offerRegions: [],
   },
 };

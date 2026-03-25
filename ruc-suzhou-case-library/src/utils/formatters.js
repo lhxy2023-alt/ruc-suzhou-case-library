@@ -9,7 +9,7 @@ export function formatShortDate(dateString) {
 }
 
 export function includesTag(list, value) {
-  if (value === "全部") {
+  if (value === "不限") {
     return true;
   }
   return list.includes(value);

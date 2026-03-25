@@ -4,13 +4,13 @@ export function filterCases(cases, state) {
   return cases.filter((item) => {
     const matchesQuery = !query || item.searchText.toLowerCase().includes(query);
     const matchesSeason =
-      state.filters.applicationSeason === "全部" ||
+      state.filters.applicationSeason === "不限" ||
       item.applicationSeason === state.filters.applicationSeason;
     const matchesCollege =
-      state.filters.undergradCollege === "全部" ||
+      state.filters.undergradCollege === "不限" ||
       item.undergradCollege === state.filters.undergradCollege;
     const matchesMajor =
-      state.filters.undergradMajor === "全部" ||
+      state.filters.undergradMajor === "不限" ||
       item.undergradMajor === state.filters.undergradMajor;
     const matchesRegion =
       !state.filters.offerRegions.length ||

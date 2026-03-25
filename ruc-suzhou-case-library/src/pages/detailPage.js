@@ -1,20 +1,21 @@
 import { pageConfig } from "../data/index.js";
 
-function renderTagList(tags = []) {
+function getDetailContactButtonText(hasCard) {
+  if (hasCard) {
+    return pageConfig["detail.contactButtonTextWithCard"] || "立即咨询";
+  }
+
+  const text = pageConfig["detail.contactButtonTextWithoutCard"] || "立即咨询";
+  return text === "咨询入口待接入" ? "立即咨询" : text;
+}
+
+function renderInlineTags(tags = []) {
   if (!tags.length) {
     return "";
   }
 
   return `
-    <div class="tag-list">
-      ${tags
-        .map(
-          (tag) => `
-            <span class="pill ${tag.type === "season" ? "pill--season" : ""}">${tag.label}</span>
-          `,
-        )
-        .join("")}
-    </div>
+    <span class="detail-inline-tags">${tags.map((tag) => `#${tag.label}`).join(" ")}</span>
   `;
 }
 
@@ -22,7 +23,7 @@ function renderIdentityValue(item) {
   return `
     <div class="detail-identity">
       <span class="detail-identity__name">${item.studentDisplayName}</span>
-      ${renderTagList(item.tags)}
+      ${renderInlineTags(item.tags)}
     </div>
   `;
 }
@@ -57,15 +58,11 @@ function renderStudentCard(card) {
 
   return `
     <section class="detail-section detail-card student-card">
-      <div class="section-title">
-        <h2>${pageConfig["detail.studentCardTitle"] || "学生名片"}</h2>
-        <p>${pageConfig["detail.studentCardDescription"] || "这部分保留为留白说明与后续联系入口，不重复展示案例主信息。"}</p>
+      <div class="student-card__top">
+        <button class="primary-btn" type="button" data-action="open-contact-modal">${card.contactLabel || "与我咨询"}</button>
       </div>
       <div class="student-card__copy">
         <p>${card.copy}</p>
-      </div>
-      <div class="student-card__actions">
-        <button class="primary-btn" type="button">${card.contactLabel}</button>
       </div>
     </section>
   `;
@@ -83,11 +80,7 @@ function renderFloatingConsult(item) {
             : pageConfig["detail.contactDescriptionWithoutCard"] || "咨询入口与二维码后续接入"
         }</span>
       </div>
-      <button class="primary-btn" type="button">${
-        hasCard
-          ? pageConfig["detail.contactButtonTextWithCard"] || "立即咨询"
-          : pageConfig["detail.contactButtonTextWithoutCard"] || "咨询入口待接入"
-      }</button>
+      <button class="primary-btn" type="button" data-action="open-contact-modal">${getDetailContactButtonText(hasCard)}</button>
     </aside>
   `;
 }

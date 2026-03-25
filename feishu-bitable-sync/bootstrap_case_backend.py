@@ -22,11 +22,17 @@ PAGE_CONFIG_ROWS = [
     {"config_key": "detail.contactDescriptionWithCard", "config_name": "详情页有名片说明", "page": "detail", "config_value": "可继续了解申请节奏与准备重点", "enabled": "是", "remark": "有学生名片时展示"},
     {"config_key": "detail.contactDescriptionWithoutCard", "config_name": "详情页无名片说明", "page": "detail", "config_value": "咨询入口与二维码后续接入", "enabled": "是", "remark": "无学生名片时展示"},
     {"config_key": "detail.contactButtonTextWithCard", "config_name": "详情页有名片按钮", "page": "detail", "config_value": "立即咨询", "enabled": "是", "remark": "有学生名片时展示"},
-    {"config_key": "detail.contactButtonTextWithoutCard", "config_name": "详情页无名片按钮", "page": "detail", "config_value": "咨询入口待接入", "enabled": "是", "remark": "无学生名片时展示"},
+    {"config_key": "detail.contactButtonTextWithoutCard", "config_name": "详情页无名片按钮", "page": "detail", "config_value": "立即咨询", "enabled": "是", "remark": "无学生名片时展示"},
     {"config_key": "detail.studentCardTitle", "config_name": "学生名片标题", "page": "detail", "config_value": "学生名片", "enabled": "是", "remark": "名片模块标题"},
     {"config_key": "detail.studentCardDescription", "config_name": "学生名片说明", "page": "detail", "config_value": "这部分保留为留白说明与后续联系入口，不重复展示案例主信息。", "enabled": "是", "remark": "名片模块说明"},
     {"config_key": "articles.sectionTitle", "config_name": "专访区标题", "page": "articles", "config_value": "乐湖专访", "enabled": "是", "remark": "专访页标题"},
     {"config_key": "articles.sectionDescription", "config_name": "专访区说明", "page": "articles", "config_value": "后续用于承接 i乐湖 公众号内的学员专访内容。", "enabled": "是", "remark": "专访页说明"},
+    {"config_key": "contact.modalTitle", "config_name": "咨询弹窗标题", "page": "contact", "config_value": "联系顾问", "enabled": "是", "remark": "咨询二维码弹窗标题"},
+    {"config_key": "contact.modalDescription", "config_name": "咨询弹窗说明", "page": "contact", "config_value": "可扫码添加微信，或填写问卷星表单。", "enabled": "是", "remark": "咨询二维码弹窗说明"},
+    {"config_key": "contact.wechatQrLabel", "config_name": "微信二维码标题", "page": "contact", "config_value": "微信二维码", "enabled": "是", "remark": "咨询弹窗内微信二维码标题"},
+    {"config_key": "contact.wechatQrImage", "config_name": "微信二维码图片", "page": "contact", "config_value": "", "enabled": "是", "remark": "支持图片 URL 或 data URL"},
+    {"config_key": "contact.wenjuanxingQrLabel", "config_name": "问卷星二维码标题", "page": "contact", "config_value": "问卷星二维码", "enabled": "是", "remark": "咨询弹窗内问卷星二维码标题"},
+    {"config_key": "contact.wenjuanxingQrImage", "config_name": "问卷星二维码图片", "page": "contact", "config_value": "", "enabled": "是", "remark": "支持图片 URL 或 data URL"},
 ]
 
 REGION_MAP = {

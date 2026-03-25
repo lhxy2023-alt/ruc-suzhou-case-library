@@ -13,7 +13,7 @@ function renderProgramPanel(group, state) {
   const selectedCollege = state.filters.undergradCollege;
   const selectedGroup = group.colleges?.find((item) => item.value === selectedCollege) || null;
   const collegeOptions = [
-    `<button class="option-chip ${selectedCollege === "全部" ? "is-selected" : ""}" data-action="set-college" data-college="全部">全部</button>`,
+    `<button class="option-chip ${selectedCollege === "不限" ? "is-selected" : ""}" data-action="set-college" data-college="不限">不限</button>`,
     ...(group.colleges || []).map(
       (college) => `
         <button
@@ -39,10 +39,10 @@ function renderProgramPanel(group, state) {
             <strong>选择专业</strong>
             <div class="sheet__options">
               <button
-                class="option-chip ${state.filters.undergradMajor === "全部" ? "is-selected" : ""}"
+                class="option-chip ${state.filters.undergradMajor === "不限" ? "is-selected" : ""}"
                 data-action="set-major"
-                data-major="全部"
-              >全部</button>
+                data-major="不限"
+              >不限</button>
               ${selectedGroup.majors
                 .map(
                   (major) => `
@@ -70,7 +70,7 @@ function renderRegionPanel(group, state) {
         <button
           class="option-chip ${state.filters.offerRegions.length ? "" : "is-selected"}"
           data-action="clear-regions"
-        >全部</button>
+        >不限</button>
         ${group.options
           .map(
             (option) => `
@@ -93,11 +93,10 @@ export function renderFilterPanel(group, state) {
   }
 
   return `
-    <div class="sheet-backdrop" data-action="close-filter"></div>
-    <section class="sheet">
+    <div class="sheet-backdrop sheet-backdrop--dropdown" data-action="close-filter"></div>
+    <section class="sheet sheet--dropdown"${state.filterPanelStyle ? ` style="${state.filterPanelStyle}"` : ""}>
       <div class="sheet__head">
         <h3>${group.label}</h3>
-        <button class="ghost-btn" data-action="close-filter">关闭</button>
       </div>
       ${
         group.id === "program"
@@ -110,8 +109,7 @@ export function renderFilterPanel(group, state) {
               </div>
             `
       }
-      <div class="sheet__foot">
-        <button class="ghost-btn" data-action="reset-filters">重置筛选</button>
+      <div class="sheet__foot ${group.id === "region" ? "" : "is-single"}">
         <button class="primary-btn" data-action="close-filter">完成</button>
       </div>
     </section>

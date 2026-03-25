@@ -1,7 +1,7 @@
 import { cases } from "./cases.js";
 
 function optionsFor(field) {
-  return ["全部", ...new Set(cases.map((item) => item[field]).filter(Boolean))];
+  return ["不限", ...new Set(cases.map((item) => item[field]).filter(Boolean))];
 }
 
 function buildSchoolMajorSections() {
@@ -9,7 +9,7 @@ function buildSchoolMajorSections() {
 
   return schools.map((school) => {
     const majors = [
-      "全部",
+      "不限",
       ...new Set(
         cases
           .filter((item) => item.undergradSchool === school)

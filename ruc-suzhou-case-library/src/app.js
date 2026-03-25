@@ -1,4 +1,5 @@
 import { articles, cases, filterGroups } from "./data/index.js";
+import { renderContactModal } from "./components/contactModal.js";
 import { renderFilterPanel } from "./components/filterPanel.js";
 import { renderPreviewModal } from "./components/previewModal.js";
 import { renderShell } from "./components/shell.js";
@@ -10,6 +11,27 @@ import { state } from "./utils/state.js";
 const root = document.getElementById("app");
 let isComposing = false;
 const FLOATING_HIDE_DURATION = 180;
+const FILTER_PANEL_WIDTH = 336;
+
+function resetFilters() {
+  state.filters = {
+    applicationSeason: "不限",
+    undergradCollege: "不限",
+    undergradMajor: "不限",
+    offerRegions: [],
+  };
+}
+
+function buildFilterPanelStyle(anchorRect) {
+  if (!anchorRect) {
+    return null;
+  }
+
+  const width = Math.min(FILTER_PANEL_WIDTH, window.innerWidth - 24);
+  const left = Math.min(Math.max(12, anchorRect.left), window.innerWidth - width - 12);
+  const top = anchorRect.bottom + 8;
+  return `top:${top}px;left:${left}px;width:${width}px;`;
+}
 
 function getFilteredCases() {
   return filterCases(cases, state);
@@ -44,12 +66,16 @@ function render() {
     })
     : renderListPage({ cases: getFilteredCases(), articles, state, filterGroups });
 
-  root.innerHTML = renderShell(body) + renderFilterPanel(currentFilterGroup, state) + renderPreviewModal(state.previewImage);
+  root.innerHTML =
+    renderShell(body) +
+    renderFilterPanel(currentFilterGroup, state) +
+    renderPreviewModal(state.previewImage) +
+    renderContactModal(state.contactModalOpen);
 
   bindEvents();
 }
 
-function updateFilterVisibility(nextFilterId) {
+function updateFilterVisibility(nextFilterId, anchorRect = null) {
   const currentFloating = root.querySelector(".floating-contact--home");
   const isOpening = Boolean(nextFilterId) && !state.openFilterId;
 
@@ -57,12 +83,14 @@ function updateFilterVisibility(nextFilterId) {
     currentFloating.classList.add("is-hidden");
     window.setTimeout(() => {
       state.openFilterId = nextFilterId;
+      state.filterPanelStyle = buildFilterPanelStyle(anchorRect);
       render();
     }, FLOATING_HIDE_DURATION);
     return;
   }
 
   state.openFilterId = nextFilterId;
+  state.filterPanelStyle = nextFilterId ? (anchorRect ? buildFilterPanelStyle(anchorRect) : state.filterPanelStyle) : null;
   render();
 }
 
@@ -97,35 +125,38 @@ function bindEvents() {
   root.querySelectorAll("[data-action='switch-tab']").forEach((button) => {
     button.addEventListener("click", () => {
       state.activeTab = button.dataset.tab;
+      state.openFilterId = null;
+      state.filterPanelStyle = null;
       render();
     });
   });
 
   root.querySelectorAll("[data-action='toggle-filter']").forEach((button) => {
     button.addEventListener("click", () => {
-      updateFilterVisibility(state.openFilterId === button.dataset.filterId ? null : button.dataset.filterId);
+      const nextFilterId = state.openFilterId === button.dataset.filterId ? null : button.dataset.filterId;
+      updateFilterVisibility(nextFilterId, button.getBoundingClientRect());
     });
   });
 
   root.querySelectorAll("[data-action='set-filter']").forEach((button) => {
     button.addEventListener("click", () => {
       state.filters[button.dataset.field] = button.dataset.value;
-      render();
+      updateFilterVisibility(null);
     });
   });
 
   root.querySelectorAll("[data-action='set-college']").forEach((button) => {
     button.addEventListener("click", () => {
       state.filters.undergradCollege = button.dataset.college;
-      state.filters.undergradMajor = "全部";
-      render();
+      state.filters.undergradMajor = "不限";
+      updateFilterVisibility(null);
     });
   });
 
   root.querySelectorAll("[data-action='set-major']").forEach((button) => {
     button.addEventListener("click", () => {
       state.filters.undergradMajor = button.dataset.major;
-      render();
+      updateFilterVisibility(null);
     });
   });
 
@@ -155,12 +186,7 @@ function bindEvents() {
 
   root.querySelectorAll("[data-action='reset-filters']").forEach((button) => {
     button.addEventListener("click", () => {
-      state.filters = {
-        applicationSeason: "全部",
-        undergradCollege: "全部",
-        undergradMajor: "全部",
-        offerRegions: [],
-      };
+      resetFilters();
       render();
     });
   });
@@ -177,6 +203,20 @@ function bindEvents() {
   root.querySelectorAll("[data-action='close-preview']").forEach((button) => {
     button.addEventListener("click", () => {
       state.previewImage = null;
+      render();
+    });
+  });
+
+  root.querySelectorAll("[data-action='open-contact-modal']").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.contactModalOpen = true;
+      render();
+    });
+  });
+
+  root.querySelectorAll("[data-action='close-contact-modal']").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.contactModalOpen = false;
       render();
     });
   });
