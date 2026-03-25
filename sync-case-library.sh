@@ -3,8 +3,7 @@ set -euo pipefail
 
 ROOT="/Users/taofangzheng/.openclaw/workspace"
 PORT="8011"
-PID_FILE="/tmp/ruc_case_http_${PORT}.pid"
-LOG_FILE="/tmp/ruc_case_http_${PORT}.log"
+LAUNCH_LABEL="ai.openclaw.case-library-http"
 LOCAL_URL="http://127.0.0.1:${PORT}/ruc-suzhou-case-library/"
 PUBLIC_URL="https://lhxy2023-alt.github.io/ruc-suzhou-case-library/"
 
@@ -27,12 +26,8 @@ else
   echo "没有新的发布改动，跳过提交与推送。"
 fi
 
-echo "[4/5] 重启本地预览服务 (${PORT})..."
-if [[ -f "$PID_FILE" ]]; then
-  kill "$(cat "$PID_FILE")" 2>/dev/null || true
-fi
-nohup python3 -m http.server "$PORT" >"$LOG_FILE" 2>&1 &
-echo $! >"$PID_FILE"
+echo "[4/5] 重启本地 LaunchAgent 服务 (${PORT})..."
+launchctl kickstart -k gui/$(id -u)/${LAUNCH_LABEL}
 sleep 1
 
 echo "[5/5] 检查页面可访问性..."
