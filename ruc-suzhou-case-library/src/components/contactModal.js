@@ -18,8 +18,8 @@ export function renderContactModal(isOpen) {
 
   const wechatLabel = pageConfig["contact.wechatQrLabel"] || "微信二维码";
   const wechatImage = pageConfig["contact.wechatQrImage"] || "";
-  const wenjuanxingLabel = pageConfig["contact.wenjuanxingQrLabel"] || "问卷星二维码";
-  const wenjuanxingImage = pageConfig["contact.wenjuanxingQrImage"] || "";
+  const wenjuanxingLabel = pageConfig["contact.formQrLabel"] || pageConfig["contact.wenjuanxingQrLabel"] || "问卷星二维码";
+  const wenjuanxingImage = pageConfig["contact.formQrImage"] || pageConfig["contact.wenjuanxingQrImage"] || "";
 
   return `
     <div class="modal-backdrop" data-action="close-contact-modal"></div>

@@ -54,8 +54,8 @@ DEFAULT_PAGE_CONFIG = {
     "contact.modalDescription": "可扫码添加微信，或填写问卷星表单。",
     "contact.wechatQrLabel": "微信二维码",
     "contact.wechatQrImage": DEFAULT_WECHAT_QR,
-    "contact.wenjuanxingQrLabel": "问卷星二维码",
-    "contact.wenjuanxingQrImage": DEFAULT_WENJUANXING_QR,
+    "contact.formQrLabel": "问卷星二维码",
+    "contact.formQrImage": DEFAULT_WENJUANXING_QR,
 }
 
 COLLEGE_DISPLAY_MAP = {
@@ -457,6 +457,10 @@ def build_filter_groups(cases):
 
 def build_page_config(records):
     config = dict(DEFAULT_PAGE_CONFIG)
+    aliases = {
+        "contact.wenjuanxingQrLabel": "contact.formQrLabel",
+        "contact.wenjuanxingQrImage": "contact.formQrImage",
+    }
     for row in records:
         fields = row.get("fields", {})
         key = normalize_scalar(fields.get("config_key"))
@@ -466,7 +470,8 @@ def build_page_config(records):
         if enabled is not None and not normalize_bool(enabled):
             continue
         value = normalize_scalar(fields.get("config_value"))
-        config[key] = value or config.get(key, "")
+        target_key = aliases.get(key, key)
+        config[target_key] = value or config.get(target_key, "")
     return config
 
 
