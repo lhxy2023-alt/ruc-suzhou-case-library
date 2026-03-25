@@ -74,13 +74,25 @@ function renderTagList(tags = []) {
   `;
 }
 
+function renderSchoolBadge(item) {
+  if (item.schoolLogoUrl) {
+    return `
+      <div class="school-badge school-badge--image" aria-hidden="true">
+        <img src="${item.schoolLogoUrl}" alt="${item.offerSchool} 校徽" loading="lazy" />
+      </div>
+    `;
+  }
+
+  return `<div class="school-badge" aria-hidden="true">${item.logoText}</div>`;
+}
+
 function renderCaseCard(item) {
   const scoreLine = buildScoreLine(item);
 
   return `
     <button class="case-card" data-action="open-case" data-case-id="${item.id}">
       <div class="case-card__head">
-        <div class="school-badge" aria-hidden="true">${item.logoText}</div>
+        ${renderSchoolBadge(item)}
         <div class="case-card__title-group">
           <h3>${item.listTitle}</h3>
           ${renderTagList(item.tags)}

@@ -309,8 +309,9 @@ def slugify(value):
     return base or "item"
 
 
-def build_case_item(record, index):
+def build_case_item(record, index, school_logo_map=None):
     fields = record.get("fields", {})
+    school_logo_map = school_logo_map or {}
     season = first_non_empty(fields, "申请季") or "未标注"
     student_display_name = first_non_empty(fields, "学生姓名", "匿名展示名", "对外匿名名") or "匿名"
     internal_student_name = first_non_empty(fields, "学生（后台真名）", "学生姓名（内部）", "学生姓名（后台真名）", "学生真实姓名")
@@ -343,6 +344,7 @@ def build_case_item(record, index):
         "greGmat": normalize_gre_gmat_score(first_non_empty(fields, "GRE/GMAT", "GMAT/GRE")),
         "offerSchool": offer_school,
         "offerProgram": offer_program,
+        "schoolLogoUrl": school_logo_map.get(offer_school),
         "offerRegion": normalize_region(raw_region) or "其他",
         "description": first_non_empty(fields, "案例说明/项目说明", "案例说明"),
         "internships": first_non_empty(fields, "实习经历", "实习"),
@@ -478,6 +480,17 @@ def build_filter_groups(cases):
     ]
 
 
+def build_school_logo_map(records):
+    mapping = {}
+    for row in records:
+        fields = row.get("fields", {})
+        school_name = first_non_empty(fields, "学校名称")
+        logo_url = first_non_empty(fields, "校徽图片URL")
+        if school_name and logo_url:
+            mapping[school_name] = logo_url
+    return mapping
+
+
 def build_page_config(records):
     config = dict(DEFAULT_PAGE_CONFIG)
     aliases = {
@@ -540,6 +553,7 @@ def main():
     if args.from_local_snapshot:
         offer_records = load_local_snapshot_records()
         page_records = []
+        school_records = []
     else:
         cfg = json.loads(CONFIG_PATH.read_text())
         token = get_tenant_access_token(cfg["base_url"], cfg["app_id"], cfg["app_secret"])
@@ -547,11 +561,15 @@ def main():
 
         offer_table_id = tables.get("offer表")
         page_table_id = tables.get("页面配置表")
+        school_table_id = tables.get("学校表")
         if not offer_table_id or not page_table_id:
             raise SystemExit("缺少 offer表 或 页面配置表")
 
         offer_records = list_records(cfg["base_url"], token, cfg["app_token"], offer_table_id)
         page_records = list_records(cfg["base_url"], token, cfg["app_token"], page_table_id)
+        school_records = list_records(cfg["base_url"], token, cfg["app_token"], school_table_id) if school_table_id else []
+
+    school_logo_map = build_school_logo_map(school_records)
 
     cases = []
     for index, record in enumerate(offer_records, start=1):
@@ -564,7 +582,7 @@ def main():
         )
         if not is_enabled(fields.get("是否前台展示"), default=has_minimum_content):
             continue
-        cases.append(build_case_item(record, index))
+        cases.append(build_case_item(record, index, school_logo_map))
 
     cases = apply_student_card_visibility(sort_cases(cases))
     filter_groups = build_filter_groups(cases)
