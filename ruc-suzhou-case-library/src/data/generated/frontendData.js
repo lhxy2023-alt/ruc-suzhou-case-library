@@ -16,7 +16,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "PPE",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -60,7 +60,7 @@ export const cases = [
         "value": "雅思7(6)"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 83 雅思7(6) 香港大学 PPE 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 83 雅思7(6) 香港大学 PPE 中国香港"
   },
   {
     "id": "24fall_002",
@@ -78,7 +78,7 @@ export const cases = [
     "greGmat": "GRE320",
     "offerSchool": "香港大学",
     "offerProgram": "房地产金融",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -123,7 +123,7 @@ export const cases = [
         "value": "雅思7 / GRE320"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 81 雅思7 GRE320 香港大学 房地产金融 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 81 雅思7 GRE320 香港大学 房地产金融 中国香港"
   },
   {
     "id": "24fall_003",
@@ -141,7 +141,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "伦敦国王学院KCL",
     "offerProgram": "Environment,politics and development",
-    "offerRegion": "其他",
+    "offerRegion": "英国",
     "description": null,
     "internships": null,
     "research": null,
@@ -185,7 +185,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7 伦敦国王学院KCL Environment,politics and development 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7 伦敦国王学院KCL Environment,politics and development 英国"
   },
   {
     "id": "24fall_004",
@@ -203,7 +203,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "econ经济学",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -247,7 +247,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 3.35 雅思7 香港科技大学 econ经济学 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 3.35 雅思7 香港科技大学 econ经济学 中国香港"
   },
   {
     "id": "24fall_005",
@@ -265,7 +265,7 @@ export const cases = [
     "greGmat": "GRE320",
     "offerSchool": "香港大学",
     "offerProgram": "BA",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -310,7 +310,7 @@ export const cases = [
         "value": "雅思7(6) / GRE320"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 86 雅思7(6) GRE320 香港大学 BA 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 86 雅思7(6) GRE320 香港大学 BA 中国香港"
   },
   {
     "id": "24fall_006",
@@ -328,7 +328,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "mgm",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -366,7 +366,7 @@ export const cases = [
         "value": "3.4+"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 3.4+ 香港大学 mgm 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 3.4+ 香港大学 mgm 中国香港"
   },
   {
     "id": "24fall_007",
@@ -384,7 +384,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "SGB（sustainable globle bussiness）",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -428,7 +428,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 81 雅思7 香港中文大学 SGB（sustainable globle bussiness） 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 81 雅思7 香港中文大学 SGB（sustainable globle bussiness） 中国香港"
   },
   {
     "id": "24fall_008",
@@ -446,7 +446,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "econ经济学",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -484,7 +484,7 @@ export const cases = [
         "value": "3.63"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3.63 香港大学 econ经济学 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3.63 香港大学 econ经济学 中国香港"
   },
   {
     "id": "24fall_009",
@@ -502,7 +502,7 @@ export const cases = [
     "greGmat": "GRE320",
     "offerSchool": "香港中文大学",
     "offerProgram": "房地产金融",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -547,7 +547,7 @@ export const cases = [
         "value": "雅思7 / GRE320"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7 GRE320 香港中文大学 房地产金融 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7 GRE320 香港中文大学 房地产金融 中国香港"
   },
   {
     "id": "24fall_010",
@@ -565,7 +565,7 @@ export const cases = [
     "greGmat": "GMAT710",
     "offerSchool": "华威大学",
     "offerProgram": "电子商务",
-    "offerRegion": "其他",
+    "offerRegion": "英国",
     "description": null,
     "internships": null,
     "research": null,
@@ -610,7 +610,7 @@ export const cases = [
         "value": "雅思7 / GMAT710"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3.1 雅思7 GMAT710 华威大学 电子商务 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3.1 雅思7 GMAT710 华威大学 电子商务 英国"
   },
   {
     "id": "24fall_011",
@@ -628,7 +628,7 @@ export const cases = [
     "greGmat": "GRE320",
     "offerSchool": "香港大学",
     "offerProgram": "中国发展研究",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -673,7 +673,7 @@ export const cases = [
         "value": "雅思7 / GRE320"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7 GRE320 香港大学 中国发展研究 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7 GRE320 香港大学 中国发展研究 中国香港"
   },
   {
     "id": "24fall_012",
@@ -691,7 +691,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "econ经济学",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -735,7 +735,7 @@ export const cases = [
         "value": "雅思7.5"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 3.5+ 雅思7.5 香港大学 econ经济学 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 3.5+ 雅思7.5 香港大学 econ经济学 中国香港"
   },
   {
     "id": "24fall_013",
@@ -753,7 +753,7 @@ export const cases = [
     "greGmat": "GMAT710",
     "offerSchool": "香港中文大学",
     "offerProgram": "SGB（sustainable globle bussiness）",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -798,7 +798,7 @@ export const cases = [
         "value": "雅思7(6.5) / GMAT710"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 83 雅思7(6.5) GMAT710 香港中文大学 SGB（sustainable globle bussiness） 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 83 雅思7(6.5) GMAT710 香港中文大学 SGB（sustainable globle bussiness） 中国香港"
   },
   {
     "id": "24fall_014",
@@ -816,7 +816,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "Real estate",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -854,7 +854,7 @@ export const cases = [
         "value": "3.5+"
       }
     ],
-    "searchText": "24fall 匿名同学 人大财金 人大财金 金融 3.5+ 香港中文大学 Real estate 其他"
+    "searchText": "24fall 匿名同学 人大财金 人大财金 金融 3.5+ 香港中文大学 Real estate 中国香港"
   },
   {
     "id": "24fall_015",
@@ -872,7 +872,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "应用经济学",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -910,7 +910,7 @@ export const cases = [
         "value": "3.63"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3.63 南洋理工大学 应用经济学 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3.63 南洋理工大学 应用经济学 新加坡"
   },
   {
     "id": "24fall_016",
@@ -928,7 +928,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "华威大学",
     "offerProgram": "全球脱碳和气候管理",
-    "offerRegion": "其他",
+    "offerRegion": "英国",
     "description": null,
     "internships": null,
     "research": null,
@@ -972,7 +972,7 @@ export const cases = [
         "value": "雅思7(6)"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7(6) 华威大学 全球脱碳和气候管理 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7(6) 华威大学 全球脱碳和气候管理 英国"
   },
   {
     "id": "24fall_017",
@@ -990,7 +990,7 @@ export const cases = [
     "greGmat": "GMAT710",
     "offerSchool": "香港科技大学",
     "offerProgram": "国际管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -1035,7 +1035,7 @@ export const cases = [
         "value": "雅思8(7) / GMAT710"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 2.9 雅思8(7) GMAT710 香港科技大学 国际管理 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 2.9 雅思8(7) GMAT710 香港科技大学 国际管理 中国香港"
   },
   {
     "id": "24fall_018",
@@ -1053,7 +1053,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "mgm",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -1097,7 +1097,7 @@ export const cases = [
         "value": "雅思7.5"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 3.5+ 雅思7.5 香港大学 mgm 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 3.5+ 雅思7.5 香港大学 mgm 中国香港"
   },
   {
     "id": "24fall_019",
@@ -1115,7 +1115,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "econ经济学带奖",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -1153,7 +1153,7 @@ export const cases = [
         "value": "3.63"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3.63 香港科技大学 econ经济学带奖 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3.63 香港科技大学 econ经济学带奖 中国香港"
   },
   {
     "id": "24fall_020",
@@ -1171,7 +1171,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "中国发展研究",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -1215,7 +1215,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 2.8 雅思6.5 香港大学 中国发展研究 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 2.8 雅思6.5 香港大学 中国发展研究 中国香港"
   },
   {
     "id": "24fall_021",
@@ -1233,7 +1233,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "信息系统管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -1271,7 +1271,7 @@ export const cases = [
         "value": "2.8"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 2.8 香港科技大学 信息系统管理 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 2.8 香港科技大学 信息系统管理 中国香港"
   },
   {
     "id": "24fall_022",
@@ -1289,7 +1289,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "BA",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -1333,7 +1333,7 @@ export const cases = [
         "value": "雅思7.5"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 3.6 雅思7.5 香港大学 BA 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 3.6 雅思7.5 香港大学 BA 中国香港"
   },
   {
     "id": "24fall_023",
@@ -1351,7 +1351,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "华威大学",
     "offerProgram": "项目管理",
-    "offerRegion": "其他",
+    "offerRegion": "英国",
     "description": null,
     "internships": null,
     "research": null,
@@ -1389,7 +1389,7 @@ export const cases = [
         "value": "2.8"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 2.8 华威大学 项目管理 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 金融 2.8 华威大学 项目管理 英国"
   },
   {
     "id": "24fall_024",
@@ -1407,7 +1407,7 @@ export const cases = [
     "greGmat": "GMAT700",
     "offerSchool": "新加坡国立大学",
     "offerProgram": "人力资源管理与分析",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -1452,7 +1452,7 @@ export const cases = [
         "value": "雅思7 / GMAT700"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 83 雅思7 GMAT700 新加坡国立大学 人力资源管理与分析 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 83 雅思7 GMAT700 新加坡国立大学 人力资源管理与分析 新加坡"
   },
   {
     "id": "24fall_025",
@@ -1470,7 +1470,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "KM知识管理",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -1514,7 +1514,7 @@ export const cases = [
         "value": "雅思6.5(6)"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 81 雅思6.5(6) 南洋理工大学 KM知识管理 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 81 雅思6.5(6) 南洋理工大学 KM知识管理 新加坡"
   },
   {
     "id": "24fall_026",
@@ -1532,7 +1532,7 @@ export const cases = [
     "greGmat": "GMAT710",
     "offerSchool": "ESSEC",
     "offerProgram": "SMIB",
-    "offerRegion": "其他",
+    "offerRegion": "法国",
     "description": null,
     "internships": null,
     "research": null,
@@ -1577,7 +1577,7 @@ export const cases = [
         "value": "雅思7 / GMAT710"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 82 雅思7 GMAT710 ESSEC SMIB 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 82 雅思7 GMAT710 ESSEC SMIB 法国"
   },
   {
     "id": "24fall_027",
@@ -1595,7 +1595,7 @@ export const cases = [
     "greGmat": "GRE320",
     "offerSchool": "新加坡国立大学",
     "offerProgram": "创新与技术管理",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -1640,7 +1640,7 @@ export const cases = [
         "value": "雅思7 / GRE320"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7 GRE320 新加坡国立大学 创新与技术管理 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7 GRE320 新加坡国立大学 创新与技术管理 新加坡"
   },
   {
     "id": "24fall_028",
@@ -1658,7 +1658,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "BA",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -1696,7 +1696,7 @@ export const cases = [
         "value": "3.63"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3.63 香港大学 BA 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3.63 香港大学 BA 中国香港"
   },
   {
     "id": "24fall_029",
@@ -1714,7 +1714,7 @@ export const cases = [
     "greGmat": "GRE320",
     "offerSchool": "南洋理工大学",
     "offerProgram": "科技创业和创新",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -1759,7 +1759,7 @@ export const cases = [
         "value": "雅思7(6) / GRE320"
       }
     ],
-    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7(6) GRE320 南洋理工大学 科技创业和创新 其他"
+    "searchText": "24fall 匿名同学 人大中法 中法学院 国管 3 雅思7(6) GRE320 南洋理工大学 科技创业和创新 新加坡"
   },
   {
     "id": "25fall_001",
@@ -1767,7 +1767,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 30,
-    "studentNameMasked": "吴有鹏",
+    "studentNameMasked": "D同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "数学",
@@ -1777,7 +1777,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "分析学",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -1821,7 +1821,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "25fall 吴有鹏 人大中法 中法学院 数学 2.9 雅思7 南洋理工大学 分析学 其他"
+    "searchText": "25fall D同学 人大中法 中法学院 数学 2.9 雅思7 南洋理工大学 分析学 新加坡"
   },
   {
     "id": "25fall_002",
@@ -1829,7 +1829,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 31,
-    "studentNameMasked": "吴有鹏",
+    "studentNameMasked": "D同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "数学",
@@ -1839,7 +1839,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "数学",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -1883,7 +1883,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "25fall 吴有鹏 人大中法 中法学院 数学 2.9 雅思7 新加坡国立大学 数学 其他"
+    "searchText": "25fall D同学 人大中法 中法学院 数学 2.9 雅思7 新加坡国立大学 数学 新加坡"
   },
   {
     "id": "25fall_003",
@@ -1891,7 +1891,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 32,
-    "studentNameMasked": "吴有鹏",
+    "studentNameMasked": "D同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "数学",
@@ -1901,7 +1901,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "数学教育",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -1945,7 +1945,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "25fall 吴有鹏 人大中法 中法学院 数学 2.9 雅思7 香港科技大学 数学教育 其他"
+    "searchText": "25fall D同学 人大中法 中法学院 数学 2.9 雅思7 香港科技大学 数学教育 中国香港"
   },
   {
     "id": "25fall_004",
@@ -1953,7 +1953,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 33,
-    "studentNameMasked": "宋弈霖",
+    "studentNameMasked": "F同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -1963,7 +1963,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "知识管理",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -2007,7 +2007,7 @@ export const cases = [
         "value": "雅思7.5"
       }
     ],
-    "searchText": "25fall 宋弈霖 人大中法 中法学院 金融 2.79 雅思7.5 南洋理工大学 知识管理 其他"
+    "searchText": "25fall F同学 人大中法 中法学院 金融 2.79 雅思7.5 南洋理工大学 知识管理 新加坡"
   },
   {
     "id": "25fall_005",
@@ -2015,7 +2015,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 34,
-    "studentNameMasked": "宋弈霖",
+    "studentNameMasked": "F同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -2025,7 +2025,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "气候治理与风险管理硕士",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -2069,7 +2069,7 @@ export const cases = [
         "value": "雅思7.5"
       }
     ],
-    "searchText": "25fall 宋弈霖 人大中法 中法学院 金融 2.79 雅思7.5 香港大学 气候治理与风险管理硕士 其他"
+    "searchText": "25fall F同学 人大中法 中法学院 金融 2.79 雅思7.5 香港大学 气候治理与风险管理硕士 中国香港"
   },
   {
     "id": "25fall_006",
@@ -2077,7 +2077,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 35,
-    "studentNameMasked": "张汉唐",
+    "studentNameMasked": "H同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -2087,7 +2087,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "财富管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -2131,7 +2131,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "25fall 张汉唐 人大中法 中法学院 人力资源管理 3.32 雅思7 香港大学 财富管理 其他"
+    "searchText": "25fall H同学 人大中法 中法学院 人力资源管理 3.32 雅思7 香港大学 财富管理 中国香港"
   },
   {
     "id": "25fall_007",
@@ -2139,7 +2139,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 36,
-    "studentNameMasked": "张汉唐",
+    "studentNameMasked": "H同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -2149,7 +2149,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "气候治理与风险管理硕士",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -2193,7 +2193,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "25fall 张汉唐 人大中法 中法学院 人力资源管理 3.32 雅思7 香港大学 气候治理与风险管理硕士 其他"
+    "searchText": "25fall H同学 人大中法 中法学院 人力资源管理 3.32 雅思7 香港大学 气候治理与风险管理硕士 中国香港"
   },
   {
     "id": "25fall_008",
@@ -2201,7 +2201,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 37,
-    "studentNameMasked": "张汉唐",
+    "studentNameMasked": "H同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -2211,7 +2211,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "可持续会计与金融",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -2255,7 +2255,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "25fall 张汉唐 人大中法 中法学院 人力资源管理 3.32 雅思7 香港大学 可持续会计与金融 其他"
+    "searchText": "25fall H同学 人大中法 中法学院 人力资源管理 3.32 雅思7 香港大学 可持续会计与金融 中国香港"
   },
   {
     "id": "25fall_009",
@@ -2263,7 +2263,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 38,
-    "studentNameMasked": "张汉唐",
+    "studentNameMasked": "H同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -2273,7 +2273,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "全球管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -2317,7 +2317,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "25fall 张汉唐 人大中法 中法学院 人力资源管理 3.32 雅思7 香港大学 全球管理 其他"
+    "searchText": "25fall H同学 人大中法 中法学院 人力资源管理 3.32 雅思7 香港大学 全球管理 中国香港"
   },
   {
     "id": "25fall_010",
@@ -2325,7 +2325,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 39,
-    "studentNameMasked": "周杰琪",
+    "studentNameMasked": "E同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -2335,7 +2335,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "经济学",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -2379,7 +2379,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "25fall 周杰琪 人大中法 中法学院 人力资源管理 3.58/87.3 雅思6.5 香港大学 经济学 其他"
+    "searchText": "25fall E同学 人大中法 中法学院 人力资源管理 3.58/87.3 雅思6.5 香港大学 经济学 中国香港"
   },
   {
     "id": "25fall_011",
@@ -2387,7 +2387,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 40,
-    "studentNameMasked": "周杰琪",
+    "studentNameMasked": "E同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -2397,7 +2397,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "经济学",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -2441,7 +2441,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "25fall 周杰琪 人大中法 中法学院 人力资源管理 3.58/87.3 雅思6.5 香港科技大学 经济学 其他"
+    "searchText": "25fall E同学 人大中法 中法学院 人力资源管理 3.58/87.3 雅思6.5 香港科技大学 经济学 中国香港"
   },
   {
     "id": "25fall_012",
@@ -2449,7 +2449,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 41,
-    "studentNameMasked": "陈弘杰",
+    "studentNameMasked": "L同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -2459,7 +2459,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "市场营销",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -2503,7 +2503,7 @@ export const cases = [
         "value": "雅思7(6.5)"
       }
     ],
-    "searchText": "25fall 陈弘杰 人大中法 中法学院 人力资源管理 3.0/82 雅思7(6.5) 香港中文大学 市场营销 其他"
+    "searchText": "25fall L同学 人大中法 中法学院 人力资源管理 3.0/82 雅思7(6.5) 香港中文大学 市场营销 中国香港"
   },
   {
     "id": "25fall_013",
@@ -2511,7 +2511,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 42,
-    "studentNameMasked": "陈弘杰",
+    "studentNameMasked": "L同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -2521,7 +2521,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "气候治理与风险管理硕士",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -2565,7 +2565,7 @@ export const cases = [
         "value": "雅思7(6.5)"
       }
     ],
-    "searchText": "25fall 陈弘杰 人大中法 中法学院 人力资源管理 3.0/82 雅思7(6.5) 香港大学 气候治理与风险管理硕士 其他"
+    "searchText": "25fall L同学 人大中法 中法学院 人力资源管理 3.0/82 雅思7(6.5) 香港大学 气候治理与风险管理硕士 中国香港"
   },
   {
     "id": "25fall_014",
@@ -2573,7 +2573,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 43,
-    "studentNameMasked": "陈弘杰",
+    "studentNameMasked": "L同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -2583,7 +2583,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "可持续发展商业",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -2627,7 +2627,7 @@ export const cases = [
         "value": "雅思7(6.5)"
       }
     ],
-    "searchText": "25fall 陈弘杰 人大中法 中法学院 人力资源管理 3.0/82 雅思7(6.5) 香港中文大学 可持续发展商业 其他"
+    "searchText": "25fall L同学 人大中法 中法学院 人力资源管理 3.0/82 雅思7(6.5) 香港中文大学 可持续发展商业 中国香港"
   },
   {
     "id": "25fall_015",
@@ -2635,7 +2635,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 44,
-    "studentNameMasked": "丛骥",
+    "studentNameMasked": "A同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -2645,7 +2645,7 @@ export const cases = [
     "greGmat": "GRE339",
     "offerSchool": "伦敦政治经济学院",
     "offerProgram": "金融",
-    "offerRegion": "其他",
+    "offerRegion": "英国",
     "description": null,
     "internships": null,
     "research": null,
@@ -2690,7 +2690,7 @@ export const cases = [
         "value": "雅思8(6.5) / GRE339"
       }
     ],
-    "searchText": "25fall 丛骥 人大中法 中法学院 金融 3.9 雅思8(6.5) GRE339 伦敦政治经济学院 金融 其他"
+    "searchText": "25fall A同学 人大中法 中法学院 金融 3.9 雅思8(6.5) GRE339 伦敦政治经济学院 金融 英国"
   },
   {
     "id": "25fall_016",
@@ -2698,7 +2698,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 45,
-    "studentNameMasked": "丛骥",
+    "studentNameMasked": "A同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -2708,7 +2708,7 @@ export const cases = [
     "greGmat": "GRE339",
     "offerSchool": "帝国理工学院",
     "offerProgram": "金融科技",
-    "offerRegion": "其他",
+    "offerRegion": "英国",
     "description": null,
     "internships": null,
     "research": null,
@@ -2753,7 +2753,7 @@ export const cases = [
         "value": "雅思8(6.5) / GRE339"
       }
     ],
-    "searchText": "25fall 丛骥 人大中法 中法学院 金融 3.9 雅思8(6.5) GRE339 帝国理工学院 金融科技 其他"
+    "searchText": "25fall A同学 人大中法 中法学院 金融 3.9 雅思8(6.5) GRE339 帝国理工学院 金融科技 英国"
   },
   {
     "id": "25fall_017",
@@ -2761,7 +2761,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 46,
-    "studentNameMasked": "丛骥",
+    "studentNameMasked": "A同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -2771,7 +2771,7 @@ export const cases = [
     "greGmat": "GRE339",
     "offerSchool": "剑桥大学",
     "offerProgram": "金融工程",
-    "offerRegion": "其他",
+    "offerRegion": "英国",
     "description": null,
     "internships": null,
     "research": null,
@@ -2816,7 +2816,7 @@ export const cases = [
         "value": "雅思8(6.5) / GRE339"
       }
     ],
-    "searchText": "25fall 丛骥 人大中法 中法学院 金融 3.9 雅思8(6.5) GRE339 剑桥大学 金融工程 其他"
+    "searchText": "25fall A同学 人大中法 中法学院 金融 3.9 雅思8(6.5) GRE339 剑桥大学 金融工程 英国"
   },
   {
     "id": "25fall_018",
@@ -2824,7 +2824,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 47,
-    "studentNameMasked": "吴子墨",
+    "studentNameMasked": "C同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -2834,7 +2834,7 @@ export const cases = [
     "greGmat": "GRE330",
     "offerSchool": "杜克大学",
     "offerProgram": "金融科技",
-    "offerRegion": "其他",
+    "offerRegion": "美国",
     "description": "带5000USD奖学金",
     "internships": null,
     "research": null,
@@ -2879,7 +2879,7 @@ export const cases = [
         "value": "雅思5 / GRE330"
       }
     ],
-    "searchText": "25fall 吴子墨 人大中法 中法学院 金融 3.7 雅思5 GRE330 杜克大学 金融科技 其他 带5000USD奖学金"
+    "searchText": "25fall C同学 人大中法 中法学院 金融 3.7 雅思5 GRE330 杜克大学 金融科技 美国 带5000USD奖学金"
   },
   {
     "id": "25fall_019",
@@ -2887,7 +2887,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 48,
-    "studentNameMasked": "吴子墨",
+    "studentNameMasked": "C同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -2897,7 +2897,7 @@ export const cases = [
     "greGmat": "GRE330",
     "offerSchool": "纽约大学",
     "offerProgram": "金融工程",
-    "offerRegion": "其他",
+    "offerRegion": "美国",
     "description": "带3000USD奖学金",
     "internships": null,
     "research": null,
@@ -2942,7 +2942,7 @@ export const cases = [
         "value": "雅思5 / GRE330"
       }
     ],
-    "searchText": "25fall 吴子墨 人大中法 中法学院 金融 3.7 雅思5 GRE330 纽约大学 金融工程 其他 带3000USD奖学金"
+    "searchText": "25fall C同学 人大中法 中法学院 金融 3.7 雅思5 GRE330 纽约大学 金融工程 美国 带3000USD奖学金"
   },
   {
     "id": "25fall_020",
@@ -2950,7 +2950,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 49,
-    "studentNameMasked": "吴子墨",
+    "studentNameMasked": "C同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -2960,7 +2960,7 @@ export const cases = [
     "greGmat": "GRE330",
     "offerSchool": "康奈尔大学",
     "offerProgram": "运筹与信息工程",
-    "offerRegion": "其他",
+    "offerRegion": "美国",
     "description": "数据科学分支",
     "internships": null,
     "research": null,
@@ -3005,7 +3005,7 @@ export const cases = [
         "value": "雅思5 / GRE330"
       }
     ],
-    "searchText": "25fall 吴子墨 人大中法 中法学院 金融 3.7 雅思5 GRE330 康奈尔大学 运筹与信息工程 其他 数据科学分支"
+    "searchText": "25fall C同学 人大中法 中法学院 金融 3.7 雅思5 GRE330 康奈尔大学 运筹与信息工程 美国 数据科学分支"
   },
   {
     "id": "25fall_021",
@@ -3013,7 +3013,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 50,
-    "studentNameMasked": "吴子墨",
+    "studentNameMasked": "C同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -3023,7 +3023,7 @@ export const cases = [
     "greGmat": "GRE330",
     "offerSchool": "哥伦比亚大学",
     "offerProgram": "统计学",
-    "offerRegion": "其他",
+    "offerRegion": "美国",
     "description": null,
     "internships": null,
     "research": null,
@@ -3068,7 +3068,7 @@ export const cases = [
         "value": "雅思5 / GRE330"
       }
     ],
-    "searchText": "25fall 吴子墨 人大中法 中法学院 金融 3.7 雅思5 GRE330 哥伦比亚大学 统计学 其他"
+    "searchText": "25fall C同学 人大中法 中法学院 金融 3.7 雅思5 GRE330 哥伦比亚大学 统计学 美国"
   },
   {
     "id": "25fall_022",
@@ -3076,7 +3076,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 51,
-    "studentNameMasked": "吕浩民",
+    "studentNameMasked": "B同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -3086,7 +3086,7 @@ export const cases = [
     "greGmat": "GMAT695",
     "offerSchool": "香港科技大学",
     "offerProgram": "经济学",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": "带64000HKD奖学金",
     "internships": null,
     "research": null,
@@ -3131,7 +3131,7 @@ export const cases = [
         "value": "雅思7 / GMAT695"
       }
     ],
-    "searchText": "25fall 吕浩民 人大中法 中法学院 金融 3.5 雅思7 GMAT695 香港科技大学 经济学 其他 带64000HKD奖学金"
+    "searchText": "25fall B同学 人大中法 中法学院 金融 3.5 雅思7 GMAT695 香港科技大学 经济学 中国香港 带64000HKD奖学金"
   },
   {
     "id": "25fall_023",
@@ -3139,7 +3139,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 52,
-    "studentNameMasked": "吕浩民",
+    "studentNameMasked": "B同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -3149,7 +3149,7 @@ export const cases = [
     "greGmat": "GMAT695",
     "offerSchool": "香港科技大学",
     "offerProgram": "金融科技",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -3194,7 +3194,7 @@ export const cases = [
         "value": "雅思7 / GMAT695"
       }
     ],
-    "searchText": "25fall 吕浩民 人大中法 中法学院 金融 3.5 雅思7 GMAT695 香港科技大学 金融科技 其他"
+    "searchText": "25fall B同学 人大中法 中法学院 金融 3.5 雅思7 GMAT695 香港科技大学 金融科技 中国香港"
   },
   {
     "id": "25fall_024",
@@ -3202,7 +3202,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 53,
-    "studentNameMasked": "吕浩民",
+    "studentNameMasked": "B同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -3212,7 +3212,7 @@ export const cases = [
     "greGmat": "GMAT695",
     "offerSchool": "南洋理工大学",
     "offerProgram": "分析学",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -3257,7 +3257,7 @@ export const cases = [
         "value": "雅思7 / GMAT695"
       }
     ],
-    "searchText": "25fall 吕浩民 人大中法 中法学院 金融 3.5 雅思7 GMAT695 南洋理工大学 分析学 其他"
+    "searchText": "25fall B同学 人大中法 中法学院 金融 3.5 雅思7 GMAT695 南洋理工大学 分析学 新加坡"
   },
   {
     "id": "25fall_025",
@@ -3265,7 +3265,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 54,
-    "studentNameMasked": "张之恋",
+    "studentNameMasked": "G同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -3275,7 +3275,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "金融工程",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -3319,7 +3319,7 @@ export const cases = [
         "value": "雅思7.5"
       }
     ],
-    "searchText": "25fall 张之恋 人大中法 中法学院 金融 3.7/89 雅思7.5 新加坡国立大学 金融工程 其他"
+    "searchText": "25fall G同学 人大中法 中法学院 金融 3.7/89 雅思7.5 新加坡国立大学 金融工程 新加坡"
   },
   {
     "id": "25fall_026",
@@ -3327,7 +3327,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 55,
-    "studentNameMasked": "张之恋",
+    "studentNameMasked": "G同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -3337,7 +3337,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "金工数学",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": "该项目与交大合作",
     "internships": null,
     "research": null,
@@ -3381,7 +3381,7 @@ export const cases = [
         "value": "雅思7.5"
       }
     ],
-    "searchText": "25fall 张之恋 人大中法 中法学院 金融 3.7/89 雅思7.5 新加坡国立大学 金工数学 其他 该项目与交大合作"
+    "searchText": "25fall G同学 人大中法 中法学院 金融 3.7/89 雅思7.5 新加坡国立大学 金工数学 新加坡 该项目与交大合作"
   },
   {
     "id": "25fall_027",
@@ -3389,7 +3389,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 56,
-    "studentNameMasked": "张之恋",
+    "studentNameMasked": "G同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -3399,7 +3399,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "金融工程",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -3443,7 +3443,7 @@ export const cases = [
         "value": "雅思7.5"
       }
     ],
-    "searchText": "25fall 张之恋 人大中法 中法学院 金融 3.7/89 雅思7.5 南洋理工大学 金融工程 其他"
+    "searchText": "25fall G同学 人大中法 中法学院 金融 3.7/89 雅思7.5 南洋理工大学 金融工程 新加坡"
   },
   {
     "id": "25fall_028",
@@ -3451,7 +3451,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 57,
-    "studentNameMasked": "王嘉豪",
+    "studentNameMasked": "K同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -3506,7 +3506,7 @@ export const cases = [
         "value": "雅思8(7) / GMAT680"
       }
     ],
-    "searchText": "25fall 王嘉豪 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 escp 管理学GE 其他"
+    "searchText": "25fall K同学 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 escp 管理学GE 其他"
   },
   {
     "id": "25fall_029",
@@ -3514,7 +3514,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 58,
-    "studentNameMasked": "王嘉豪",
+    "studentNameMasked": "K同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -3524,7 +3524,7 @@ export const cases = [
     "greGmat": "GMAT680",
     "offerSchool": "新加坡国立大学",
     "offerProgram": "战略分析与创新",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -3569,7 +3569,7 @@ export const cases = [
         "value": "雅思8(7) / GMAT680"
       }
     ],
-    "searchText": "25fall 王嘉豪 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 新加坡国立大学 战略分析与创新 其他"
+    "searchText": "25fall K同学 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 新加坡国立大学 战略分析与创新 新加坡"
   },
   {
     "id": "25fall_030",
@@ -3577,7 +3577,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 59,
-    "studentNameMasked": "王嘉豪",
+    "studentNameMasked": "K同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -3587,7 +3587,7 @@ export const cases = [
     "greGmat": "GMAT680",
     "offerSchool": "芝加哥大学",
     "offerProgram": "公共政策",
-    "offerRegion": "其他",
+    "offerRegion": "美国",
     "description": null,
     "internships": null,
     "research": null,
@@ -3632,7 +3632,7 @@ export const cases = [
         "value": "雅思8(7) / GMAT680"
       }
     ],
-    "searchText": "25fall 王嘉豪 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 芝加哥大学 公共政策 其他"
+    "searchText": "25fall K同学 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 芝加哥大学 公共政策 美国"
   },
   {
     "id": "25fall_031",
@@ -3640,7 +3640,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 60,
-    "studentNameMasked": "王嘉豪",
+    "studentNameMasked": "K同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -3695,7 +3695,7 @@ export const cases = [
         "value": "雅思8(7) / GMAT680"
       }
     ],
-    "searchText": "25fall 王嘉豪 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 esses DSBA joint program 其他"
+    "searchText": "25fall K同学 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 esses DSBA joint program 其他"
   },
   {
     "id": "25fall_032",
@@ -3703,7 +3703,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 61,
-    "studentNameMasked": "王嘉豪",
+    "studentNameMasked": "K同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -3713,7 +3713,7 @@ export const cases = [
     "greGmat": "GMAT680",
     "offerSchool": "博科尼大学",
     "offerProgram": "国际管理",
-    "offerRegion": "其他",
+    "offerRegion": "意大利",
     "description": null,
     "internships": null,
     "research": null,
@@ -3758,7 +3758,7 @@ export const cases = [
         "value": "雅思8(7) / GMAT680"
       }
     ],
-    "searchText": "25fall 王嘉豪 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 博科尼大学 国际管理 其他"
+    "searchText": "25fall K同学 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 博科尼大学 国际管理 意大利"
   },
   {
     "id": "25fall_033",
@@ -3766,7 +3766,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 62,
-    "studentNameMasked": "王嘉豪",
+    "studentNameMasked": "K同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "人力资源管理",
@@ -3776,7 +3776,7 @@ export const cases = [
     "greGmat": "GMAT680",
     "offerSchool": "香港大学",
     "offerProgram": "全球管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -3821,7 +3821,7 @@ export const cases = [
         "value": "雅思8(7) / GMAT680"
       }
     ],
-    "searchText": "25fall 王嘉豪 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 香港大学 全球管理 其他"
+    "searchText": "25fall K同学 人大中法 中法学院 人力资源管理 3.6 雅思8(7) GMAT680 香港大学 全球管理 中国香港"
   },
   {
     "id": "25fall_034",
@@ -3829,7 +3829,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 63,
-    "studentNameMasked": "李昊东",
+    "studentNameMasked": "I同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "国管",
@@ -3839,7 +3839,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "信息科学与技术管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -3883,7 +3883,7 @@ export const cases = [
         "value": "雅思6.5(6)"
       }
     ],
-    "searchText": "25fall 李昊东 人大中法 中法学院 国管 2.9/82 雅思6.5(6) 香港中文大学 信息科学与技术管理 其他"
+    "searchText": "25fall I同学 人大中法 中法学院 国管 2.9/82 雅思6.5(6) 香港中文大学 信息科学与技术管理 中国香港"
   },
   {
     "id": "25fall_035",
@@ -3891,7 +3891,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 64,
-    "studentNameMasked": "李昊东",
+    "studentNameMasked": "I同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "国管",
@@ -3901,7 +3901,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "信息系统管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -3945,7 +3945,7 @@ export const cases = [
         "value": "雅思6.5(6)"
       }
     ],
-    "searchText": "25fall 李昊东 人大中法 中法学院 国管 2.9/82 雅思6.5(6) 香港科技大学 信息系统管理 其他"
+    "searchText": "25fall I同学 人大中法 中法学院 国管 2.9/82 雅思6.5(6) 香港科技大学 信息系统管理 中国香港"
   },
   {
     "id": "25fall_036",
@@ -3953,7 +3953,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 65,
-    "studentNameMasked": "李昊东",
+    "studentNameMasked": "I同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "国管",
@@ -3963,7 +3963,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "墨尔本大学",
     "offerProgram": "数据科学",
-    "offerRegion": "其他",
+    "offerRegion": "澳大利亚",
     "description": null,
     "internships": null,
     "research": null,
@@ -4007,7 +4007,7 @@ export const cases = [
         "value": "雅思6.5(6)"
       }
     ],
-    "searchText": "25fall 李昊东 人大中法 中法学院 国管 2.9/82 雅思6.5(6) 墨尔本大学 数据科学 其他"
+    "searchText": "25fall I同学 人大中法 中法学院 国管 2.9/82 雅思6.5(6) 墨尔本大学 数据科学 澳大利亚"
   },
   {
     "id": "25fall_037",
@@ -4015,7 +4015,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 66,
-    "studentNameMasked": "李昊东",
+    "studentNameMasked": "I同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "国管",
@@ -4025,7 +4025,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "统计学",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -4069,7 +4069,7 @@ export const cases = [
         "value": "雅思6.5(6)"
       }
     ],
-    "searchText": "25fall 李昊东 人大中法 中法学院 国管 2.9/82 雅思6.5(6) 香港大学 统计学 其他"
+    "searchText": "25fall I同学 人大中法 中法学院 国管 2.9/82 雅思6.5(6) 香港大学 统计学 中国香港"
   },
   {
     "id": "25fall_038",
@@ -4077,7 +4077,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 67,
-    "studentNameMasked": "熊子睿",
+    "studentNameMasked": "J同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4087,7 +4087,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "环球企业管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -4131,7 +4131,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "25fall 熊子睿 人大中法 中法学院 金融 2.52 雅思6.5 香港城市大学 环球企业管理 其他"
+    "searchText": "25fall J同学 人大中法 中法学院 金融 2.52 雅思6.5 香港城市大学 环球企业管理 中国香港"
   },
   {
     "id": "25fall_039",
@@ -4139,7 +4139,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 68,
-    "studentNameMasked": "熊子睿",
+    "studentNameMasked": "J同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4149,7 +4149,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "数字化转型及科技创新",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -4193,7 +4193,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "25fall 熊子睿 人大中法 中法学院 金融 2.52 雅思6.5 香港城市大学 数字化转型及科技创新 其他"
+    "searchText": "25fall J同学 人大中法 中法学院 金融 2.52 雅思6.5 香港城市大学 数字化转型及科技创新 中国香港"
   },
   {
     "id": "25fall_040",
@@ -4201,7 +4201,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 69,
-    "studentNameMasked": "熊子睿",
+    "studentNameMasked": "J同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4211,7 +4211,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "商务资讯系统",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -4255,7 +4255,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "25fall 熊子睿 人大中法 中法学院 金融 2.52 雅思6.5 香港城市大学 商务资讯系统 其他"
+    "searchText": "25fall J同学 人大中法 中法学院 金融 2.52 雅思6.5 香港城市大学 商务资讯系统 中国香港"
   },
   {
     "id": "25fall_041",
@@ -4263,7 +4263,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 70,
-    "studentNameMasked": "熊子睿",
+    "studentNameMasked": "J同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4273,7 +4273,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "澳国立",
     "offerProgram": "商务资讯系统",
-    "offerRegion": "其他",
+    "offerRegion": "澳大利亚",
     "description": null,
     "internships": null,
     "research": null,
@@ -4317,7 +4317,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "25fall 熊子睿 人大中法 中法学院 金融 2.52 雅思6.5 澳国立 商务资讯系统 其他"
+    "searchText": "25fall J同学 人大中法 中法学院 金融 2.52 雅思6.5 澳国立 商务资讯系统 澳大利亚"
   },
   {
     "id": "25fall_042",
@@ -4325,7 +4325,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 71,
-    "studentNameMasked": "熊子睿",
+    "studentNameMasked": "J同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4335,7 +4335,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "悉尼大学",
     "offerProgram": "商业硕士",
-    "offerRegion": "其他",
+    "offerRegion": "澳大利亚",
     "description": null,
     "internships": null,
     "research": null,
@@ -4379,7 +4379,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "25fall 熊子睿 人大中法 中法学院 金融 2.52 雅思6.5 悉尼大学 商业硕士 其他"
+    "searchText": "25fall J同学 人大中法 中法学院 金融 2.52 雅思6.5 悉尼大学 商业硕士 澳大利亚"
   },
   {
     "id": "25fall_043",
@@ -4387,7 +4387,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 72,
-    "studentNameMasked": "熊子睿",
+    "studentNameMasked": "J同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4397,7 +4397,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港理工大学",
     "offerProgram": "国际管理与领导",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -4441,7 +4441,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "25fall 熊子睿 人大中法 中法学院 金融 2.52 雅思6.5 香港理工大学 国际管理与领导 其他"
+    "searchText": "25fall J同学 人大中法 中法学院 金融 2.52 雅思6.5 香港理工大学 国际管理与领导 中国香港"
   },
   {
     "id": "25fall_044",
@@ -4449,7 +4449,7 @@ export const cases = [
     "applicationSeason": "25fall",
     "seasonKey": "25fall",
     "sourceRow": 73,
-    "studentNameMasked": "熊子睿",
+    "studentNameMasked": "J同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4459,7 +4459,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "数字城市管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -4503,7 +4503,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "25fall 熊子睿 人大中法 中法学院 金融 2.52 雅思6.5 香港大学 数字城市管理 其他"
+    "searchText": "25fall J同学 人大中法 中法学院 金融 2.52 雅思6.5 香港大学 数字城市管理 中国香港"
   },
   {
     "id": "26fall_001",
@@ -4511,7 +4511,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 74,
-    "studentNameMasked": "郝宇轩",
+    "studentNameMasked": "U同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "数学与应用数学",
@@ -4521,7 +4521,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "统计学",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": "带奖*150000RMB",
     "internships": null,
     "research": null,
@@ -4565,7 +4565,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 郝宇轩 人大中法 中法学院 数学与应用数学 3.66 雅思7 新加坡国立大学 统计学 其他 带奖*150000RMB"
+    "searchText": "26fall U同学 人大中法 中法学院 数学与应用数学 3.66 雅思7 新加坡国立大学 统计学 新加坡 带奖*150000RMB"
   },
   {
     "id": "26fall_002",
@@ -4573,7 +4573,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 75,
-    "studentNameMasked": "刘姿彤",
+    "studentNameMasked": "N同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4583,7 +4583,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "科技管理与创新",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -4627,7 +4627,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 刘姿彤 人大中法 中法学院 金融 3.61 雅思7 新加坡国立大学 科技管理与创新 其他"
+    "searchText": "26fall N同学 人大中法 中法学院 金融 3.61 雅思7 新加坡国立大学 科技管理与创新 新加坡"
   },
   {
     "id": "26fall_003",
@@ -4635,7 +4635,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 76,
-    "studentNameMasked": "王飒逸",
+    "studentNameMasked": "Q同学",
     "undergradSchool": "中央财经大学",
     "undergradSchoolLabel": "中央财经大学",
     "undergradMajor": "精算学",
@@ -4645,7 +4645,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "统计学",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -4689,7 +4689,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "26fall 王飒逸 中央财经大学 中央财经大学 精算学 89.13 雅思6.5 新加坡国立大学 统计学 其他"
+    "searchText": "26fall Q同学 中央财经大学 中央财经大学 精算学 89.13 雅思6.5 新加坡国立大学 统计学 新加坡"
   },
   {
     "id": "26fall_004",
@@ -4697,7 +4697,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 77,
-    "studentNameMasked": "王飒逸",
+    "studentNameMasked": "Q同学",
     "undergradSchool": "中央财经大学",
     "undergradSchoolLabel": "中央财经大学",
     "undergradMajor": "精算学",
@@ -4707,7 +4707,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "金融",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -4751,7 +4751,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "26fall 王飒逸 中央财经大学 中央财经大学 精算学 89.13 雅思6.5 香港大学 金融 其他"
+    "searchText": "26fall Q同学 中央财经大学 中央财经大学 精算学 89.13 雅思6.5 香港大学 金融 中国香港"
   },
   {
     "id": "26fall_005",
@@ -4759,7 +4759,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 78,
-    "studentNameMasked": "贾云哲",
+    "studentNameMasked": "S同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4769,7 +4769,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "家族财富管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -4813,7 +4813,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 贾云哲 人大中法 中法学院 金融 3.62 雅思7 香港大学 家族财富管理 其他"
+    "searchText": "26fall S同学 人大中法 中法学院 金融 3.62 雅思7 香港大学 家族财富管理 中国香港"
   },
   {
     "id": "26fall_006",
@@ -4821,7 +4821,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 79,
-    "studentNameMasked": "贾云哲",
+    "studentNameMasked": "S同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4831,7 +4831,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "可持续会计与金融",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -4875,7 +4875,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 贾云哲 人大中法 中法学院 金融 3.62 雅思7 香港大学 可持续会计与金融 其他"
+    "searchText": "26fall S同学 人大中法 中法学院 金融 3.62 雅思7 香港大学 可持续会计与金融 中国香港"
   },
   {
     "id": "26fall_007",
@@ -4883,7 +4883,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 80,
-    "studentNameMasked": "叶锃",
+    "studentNameMasked": "O同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -4893,7 +4893,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "气候治理与风险管理硕士",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -4937,7 +4937,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "26fall 叶锃 人大中法 中法学院 金融 3.03 雅思6.5 香港大学 气候治理与风险管理硕士 其他"
+    "searchText": "26fall O同学 人大中法 中法学院 金融 3.03 雅思6.5 香港大学 气候治理与风险管理硕士 中国香港"
   },
   {
     "id": "26fall_008",
@@ -4945,7 +4945,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 81,
-    "studentNameMasked": "井淼",
+    "studentNameMasked": "M同学",
     "undergradSchool": "中国人民大学财政金融学院",
     "undergradSchoolLabel": "财政金融学院",
     "undergradMajor": "金融",
@@ -4955,7 +4955,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "统计学",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -4999,7 +4999,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "26fall 井淼 中国人民大学财政金融学院 财政金融学院 金融 3.44 雅思6.5 新加坡国立大学 统计学 其他"
+    "searchText": "26fall M同学 中国人民大学财政金融学院 财政金融学院 金融 3.44 雅思6.5 新加坡国立大学 统计学 新加坡"
   },
   {
     "id": "26fall_009",
@@ -5007,7 +5007,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 82,
-    "studentNameMasked": "井淼",
+    "studentNameMasked": "M同学",
     "undergradSchool": "中国人民大学财政金融学院",
     "undergradSchoolLabel": "财政金融学院",
     "undergradMajor": "金融",
@@ -5017,7 +5017,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "经济学",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5061,7 +5061,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "26fall 井淼 中国人民大学财政金融学院 财政金融学院 金融 3.44 雅思6.5 香港中文大学 经济学 其他"
+    "searchText": "26fall M同学 中国人民大学财政金融学院 财政金融学院 金融 3.44 雅思6.5 香港中文大学 经济学 中国香港"
   },
   {
     "id": "26fall_010",
@@ -5069,7 +5069,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 83,
-    "studentNameMasked": "玄书妍",
+    "studentNameMasked": "P同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -5079,7 +5079,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "管理与创新",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5123,7 +5123,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "26fall 玄书妍 人大中法 中法学院 金融 2.53 雅思6.5 香港城市大学 管理与创新 其他"
+    "searchText": "26fall P同学 人大中法 中法学院 金融 2.53 雅思6.5 香港城市大学 管理与创新 中国香港"
   },
   {
     "id": "26fall_011",
@@ -5131,7 +5131,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 84,
-    "studentNameMasked": "玄书妍",
+    "studentNameMasked": "P同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -5141,7 +5141,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "商业人工智能",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5185,7 +5185,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "26fall 玄书妍 人大中法 中法学院 金融 2.53 雅思6.5 香港城市大学 商业人工智能 其他"
+    "searchText": "26fall P同学 人大中法 中法学院 金融 2.53 雅思6.5 香港城市大学 商业人工智能 中国香港"
   },
   {
     "id": "26fall_012",
@@ -5193,7 +5193,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 85,
-    "studentNameMasked": "玄书妍",
+    "studentNameMasked": "P同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -5203,7 +5203,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "生物科技企业领导力",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5247,7 +5247,7 @@ export const cases = [
         "value": "雅思6.5"
       }
     ],
-    "searchText": "26fall 玄书妍 人大中法 中法学院 金融 2.53 雅思6.5 香港科技大学 生物科技企业领导力 其他"
+    "searchText": "26fall P同学 人大中法 中法学院 金融 2.53 雅思6.5 香港科技大学 生物科技企业领导力 中国香港"
   },
   {
     "id": "26fall_013",
@@ -5255,7 +5255,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 86,
-    "studentNameMasked": "郭科甫",
+    "studentNameMasked": "V同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -5265,7 +5265,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港中文大学深圳校区",
     "offerProgram": "可持续发展",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5310,7 +5310,7 @@ export const cases = [
         "value": "雅思9 / 托福98"
       }
     ],
-    "searchText": "26fall 郭科甫 人大中法 中法学院 金融 3.1 雅思9 托福98 香港中文大学深圳校区 可持续发展 其他"
+    "searchText": "26fall V同学 人大中法 中法学院 金融 3.1 雅思9 托福98 香港中文大学深圳校区 可持续发展 中国香港"
   },
   {
     "id": "26fall_014",
@@ -5318,7 +5318,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 87,
-    "studentNameMasked": "郭科甫",
+    "studentNameMasked": "V同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -5328,7 +5328,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港中文大学深圳校区",
     "offerProgram": "公共政策",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": "带奖*80000RMB",
     "internships": null,
     "research": null,
@@ -5373,7 +5373,7 @@ export const cases = [
         "value": "雅思9 / 托福98"
       }
     ],
-    "searchText": "26fall 郭科甫 人大中法 中法学院 金融 3.1 雅思9 托福98 香港中文大学深圳校区 公共政策 其他 带奖*80000RMB"
+    "searchText": "26fall V同学 人大中法 中法学院 金融 3.1 雅思9 托福98 香港中文大学深圳校区 公共政策 中国香港 带奖*80000RMB"
   },
   {
     "id": "26fall_015",
@@ -5381,7 +5381,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 88,
-    "studentNameMasked": "郭科甫",
+    "studentNameMasked": "V同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -5391,7 +5391,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "中国与全球治理",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -5436,7 +5436,7 @@ export const cases = [
         "value": "雅思9 / 托福98"
       }
     ],
-    "searchText": "26fall 郭科甫 人大中法 中法学院 金融 3.1 雅思9 托福98 南洋理工大学 中国与全球治理 其他"
+    "searchText": "26fall V同学 人大中法 中法学院 金融 3.1 雅思9 托福98 南洋理工大学 中国与全球治理 新加坡"
   },
   {
     "id": "26fall_016",
@@ -5444,7 +5444,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 89,
-    "studentNameMasked": "郭科甫",
+    "studentNameMasked": "V同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -5454,7 +5454,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "中国发展研究",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5499,7 +5499,7 @@ export const cases = [
         "value": "雅思9 / 托福98"
       }
     ],
-    "searchText": "26fall 郭科甫 人大中法 中法学院 金融 3.1 雅思9 托福98 香港大学 中国发展研究 其他"
+    "searchText": "26fall V同学 人大中法 中法学院 金融 3.1 雅思9 托福98 香港大学 中国发展研究 中国香港"
   },
   {
     "id": "26fall_017",
@@ -5507,7 +5507,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 90,
-    "studentNameMasked": "陈禹霏",
+    "studentNameMasked": "W同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "国管",
@@ -5517,7 +5517,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "财富管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5561,7 +5561,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 陈禹霏 人大中法 中法学院 国管 3.58 雅思7 香港大学 财富管理 其他"
+    "searchText": "26fall W同学 人大中法 中法学院 国管 3.58 雅思7 香港大学 财富管理 中国香港"
   },
   {
     "id": "26fall_018",
@@ -5569,7 +5569,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 91,
-    "studentNameMasked": "陈禹霏",
+    "studentNameMasked": "W同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "国管",
@@ -5579,7 +5579,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "科技管理与创新",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -5623,7 +5623,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 陈禹霏 人大中法 中法学院 国管 3.58 雅思7 新加坡国立大学 科技管理与创新 其他"
+    "searchText": "26fall W同学 人大中法 中法学院 国管 3.58 雅思7 新加坡国立大学 科技管理与创新 新加坡"
   },
   {
     "id": "26fall_019",
@@ -5631,7 +5631,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 92,
-    "studentNameMasked": "陈禹霏",
+    "studentNameMasked": "W同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "国管",
@@ -5641,7 +5641,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "全球管理",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5685,7 +5685,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 陈禹霏 人大中法 中法学院 国管 3.58 雅思7 香港大学 全球管理 其他"
+    "searchText": "26fall W同学 人大中法 中法学院 国管 3.58 雅思7 香港大学 全球管理 中国香港"
   },
   {
     "id": "26fall_020",
@@ -5693,7 +5693,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 93,
-    "studentNameMasked": "陈禹霏",
+    "studentNameMasked": "W同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "国管",
@@ -5703,7 +5703,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "应用经济学",
-    "offerRegion": "其他",
+    "offerRegion": "新加坡",
     "description": null,
     "internships": null,
     "research": null,
@@ -5747,7 +5747,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 陈禹霏 人大中法 中法学院 国管 3.58 雅思7 南洋理工大学 应用经济学 其他"
+    "searchText": "26fall W同学 人大中法 中法学院 国管 3.58 雅思7 南洋理工大学 应用经济学 新加坡"
   },
   {
     "id": "26fall_021",
@@ -5755,7 +5755,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 94,
-    "studentNameMasked": "迟与菲",
+    "studentNameMasked": "T同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -5765,7 +5765,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港理工大学",
     "offerProgram": "全球供应链管理硕士",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5809,7 +5809,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 迟与菲 人大中法 中法学院 金融 3.02 雅思7 香港理工大学 全球供应链管理硕士 其他"
+    "searchText": "26fall T同学 人大中法 中法学院 金融 3.02 雅思7 香港理工大学 全球供应链管理硕士 中国香港"
   },
   {
     "id": "26fall_022",
@@ -5817,7 +5817,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 95,
-    "studentNameMasked": "迟与菲",
+    "studentNameMasked": "T同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -5827,7 +5827,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "房地产理学硕士",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5871,7 +5871,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 迟与菲 人大中法 中法学院 金融 3.02 雅思7 香港中文大学 房地产理学硕士 其他"
+    "searchText": "26fall T同学 人大中法 中法学院 金融 3.02 雅思7 香港中文大学 房地产理学硕士 中国香港"
   },
   {
     "id": "26fall_023",
@@ -5879,7 +5879,7 @@ export const cases = [
     "applicationSeason": "26fall",
     "seasonKey": "26fall",
     "sourceRow": 96,
-    "studentNameMasked": "费荧",
+    "studentNameMasked": "R同学",
     "undergradSchool": "人大中法",
     "undergradSchoolLabel": "中法学院",
     "undergradMajor": "金融",
@@ -5889,7 +5889,7 @@ export const cases = [
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "可持续环球商业",
-    "offerRegion": "其他",
+    "offerRegion": "中国香港",
     "description": null,
     "internships": null,
     "research": null,
@@ -5933,7 +5933,7 @@ export const cases = [
         "value": "雅思7"
       }
     ],
-    "searchText": "26fall 费荧 人大中法 中法学院 金融 3.14/84.33 雅思7 香港中文大学 可持续环球商业 其他"
+    "searchText": "26fall R同学 人大中法 中法学院 金融 3.14/84.33 雅思7 香港中文大学 可持续环球商业 中国香港"
   }
 ];
 
@@ -6002,7 +6002,14 @@ export const filterGroups = [
     "field": "offerRegion",
     "options": [
       "全部",
-      "其他"
+      "中国香港",
+      "英国",
+      "新加坡",
+      "法国",
+      "美国",
+      "其他",
+      "意大利",
+      "澳大利亚"
     ]
   }
 ];
