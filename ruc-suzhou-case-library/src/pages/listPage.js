@@ -1,3 +1,5 @@
+import { pageConfig } from "../data/index.js";
+
 function buildProgramFilterLabel(state, filterGroups) {
   const group = filterGroups.find((item) => item.id === "program");
 
@@ -76,8 +78,8 @@ export function renderListContent({ cases, articles, state }) {
     return `
       <section class="section-header">
         <div>
-          <h2>乐湖专访</h2>
-          <p>后续用于承接 i乐湖 公众号内的学员专访内容。</p>
+          <h2>${pageConfig["articles.sectionTitle"] || "乐湖专访"}</h2>
+          <p>${pageConfig["articles.sectionDescription"] || "后续用于承接 i乐湖 公众号内的学员专访内容。"}</p>
         </div>
         <span class="section-count">${articles.length} 篇</span>
       </section>
@@ -108,8 +110,8 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
   return `
     <header class="hero hero--brand">
       <div class="hero-brand">
-        <p class="hero-brand__eyebrow">i乐湖</p>
-        <h1>i乐湖案例库</h1>
+        <p class="hero-brand__eyebrow">${pageConfig["home.heroEyebrow"] || "i乐湖"}</p>
+        <h1>${pageConfig["home.heroTitle"] || "i乐湖案例库"}</h1>
       </div>
       <label class="search-box">
         <span class="search-box__icon">搜</span>
@@ -117,7 +119,7 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
           id="searchInput"
           type="search"
           value="${state.query}"
-          placeholder="搜索学校、专业、成绩、国家（地区）"
+          placeholder="${pageConfig["home.searchPlaceholder"] || "搜索学校、专业、成绩、国家（地区）"}"
           autocomplete="off"
           spellcheck="false"
         />
@@ -167,10 +169,10 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
     </main>
     <aside class="floating-contact floating-contact--home">
       <div class="floating-contact__copy">
-        <strong>联系我们</strong>
-        <span>想了解案例匹配、申请规划或合作方式，可直接联系顾问。</span>
+        <strong>${pageConfig["home.contactTitle"] || "联系我们"}</strong>
+        <span>${pageConfig["home.contactDescription"] || "想了解案例匹配、申请规划或合作方式，可直接联系顾问。"}</span>
       </div>
-      <button class="primary-btn" type="button">立即联系</button>
+      <button class="primary-btn" type="button">${pageConfig["home.contactButtonText"] || "立即联系"}</button>
     </aside>
   `;
 }

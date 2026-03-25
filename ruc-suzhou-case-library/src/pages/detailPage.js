@@ -1,3 +1,5 @@
+import { pageConfig } from "../data/index.js";
+
 function buildIdentityMeta(item) {
   return [item.applicationSeason].filter(Boolean);
 }
@@ -26,12 +28,10 @@ function renderInfoRows(item) {
     item.studentNameMasked
       ? { label: "学生姓名", value: renderIdentityValue(item) }
       : null,
-    ...item.detailSections
-      .filter((section) => !["投递时间", "录取时间"].includes(section.label))
-      .map((section) => ({
-        label: section.label,
-        value: `<span>${section.value}</span>`,
-      })),
+    ...item.detailSections.map((section) => ({
+      label: section.label,
+      value: `<span>${section.value}</span>`,
+    })),
   ].filter(Boolean);
 
   return rows
@@ -46,46 +46,6 @@ function renderInfoRows(item) {
     .join("");
 }
 
-function renderTimeline(item) {
-  const entries = [
-    { label: "提交申请", value: item.submittedAt },
-    { label: "收到录取", value: item.admissionAt },
-  ].filter((entry) => entry.value);
-
-  if (!entries.length) {
-    return "";
-  }
-
-  return `
-    <div class="detail-timeline">
-      ${entries
-        .map(
-          (entry) => `
-            <div class="detail-timeline__item">
-              <span class="detail-timeline__label">${entry.label}</span>
-              <strong class="detail-timeline__value">${entry.value}</strong>
-            </div>
-          `,
-        )
-        .join("")}
-    </div>
-  `;
-}
-
-function renderInfoSection(item) {
-  return `
-    <section class="detail-section detail-card detail-sheet">
-      <div class="section-title section-title--detail">
-        <h2>录取详情</h2>
-      </div>
-      ${renderTimeline(item)}
-      <div class="detail-info-list">
-        ${renderInfoRows(item)}
-      </div>
-    </section>
-  `;
-}
-
 function renderStudentCard(card) {
   if (!card) {
     return "";
@@ -94,8 +54,8 @@ function renderStudentCard(card) {
   return `
     <section class="detail-section detail-card student-card">
       <div class="section-title">
-        <h2>学生名片</h2>
-        <p>这部分保留为留白说明与后续联系入口，不重复展示案例主信息。</p>
+        <h2>${pageConfig["detail.studentCardTitle"] || "学生名片"}</h2>
+        <p>${pageConfig["detail.studentCardDescription"] || "这部分保留为留白说明与后续联系入口，不重复展示案例主信息。"}</p>
       </div>
       <div class="student-card__copy">
         <p>${card.copy}</p>
@@ -108,13 +68,22 @@ function renderStudentCard(card) {
 }
 
 function renderFloatingConsult(item) {
+  const hasCard = Boolean(item.studentCard);
   return `
     <aside class="floating-contact">
       <div class="floating-contact__copy">
-        <strong>案例咨询</strong>
-        <span>${item.studentCard ? "可继续了解申请节奏与准备重点" : "咨询入口与二维码后续接入"}</span>
+        <strong>${pageConfig["detail.contactTitle"] || "案例咨询"}</strong>
+        <span>${
+          hasCard
+            ? pageConfig["detail.contactDescriptionWithCard"] || "可继续了解申请节奏与准备重点"
+            : pageConfig["detail.contactDescriptionWithoutCard"] || "咨询入口与二维码后续接入"
+        }</span>
       </div>
-      <button class="primary-btn" type="button">${item.studentCard ? "立即咨询" : "咨询入口待接入"}</button>
+      <button class="primary-btn" type="button">${
+        hasCard
+          ? pageConfig["detail.contactButtonTextWithCard"] || "立即咨询"
+          : pageConfig["detail.contactButtonTextWithoutCard"] || "咨询入口待接入"
+      }</button>
     </aside>
   `;
 }
@@ -126,7 +95,14 @@ export function renderDetailPage({ item }) {
         <button class="ghost-btn" data-action="back-to-list">返回</button>
       </header>
 
-      ${renderInfoSection(item)}
+      <section class="detail-section detail-card detail-sheet">
+        <div class="section-title section-title--detail">
+          <h2>录取详情</h2>
+        </div>
+        <div class="detail-info-list">
+          ${renderInfoRows(item)}
+        </div>
+      </section>
       ${renderStudentCard(item.studentCard)}
       ${renderFloatingConsult(item)}
     </main>
