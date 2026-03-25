@@ -211,7 +211,7 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
         ${renderListContent({ cases, articles, state })}
       </div>
     </main>
-    <aside class="floating-contact floating-contact--home ${state.openFilterId ? "is-hidden" : ""}">
+    <aside class="floating-contact floating-contact--home ${state.openFilterId || state.searchFocused ? "is-hidden" : ""}">
       <div class="floating-contact__copy">
         <strong>${pageConfig["home.contactTitle"] || "联系我们"}</strong>
         <span>${pageConfig["home.contactDescription"] || "想了解案例匹配、申请规划或合作方式，可直接联系顾问。"}</span>

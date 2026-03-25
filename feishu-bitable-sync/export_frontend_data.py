@@ -256,6 +256,29 @@ def build_score_list(item):
     return [value for value in [item.get("ielts"), item.get("toefl"), item.get("greGmat")] if value]
 
 
+def normalize_prefixed_score(value, prefix):
+    normalized = normalize_scalar(value)
+    if not normalized:
+        return None
+    if normalized.startswith(prefix):
+        return normalized
+    return f"{prefix}{normalized}"
+
+
+def normalize_gre_gmat_score(value):
+    normalized = normalize_scalar(value)
+    if not normalized:
+        return None
+    upper = normalized.upper()
+    if upper.startswith("GRE") or upper.startswith("GMAT"):
+        return upper
+    digits_match = re.search(r"\d+", normalized)
+    if not digits_match:
+        return normalized
+    digits = digits_match.group(0)
+    return f"{'GRE' if int(digits) < 400 else 'GMAT'}{digits}"
+
+
 def build_language_score_text(item):
     return " / ".join(build_score_list(item)) or None
 
@@ -315,9 +338,9 @@ def build_case_item(record, index):
         "undergradCollegeLabel": normalize_college_label(undergrad_college) or undergrad_college,
         "undergradMajor": normalize_scalar(fields.get("本科专业")),
         "gpa": normalize_scalar(fields.get("GPA/均分")),
-        "ielts": first_non_empty(fields, "雅思", "语言成绩"),
-        "toefl": first_non_empty(fields, "托福"),
-        "greGmat": first_non_empty(fields, "GRE/GMAT", "GMAT/GRE"),
+        "ielts": normalize_prefixed_score(first_non_empty(fields, "雅思", "语言成绩"), "雅思"),
+        "toefl": normalize_prefixed_score(first_non_empty(fields, "托福"), "托福"),
+        "greGmat": normalize_gre_gmat_score(first_non_empty(fields, "GRE/GMAT", "GMAT/GRE")),
         "offerSchool": offer_school,
         "offerProgram": offer_program,
         "offerRegion": normalize_region(raw_region) or "其他",

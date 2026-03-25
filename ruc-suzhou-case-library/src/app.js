@@ -97,6 +97,7 @@ function updateFilterVisibility(nextFilterId, anchorRect = null) {
 function bindListActionEvents() {
   root.querySelectorAll("[data-action='open-case']").forEach((button) => {
     button.addEventListener("click", () => {
+      state.searchFocused = false;
       state.selectedCaseId = button.dataset.caseId;
       state.openFilterId = null;
       render();
@@ -106,6 +107,22 @@ function bindListActionEvents() {
 
 function bindEvents() {
   const searchInput = root.querySelector("#searchInput");
+  searchInput?.addEventListener("focus", () => {
+    if (!state.searchFocused) {
+      state.searchFocused = true;
+      const floatingContact = root.querySelector(".floating-contact--home");
+      floatingContact?.classList.add("is-hidden");
+    }
+  });
+  searchInput?.addEventListener("blur", () => {
+    if (state.searchFocused) {
+      state.searchFocused = false;
+      const floatingContact = root.querySelector(".floating-contact--home");
+      if (!state.openFilterId) {
+        floatingContact?.classList.remove("is-hidden");
+      }
+    }
+  });
   searchInput?.addEventListener("compositionstart", () => {
     isComposing = true;
   });
@@ -125,6 +142,7 @@ function bindEvents() {
   root.querySelectorAll("[data-action='switch-tab']").forEach((button) => {
     button.addEventListener("click", () => {
       state.activeTab = button.dataset.tab;
+      state.searchFocused = false;
       state.openFilterId = null;
       state.filterPanelStyle = null;
       render();
@@ -196,6 +214,7 @@ function bindEvents() {
   root.querySelectorAll("[data-action='back-to-list']").forEach((button) => {
     button.addEventListener("click", () => {
       state.selectedCaseId = null;
+      state.searchFocused = false;
       render();
     });
   });
@@ -209,6 +228,7 @@ function bindEvents() {
 
   root.querySelectorAll("[data-action='open-contact-modal']").forEach((button) => {
     button.addEventListener("click", () => {
+      state.searchFocused = false;
       state.contactModalOpen = true;
       render();
     });
