@@ -421,7 +421,7 @@ export const cases = [
     "ielts": null,
     "toefl": null,
     "greGmat": null,
-    "offerSchool": "伦敦国王学院（KCL）",
+    "offerSchool": "伦敦国王学院",
     "offerProgram": "Environment,politics and development",
     "offerRegion": "英国",
     "description": null,
@@ -445,12 +445,12 @@ export const cases = [
         "type": "season"
       }
     ],
-    "listTitle": "伦敦国王学院（KCL） Environment,politics and development",
+    "listTitle": "伦敦国王学院 Environment,politics and development",
     "logoText": "伦敦",
     "detailSections": [
       {
         "label": "录取学校",
-        "value": "伦敦国王学院（KCL）"
+        "value": "伦敦国王学院"
       },
       {
         "label": "录取专业",
@@ -469,7 +469,7 @@ export const cases = [
         "value": "3.0"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 3.0 伦敦国王学院（KCL） Environment,politics and development 英国"
+    "searchText": "24fall 匿名 中法 中法 国管 3.0 伦敦国王学院 Environment,politics and development 英国"
   },
   {
     "id": "24fall_004",
@@ -2027,7 +2027,7 @@ export const cases = [
     "ielts": null,
     "toefl": null,
     "greGmat": "GMAT710",
-    "offerSchool": "ESSEC",
+    "offerSchool": "埃塞克高等商学院",
     "offerProgram": "SMIB",
     "offerRegion": "法国",
     "description": null,
@@ -2053,12 +2053,12 @@ export const cases = [
         "type": "season"
       }
     ],
-    "listTitle": "ESSEC SMIB",
-    "logoText": "ES",
+    "listTitle": "埃塞克高等商学院 SMIB",
+    "logoText": "埃塞",
     "detailSections": [
       {
         "label": "录取学校",
-        "value": "ESSEC"
+        "value": "埃塞克高等商学院"
       },
       {
         "label": "录取专业",
@@ -2081,7 +2081,7 @@ export const cases = [
         "value": "GMAT710"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 82 GMAT710 ESSEC SMIB 法国"
+    "searchText": "24fall 匿名 中法 中法 国管 82 GMAT710 埃塞克高等商学院 SMIB 法国"
   },
   {
     "id": "24fall_027",
@@ -4234,7 +4234,7 @@ export const cases = [
     "ielts": null,
     "toefl": null,
     "greGmat": "GMAT680",
-    "offerSchool": "escp",
+    "offerSchool": "欧洲高等商学院",
     "offerProgram": "管理学GE",
     "offerRegion": "法国",
     "description": null,
@@ -4263,12 +4263,12 @@ export const cases = [
         "type": "season"
       }
     ],
-    "listTitle": "escp 管理学GE",
-    "logoText": "es",
+    "listTitle": "欧洲高等商学院 管理学GE",
+    "logoText": "欧洲",
     "detailSections": [
       {
         "label": "录取学校",
-        "value": "escp"
+        "value": "欧洲高等商学院"
       },
       {
         "label": "录取专业",
@@ -4291,7 +4291,7 @@ export const cases = [
         "value": "GMAT680"
       }
     ],
-    "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 escp 管理学GE 法国"
+    "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 欧洲高等商学院 管理学GE 法国"
   },
   {
     "id": "25fall_029",
@@ -4465,7 +4465,7 @@ export const cases = [
     "ielts": null,
     "toefl": null,
     "greGmat": "GMAT680",
-    "offerSchool": "esses",
+    "offerSchool": "埃塞克高等商学院",
     "offerProgram": "DSBA joint program",
     "offerRegion": "法国",
     "description": null,
@@ -4494,12 +4494,12 @@ export const cases = [
         "type": "season"
       }
     ],
-    "listTitle": "esses DSBA joint program",
-    "logoText": "es",
+    "listTitle": "埃塞克高等商学院 DSBA joint program",
+    "logoText": "埃塞",
     "detailSections": [
       {
         "label": "录取学校",
-        "value": "esses"
+        "value": "埃塞克高等商学院"
       },
       {
         "label": "录取专业",
@@ -4522,7 +4522,7 @@ export const cases = [
         "value": "GMAT680"
       }
     ],
-    "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 esses DSBA joint program 法国"
+    "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 埃塞克高等商学院 DSBA joint program 法国"
   },
   {
     "id": "25fall_032",
@@ -5270,7 +5270,7 @@ export const cases = [
     "ielts": null,
     "toefl": null,
     "greGmat": null,
-    "offerSchool": "澳国立",
+    "offerSchool": "澳大利亚国立大学",
     "offerProgram": "商务资讯系统",
     "offerRegion": "澳大利亚",
     "description": null,
@@ -5308,12 +5308,12 @@ export const cases = [
         "type": "default"
       }
     ],
-    "listTitle": "澳国立 商务资讯系统",
-    "logoText": "澳国",
+    "listTitle": "澳大利亚国立大学 商务资讯系统",
+    "logoText": "澳大",
     "detailSections": [
       {
         "label": "录取学校",
-        "value": "澳国立"
+        "value": "澳大利亚国立大学"
       },
       {
         "label": "录取专业",
@@ -5332,7 +5332,7 @@ export const cases = [
         "value": "2.52"
       }
     ],
-    "searchText": "25fall J同学 中法 中法 金融 2.52 澳国立 商务资讯系统 澳大利亚 低分高录 乐湖案例"
+    "searchText": "25fall J同学 中法 中法 金融 2.52 澳大利亚国立大学 商务资讯系统 澳大利亚 低分高录 乐湖案例"
   },
   {
     "id": "25fall_042",
@@ -6237,7 +6237,7 @@ export const cases = [
     "ielts": null,
     "toefl": "托福98",
     "greGmat": null,
-    "offerSchool": "香港中文大学深圳校区",
+    "offerSchool": "香港中文大学（深圳校区）",
     "offerProgram": "可持续发展",
     "offerRegion": "香港",
     "description": null,
@@ -6277,12 +6277,12 @@ export const cases = [
         "type": "default"
       }
     ],
-    "listTitle": "香港中文大学深圳校区 可持续发展",
+    "listTitle": "香港中文大学（深圳校区） 可持续发展",
     "logoText": "香港",
     "detailSections": [
       {
         "label": "录取学校",
-        "value": "香港中文大学深圳校区"
+        "value": "香港中文大学（深圳校区）"
       },
       {
         "label": "录取专业",
@@ -6325,7 +6325,7 @@ export const cases = [
         "value": "考申策略"
       }
     ],
-    "searchText": "26fall 郭科甫 中法 中法 金融 3.1 托福98 香港中文大学深圳校区 可持续发展 香港 考申策略 低分高录 乐湖案例"
+    "searchText": "26fall 郭科甫 中法 中法 金融 3.1 托福98 香港中文大学（深圳校区） 可持续发展 香港 考申策略 低分高录 乐湖案例"
   },
   {
     "id": "26fall_014",
@@ -6345,7 +6345,7 @@ export const cases = [
     "ielts": null,
     "toefl": "托福98",
     "greGmat": null,
-    "offerSchool": "香港中文大学深圳校区",
+    "offerSchool": "香港中文大学（深圳校区）",
     "offerProgram": "公共政策",
     "offerRegion": "香港",
     "description": null,
@@ -6385,12 +6385,12 @@ export const cases = [
         "type": "default"
       }
     ],
-    "listTitle": "香港中文大学深圳校区 公共政策",
+    "listTitle": "香港中文大学（深圳校区） 公共政策",
     "logoText": "香港",
     "detailSections": [
       {
         "label": "录取学校",
-        "value": "香港中文大学深圳校区"
+        "value": "香港中文大学（深圳校区）"
       },
       {
         "label": "录取专业",
@@ -6433,7 +6433,7 @@ export const cases = [
         "value": "考申策略"
       }
     ],
-    "searchText": "26fall 郭科甫 中法 中法 金融 3.1 托福98 香港中文大学深圳校区 公共政策 香港 考申策略 低分高录 乐湖案例"
+    "searchText": "26fall 郭科甫 中法 中法 金融 3.1 托福98 香港中文大学（深圳校区） 公共政策 香港 考申策略 低分高录 乐湖案例"
   },
   {
     "id": "26fall_015",
