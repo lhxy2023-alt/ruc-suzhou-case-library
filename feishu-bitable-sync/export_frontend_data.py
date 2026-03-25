@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import argparse
 import json
 import random
 import re
@@ -11,6 +12,7 @@ WORKSPACE = Path(__file__).resolve().parent.parent
 CONFIG_PATH = WORKSPACE / "feishu-bitable-sync" / "config.json"
 OUTPUT_DIR = WORKSPACE / "ruc-suzhou-case-library" / "src" / "data" / "generated"
 OUTPUT_FILE = OUTPUT_DIR / "frontendData.js"
+LOCAL_SNAPSHOT_PATH = WORKSPACE / "feishu-bitable-sync" / "data" / "rebuilt-offers.json"
 
 ARTICLE_SEED = [
     {
@@ -73,10 +75,14 @@ DEFAULT_PAGE_CONFIG = {
     "articles.sectionDescription": "后续用于承接 i乐湖 公众号内的学员专访内容。",
 }
 
-SCHOOL_DISPLAY_MAP = {
-    "人大中法": "中法学院",
-    "中国人民大学财政金融学院": "财政金融学院",
-    "中央财经大学": "中央财经大学",
+COLLEGE_DISPLAY_MAP = {
+    "人大中法": "中法",
+    "中法学院": "中法",
+    "中国人民大学中法学院": "中法",
+    "中国人民大学（苏州校区）中法学院": "中法",
+    "中国人民大学财政金融学院": "财政金融",
+    "财政金融学院": "财政金融",
+    "中央财经大学": "中央财经",
 }
 
 STUDENT_CARD_TEMPLATES = [
@@ -162,6 +168,14 @@ def normalize_scalar(value):
     return str(value).strip()
 
 
+def first_non_empty(fields, *names):
+    for name in names:
+        value = normalize_scalar(fields.get(name))
+        if value:
+            return value
+    return None
+
+
 def normalize_bool(value):
     text = (normalize_scalar(value) or "").strip().lower()
     return text in {"1", "true", "yes", "y", "是", "开启", "open", "on"}
@@ -178,11 +192,69 @@ def hash_text(value):
     return sum(ord(ch) for ch in value)
 
 
-def build_student_card(student_name, row):
-    if not is_enabled(row.get("是否展示学生名片"), default=False):
+def normalize_region(value):
+    region = (normalize_scalar(value) or "").strip()
+    return {
+        "中国香港": "香港",
+        "中国澳门": "澳门",
+        "中国内地": "内地",
+    }.get(region, region or None)
+
+
+def normalize_college_label(value):
+    text = (normalize_scalar(value) or "").strip()
+    if not text:
         return None
-    custom_copy = normalize_scalar(row.get("学生名片简介"))
-    copy = custom_copy or STUDENT_CARD_TEMPLATES[hash_text(student_name) % len(STUDENT_CARD_TEMPLATES)]
+    if text in COLLEGE_DISPLAY_MAP:
+        return COLLEGE_DISPLAY_MAP[text]
+    if text.endswith("学院") and len(text) <= 8:
+        return text[:-2]
+    return text
+
+
+def parse_display_tags(value):
+    text = (normalize_scalar(value) or "").strip()
+    if not text:
+        return []
+    if "#" in text:
+        tags = [chunk.strip() for chunk in re.findall(r"#([^#]+)", text) if chunk.strip()]
+        if tags:
+            return tags
+    return [chunk.strip() for chunk in re.split(r"[／/\n]+", text) if chunk.strip()]
+
+
+def strip_trailing_offer(value):
+    text = (normalize_scalar(value) or "").strip()
+    if not text:
+        return None
+    return re.sub(r"\s*offer\s*$", "", text, flags=re.IGNORECASE).strip()
+
+
+def build_offer_title(offer_school, offer_program):
+    parts = [strip_trailing_offer(offer_school), strip_trailing_offer(offer_program)]
+    return " ".join(part for part in parts if part)
+
+
+def build_logo_text(value):
+    text = re.sub(r"\s+", "", normalize_scalar(value) or "")
+    return text[:2] or "录取"
+
+
+def build_student_card(row, anonymous_mode):
+    if anonymous_mode:
+        return None
+    if not is_enabled(first_non_empty(row, "是否展示学生名片"), default=False):
+        return None
+    student_seed = first_non_empty(
+        row,
+        "学生标识",
+        "学生（后台真名）",
+        "学生姓名（内部）",
+        "学生姓名",
+        "匿名展示名",
+    ) or "student"
+    custom_copy = first_non_empty(row, "学生名片简介")
+    copy = custom_copy or STUDENT_CARD_TEMPLATES[hash_text(student_seed) % len(STUDENT_CARD_TEMPLATES)]
     return {
         "copy": copy,
         "contactLabel": "咨询该同学",
@@ -201,7 +273,7 @@ def build_detail_sections(item):
     sections = [
         {"label": "录取学校", "value": item.get("offerSchool")},
         {"label": "录取专业", "value": item.get("offerProgram")},
-        {"label": "本科院校", "value": item.get("undergradSchoolLabel")},
+        {"label": "本科学院", "value": item.get("undergradCollegeLabel")},
         {"label": "本科专业", "value": item.get("undergradMajor")},
         {"label": "绩点或均分", "value": item.get("gpa")},
         {"label": "语言成绩与标化", "value": item.get("languageScoreText")},
@@ -222,52 +294,65 @@ def slugify(value):
 
 def build_case_item(record, index):
     fields = record.get("fields", {})
-    season = normalize_scalar(fields.get("申请季")) or "未标注"
-    student_name = normalize_scalar(fields.get("匿名展示名")) or normalize_scalar(fields.get("学生姓名")) or "匿名同学"
-    offer_school = normalize_scalar(fields.get("录取学校") or fields.get("录取院校")) or "未填写院校"
-    offer_program = normalize_scalar(fields.get("录取专业")) or "未填写专业"
-    undergrad_school = normalize_scalar(fields.get("本科院校") or fields.get("本科学校")) or "未知院校"
+    season = first_non_empty(fields, "申请季") or "未标注"
+    student_display_name = first_non_empty(fields, "学生姓名", "匿名展示名", "对外匿名名") or "匿名"
+    internal_student_name = first_non_empty(fields, "学生（后台真名）", "学生姓名（内部）", "学生姓名（后台真名）", "学生真实姓名")
+    anonymous_mode = student_display_name == "匿名"
+    offer_school = first_non_empty(fields, "录取学校", "录取院校") or "未填写院校"
+    offer_program = first_non_empty(fields, "录取专业") or "未填写专业"
+    undergrad_college = first_non_empty(fields, "本科学院", "本科院校", "本科学校") or "未知学院"
+    raw_region = first_non_empty(fields, "录取国家/地区", "录取地区", "国家（地区）")
+    display_tags = parse_display_tags(first_non_empty(fields, "标签", "展示标签"))
+    is_final_offer = is_enabled(first_non_empty(fields, "最终选择标记", "最终录取标记", "最终去向标记"), default=False)
+    if anonymous_mode:
+        is_final_offer = False
     item = {
         "id": normalize_scalar(fields.get("案例ID")) or f"{slugify(season)}-{index:03d}",
         "recordId": record.get("record_id"),
         "applicationSeason": season,
         "seasonKey": slugify(season),
         "sourceRow": index,
-        "studentNameMasked": student_name,
-        "undergradSchool": undergrad_school,
-        "undergradSchoolLabel": SCHOOL_DISPLAY_MAP.get(undergrad_school, undergrad_school),
+        "studentDisplayName": student_display_name,
+        "studentNameMasked": student_display_name,
+        "anonymousMode": anonymous_mode,
+        "internalStudentName": internal_student_name,
+        "studentKey": first_non_empty(fields, "学生标识") or internal_student_name or student_display_name,
+        "undergradCollege": undergrad_college,
+        "undergradCollegeLabel": normalize_college_label(undergrad_college) or undergrad_college,
         "undergradMajor": normalize_scalar(fields.get("本科专业")),
         "gpa": normalize_scalar(fields.get("GPA/均分")),
-        "ielts": normalize_scalar(fields.get("雅思")),
-        "toefl": normalize_scalar(fields.get("托福")),
-        "greGmat": normalize_scalar(fields.get("GRE/GMAT")),
+        "ielts": first_non_empty(fields, "雅思", "语言成绩"),
+        "toefl": first_non_empty(fields, "托福"),
+        "greGmat": first_non_empty(fields, "GRE/GMAT", "GMAT/GRE"),
         "offerSchool": offer_school,
         "offerProgram": offer_program,
-        "offerRegion": normalize_scalar(fields.get("录取国家/地区")) or "其他",
-        "description": normalize_scalar(fields.get("案例说明/项目说明")),
-        "internships": normalize_scalar(fields.get("实习经历")),
-        "research": normalize_scalar(fields.get("科研经历")),
-        "applicationRound": normalize_scalar(fields.get("申请轮次")),
-        "admissionAt": normalize_scalar(fields.get("录取时间")),
-        "notes": normalize_scalar(fields.get("备注")),
-        "finalDestination": normalize_scalar(fields.get("最终去向说明")),
+        "offerRegion": normalize_region(raw_region) or "其他",
+        "description": first_non_empty(fields, "案例说明/项目说明", "案例说明"),
+        "internships": first_non_empty(fields, "实习经历", "实习"),
+        "research": first_non_empty(fields, "科研经历", "科研"),
+        "applicationRound": first_non_empty(fields, "申请轮次"),
+        "admissionAt": first_non_empty(fields, "录取时间"),
+        "notes": first_non_empty(fields, "备注"),
+        "finalDestination": first_non_empty(fields, "最终去向说明", "最终去向"),
+        "isFinalOffer": is_final_offer,
         "sortOrder": int(normalize_scalar(fields.get("排序权重")) or 0),
         "isPinned": normalize_bool(fields.get("置顶标记")),
-        "displayTags": [tag.strip() for tag in (normalize_scalar(fields.get("标签")) or "").split("/") if tag.strip()],
-        "studentCard": build_student_card(student_name, fields),
+        "displayTags": display_tags,
+        "studentCard": build_student_card(fields, anonymous_mode),
     }
     item["scoreList"] = build_score_list(item)
     item["languageScoreText"] = build_language_score_text(item)
-    item["listTitle"] = f"{offer_school}{offer_program}offer"
-    item["logoText"] = offer_school[:2]
+    item["tags"] = [{"label": season, "type": "season"}, *({"label": tag, "type": "default"} for tag in display_tags)]
+    item["listTitle"] = build_offer_title(offer_school, offer_program)
+    item["logoText"] = build_logo_text(offer_school)
     item["detailSections"] = build_detail_sections(item)
     item["searchText"] = " ".join(
         str(value)
         for value in [
             item.get("applicationSeason"),
-            item.get("studentNameMasked"),
-            item.get("undergradSchool"),
-            item.get("undergradSchoolLabel"),
+            item.get("studentDisplayName"),
+            item.get("undergradCollege"),
+            item.get("undergradCollegeLabel"),
             item.get("undergradMajor"),
             item.get("gpa"),
             item.get("ielts"),
@@ -284,6 +369,25 @@ def build_case_item(record, index):
         if value
     )
     return item
+
+
+def apply_student_card_visibility(cases):
+    groups = {}
+    for item in cases:
+        key = item.get("studentKey") or item.get("internalStudentName") or item.get("studentDisplayName")
+        if not key:
+            continue
+        groups.setdefault(key, []).append(item)
+
+    for group in groups.values():
+        shared_card = next((item.get("studentCard") for item in group if item.get("studentCard")), None)
+        if not shared_card:
+            continue
+        for item in group:
+            if not item.get("anonymousMode"):
+                item["studentCard"] = shared_card
+
+    return cases
 
 
 def sort_cases(items):
@@ -309,30 +413,27 @@ def build_filter_groups(cases):
                 values.append(value)
         return ["全部", *values]
 
-    sections = []
-    school_order = []
-    seen_schools = set()
+    colleges = []
+    seen_colleges = set()
     for item in cases:
-        school = item.get("undergradSchool")
-        if school and school not in seen_schools:
-            seen_schools.add(school)
-            school_order.append(school)
-    for school in school_order:
-        majors = ["全部"]
+        college = item.get("undergradCollege")
+        if not college or college in seen_colleges:
+            continue
+        seen_colleges.add(college)
+        majors = []
         seen_majors = set()
-        for item in cases:
-            if item.get("undergradSchool") != school:
+        for current in cases:
+            if current.get("undergradCollege") != college:
                 continue
-            major = item.get("undergradMajor")
+            major = current.get("undergradMajor")
             if major and major not in seen_majors:
                 seen_majors.add(major)
                 majors.append(major)
-        sections.append(
+        colleges.append(
             {
-                "title": next((item.get("undergradSchoolLabel") for item in cases if item.get("undergradSchool") == school), school),
-                "schoolValue": school,
-                "field": "undergradMajor",
-                "options": majors,
+                "value": college,
+                "label": next((item.get("undergradCollegeLabel") for item in cases if item.get("undergradCollege") == college), college),
+                "majors": majors,
             }
         )
 
@@ -345,15 +446,16 @@ def build_filter_groups(cases):
         },
         {
             "id": "program",
-            "label": "院校专业",
-            "field": "undergradMajor",
-            "sections": sections,
+            "label": "学院专业",
+            "field": "undergradCollege",
+            "colleges": colleges,
         },
         {
             "id": "region",
             "label": "国家（地区）",
-            "field": "offerRegion",
-            "options": unique_values("offerRegion"),
+            "field": "offerRegions",
+            "multiple": True,
+            "options": [value for value in unique_values("offerRegion") if value != "全部"],
         },
     ]
 
@@ -384,18 +486,49 @@ def render_module(cases, filter_groups, page_config):
     return header + body
 
 
+def load_local_snapshot_records():
+    payload = json.loads(LOCAL_SNAPSHOT_PATH.read_text())
+    records = []
+    for season, rows in payload.items():
+        for index, row in enumerate(rows, start=1):
+            fields = dict(row)
+            fields.setdefault("申请季", season)
+            records.append(
+                {
+                    "record_id": f"local-{slugify(season)}-{index:03d}",
+                    "fields": fields,
+                }
+            )
+    return records
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--from-local-snapshot",
+        action="store_true",
+        help="Export from feishu-bitable-sync/data/rebuilt-offers.json instead of live Feishu data.",
+    )
+    return parser.parse_args()
+
+
 def main():
-    cfg = json.loads(CONFIG_PATH.read_text())
-    token = get_tenant_access_token(cfg["base_url"], cfg["app_id"], cfg["app_secret"])
-    tables = {item["name"]: item["table_id"] for item in list_tables(cfg["base_url"], token, cfg["app_token"])}
+    args = parse_args()
+    if args.from_local_snapshot:
+        offer_records = load_local_snapshot_records()
+        page_records = []
+    else:
+        cfg = json.loads(CONFIG_PATH.read_text())
+        token = get_tenant_access_token(cfg["base_url"], cfg["app_id"], cfg["app_secret"])
+        tables = {item["name"]: item["table_id"] for item in list_tables(cfg["base_url"], token, cfg["app_token"])}
 
-    offer_table_id = tables.get("offer表")
-    page_table_id = tables.get("页面配置表")
-    if not offer_table_id or not page_table_id:
-        raise SystemExit("缺少 offer表 或 页面配置表")
+        offer_table_id = tables.get("offer表")
+        page_table_id = tables.get("页面配置表")
+        if not offer_table_id or not page_table_id:
+            raise SystemExit("缺少 offer表 或 页面配置表")
 
-    offer_records = list_records(cfg["base_url"], token, cfg["app_token"], offer_table_id)
-    page_records = list_records(cfg["base_url"], token, cfg["app_token"], page_table_id)
+        offer_records = list_records(cfg["base_url"], token, cfg["app_token"], offer_table_id)
+        page_records = list_records(cfg["base_url"], token, cfg["app_token"], page_table_id)
 
     cases = []
     for index, record in enumerate(offer_records, start=1):
@@ -410,7 +543,7 @@ def main():
             continue
         cases.append(build_case_item(record, index))
 
-    cases = sort_cases(cases)
+    cases = apply_student_card_visibility(sort_cases(cases))
     filter_groups = build_filter_groups(cases)
     page_config = build_page_config(page_records)
 

@@ -9,6 +9,7 @@ import { state } from "./utils/state.js";
 
 const root = document.getElementById("app");
 let isComposing = false;
+const FLOATING_HIDE_DURATION = 180;
 
 function getFilteredCases() {
   return filterCases(cases, state);
@@ -48,6 +49,23 @@ function render() {
   bindEvents();
 }
 
+function updateFilterVisibility(nextFilterId) {
+  const currentFloating = root.querySelector(".floating-contact--home");
+  const isOpening = Boolean(nextFilterId) && !state.openFilterId;
+
+  if (isOpening && currentFloating) {
+    currentFloating.classList.add("is-hidden");
+    window.setTimeout(() => {
+      state.openFilterId = nextFilterId;
+      render();
+    }, FLOATING_HIDE_DURATION);
+    return;
+  }
+
+  state.openFilterId = nextFilterId;
+  render();
+}
+
 function bindListActionEvents() {
   root.querySelectorAll("[data-action='open-case']").forEach((button) => {
     button.addEventListener("click", () => {
@@ -85,8 +103,7 @@ function bindEvents() {
 
   root.querySelectorAll("[data-action='toggle-filter']").forEach((button) => {
     button.addEventListener("click", () => {
-      state.openFilterId = state.openFilterId === button.dataset.filterId ? null : button.dataset.filterId;
-      render();
+      updateFilterVisibility(state.openFilterId === button.dataset.filterId ? null : button.dataset.filterId);
     });
   });
 
@@ -97,18 +114,42 @@ function bindEvents() {
     });
   });
 
-  root.querySelectorAll("[data-action='set-school-major']").forEach((button) => {
+  root.querySelectorAll("[data-action='set-college']").forEach((button) => {
     button.addEventListener("click", () => {
-      state.filters.undergradSchool = button.dataset.school;
+      state.filters.undergradCollege = button.dataset.college;
+      state.filters.undergradMajor = "全部";
+      render();
+    });
+  });
+
+  root.querySelectorAll("[data-action='set-major']").forEach((button) => {
+    button.addEventListener("click", () => {
       state.filters.undergradMajor = button.dataset.major;
+      render();
+    });
+  });
+
+  root.querySelectorAll("[data-action='toggle-region']").forEach((button) => {
+    button.addEventListener("click", () => {
+      const region = button.dataset.region;
+      const exists = state.filters.offerRegions.includes(region);
+      state.filters.offerRegions = exists
+        ? state.filters.offerRegions.filter((item) => item !== region)
+        : [...state.filters.offerRegions, region];
+      render();
+    });
+  });
+
+  root.querySelectorAll("[data-action='clear-regions']").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.filters.offerRegions = [];
       render();
     });
   });
 
   root.querySelectorAll("[data-action='close-filter']").forEach((button) => {
     button.addEventListener("click", () => {
-      state.openFilterId = null;
-      render();
+      updateFilterVisibility(null);
     });
   });
 
@@ -116,9 +157,9 @@ function bindEvents() {
     button.addEventListener("click", () => {
       state.filters = {
         applicationSeason: "全部",
-        undergradSchool: "全部",
+        undergradCollege: "全部",
         undergradMajor: "全部",
-        offerRegion: "全部",
+        offerRegions: [],
       };
       render();
     });

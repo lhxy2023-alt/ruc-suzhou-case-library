@@ -6,8 +6,8 @@ export const state = {
   previewImage: null,
   filters: {
     applicationSeason: "全部",
-    undergradSchool: "全部",
+    undergradCollege: "全部",
     undergradMajor: "全部",
-    offerRegion: "全部",
+    offerRegions: [],
   },
 };

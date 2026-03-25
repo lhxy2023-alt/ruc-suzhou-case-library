@@ -6,17 +6,17 @@ export function filterCases(cases, state) {
     const matchesSeason =
       state.filters.applicationSeason === "全部" ||
       item.applicationSeason === state.filters.applicationSeason;
-    const matchesSchool =
-      state.filters.undergradSchool === "全部" ||
-      item.undergradSchool === state.filters.undergradSchool;
+    const matchesCollege =
+      state.filters.undergradCollege === "全部" ||
+      item.undergradCollege === state.filters.undergradCollege;
     const matchesMajor =
       state.filters.undergradMajor === "全部" ||
       item.undergradMajor === state.filters.undergradMajor;
     const matchesRegion =
-      state.filters.offerRegion === "全部" ||
-      item.offerRegion === state.filters.offerRegion;
+      !state.filters.offerRegions.length ||
+      state.filters.offerRegions.includes(item.offerRegion);
 
-    return matchesQuery && matchesSeason && matchesSchool && matchesMajor && matchesRegion;
+    return matchesQuery && matchesSeason && matchesCollege && matchesMajor && matchesRegion;
   });
 }
 

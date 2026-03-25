@@ -3,28 +3,66 @@ import { pageConfig } from "../data/index.js";
 function buildProgramFilterLabel(state, filterGroups) {
   const group = filterGroups.find((item) => item.id === "program");
 
-  if (state.filters.undergradSchool === "全部") {
-    return "全部";
+  if (state.filters.undergradCollege === "全部") {
+    return group?.label || "学院专业";
   }
 
-  const section = group?.sections?.find((item) => item.schoolValue === state.filters.undergradSchool);
-  if (!section) {
-    return "全部";
+  const college = group?.colleges?.find((item) => item.value === state.filters.undergradCollege);
+  if (!college) {
+    return group?.label || "学院专业";
   }
 
   if (state.filters.undergradMajor === "全部") {
-    return `${section.title}·全部`;
+    return college.label;
   }
 
-  return `${section.title}·${state.filters.undergradMajor}`;
+  return `${college.label}${state.filters.undergradMajor}`;
 }
 
 function buildBackgroundLine(item) {
-  return [item.undergradSchoolLabel, item.undergradMajor, item.gpa].filter(Boolean).join(" / ");
+  return [item.undergradCollegeLabel, item.undergradMajor, item.gpa].filter(Boolean).join(" / ");
 }
 
 function buildScoreLine(item) {
   return item.scoreList.join(" / ");
+}
+
+function buildRegionFilterLabel(state) {
+  if (!state.filters.offerRegions.length) {
+    return "国家（地区）";
+  }
+  if (state.filters.offerRegions.length === 1) {
+    return state.filters.offerRegions[0];
+  }
+  return "多地区";
+}
+
+function buildFilterChipLabel(group, state, filterGroups) {
+  if (group.id === "program") {
+    return buildProgramFilterLabel(state, filterGroups);
+  }
+  if (group.id === "region") {
+    return buildRegionFilterLabel(state);
+  }
+  return state.filters[group.field] === "全部" ? group.label : state.filters[group.field];
+}
+
+function renderTagList(tags = []) {
+  if (!tags.length) {
+    return "";
+  }
+
+  return `
+    <div class="tag-list">
+      ${tags
+        .map(
+          (tag) => `
+            <span class="pill ${tag.type === "season" ? "pill--season" : ""}">${tag.label}</span>
+          `,
+        )
+        .join("")}
+    </div>
+  `;
 }
 
 function renderCaseCard(item) {
@@ -33,12 +71,15 @@ function renderCaseCard(item) {
   return `
     <button class="case-card" data-action="open-case" data-case-id="${item.id}">
       <div class="case-card__top">
-        <span class="pill pill--season">${item.applicationSeason}</span>
+        <h3>${item.listTitle}</h3>
+        <div class="case-card__identity">
+          <strong>${item.studentDisplayName}</strong>
+          ${renderTagList(item.tags)}
+        </div>
       </div>
       <div class="case-card__body">
         <div class="school-badge" aria-hidden="true">${item.logoText}</div>
         <div class="case-card__content">
-          <h3>${item.listTitle}</h3>
           <div class="case-card__line">
             <span class="case-card__icon">学</span>
             <span>${buildBackgroundLine(item)}</span>
@@ -102,11 +143,6 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
     { id: "articles", label: "专访" },
   ];
 
-  const displayFilters = {
-    ...state.filters,
-    undergradProgram: buildProgramFilterLabel(state, filterGroups),
-  };
-
   return `
     <header class="hero hero--brand">
       <div class="hero-brand">
@@ -152,8 +188,7 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
                       data-action="toggle-filter"
                       data-filter-id="${group.id}"
                     >
-                      <span>${group.label}</span>
-                      <strong>${group.id === "program" ? displayFilters.undergradProgram : displayFilters[group.field]}</strong>
+                      <strong>${buildFilterChipLabel(group, state, filterGroups)}</strong>
                     </button>
                   `,
                 )
@@ -167,7 +202,7 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
         ${renderListContent({ cases, articles, state })}
       </div>
     </main>
-    <aside class="floating-contact floating-contact--home">
+    <aside class="floating-contact floating-contact--home ${state.openFilterId ? "is-hidden" : ""}">
       <div class="floating-contact__copy">
         <strong>${pageConfig["home.contactTitle"] || "联系我们"}</strong>
         <span>${pageConfig["home.contactDescription"] || "想了解案例匹配、申请规划或合作方式，可直接联系顾问。"}</span>

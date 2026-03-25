@@ -1,31 +1,35 @@
 import { pageConfig } from "../data/index.js";
 
-function buildIdentityMeta(item) {
-  return [item.applicationSeason].filter(Boolean);
+function renderTagList(tags = []) {
+  if (!tags.length) {
+    return "";
+  }
+
+  return `
+    <div class="tag-list">
+      ${tags
+        .map(
+          (tag) => `
+            <span class="pill ${tag.type === "season" ? "pill--season" : ""}">${tag.label}</span>
+          `,
+        )
+        .join("")}
+    </div>
+  `;
 }
 
 function renderIdentityValue(item) {
-  const meta = buildIdentityMeta(item);
-
   return `
     <div class="detail-identity">
-      <span class="detail-identity__name">${item.studentNameMasked}</span>
-      ${
-        meta.length
-          ? `
-            <div class="detail-identity__meta">
-              ${meta.map((value) => `<span>${value}</span>`).join("")}
-            </div>
-          `
-          : ""
-      }
+      <span class="detail-identity__name">${item.studentDisplayName}</span>
+      ${renderTagList(item.tags)}
     </div>
   `;
 }
 
 function renderInfoRows(item) {
   const rows = [
-    item.studentNameMasked
+    item.studentDisplayName
       ? { label: "学生姓名", value: renderIdentityValue(item) }
       : null,
     ...item.detailSections.map((section) => ({
@@ -97,7 +101,8 @@ export function renderDetailPage({ item }) {
 
       <section class="detail-section detail-card detail-sheet">
         <div class="section-title section-title--detail">
-          <h2>录取详情</h2>
+          <p>录取详情</p>
+          <h2>${item.listTitle}</h2>
         </div>
         <div class="detail-info-list">
           ${renderInfoRows(item)}

@@ -85,7 +85,6 @@
 }
 
 .top-tabs__item,
-.filter-chip,
 .ghost-btn,
 .option-chip {
   border: 1px solid rgba(159, 47, 47, 0.12);
@@ -110,25 +109,27 @@
 .filter-bar {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  gap: 8px;
   margin-top: 10px;
 }
 
 .filter-chip {
-  display: grid;
-  gap: 6px;
-  padding: 12px 13px;
-  text-align: left;
-}
-
-.filter-chip span {
-  color: var(--muted);
-  font-size: 12px;
+  min-width: 0;
+  padding: 10px 10px;
+  text-align: center;
+  border: 1px solid rgba(159, 47, 47, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #5d463f;
 }
 
 .filter-chip strong {
+  display: block;
+  overflow: hidden;
   font-size: 13px;
-  line-height: 1.3;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .filter-chip.is-active {
@@ -167,6 +168,14 @@
   margin-bottom: 0;
 }
 
+.section-title--detail p {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .section-count,
 .news-card__head span:last-child {
   font-size: 12px;
@@ -200,7 +209,14 @@
 }
 
 .case-card__top {
+  display: grid;
+  gap: 8px;
   margin-bottom: 10px;
+}
+
+.case-card__top h3 {
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 .pill,
@@ -238,6 +254,20 @@
   align-items: start;
 }
 
+.case-card__identity,
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.case-card__identity strong,
+.detail-identity__name {
+  font-size: 14px;
+  color: var(--brand-deep);
+}
+
 .school-badge {
   width: 56px;
   height: 56px;
@@ -254,12 +284,7 @@
 
 .case-card__content {
   display: grid;
-  gap: 8px;
-}
-
-.case-card__content h3 {
-  font-size: 18px;
-  line-height: 1.4;
+  gap: 10px;
 }
 
 .case-card__line {
@@ -351,22 +376,8 @@
 }
 
 .detail-identity {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
-
-.detail-identity__name {
-  color: var(--text);
-  font-weight: 600;
-}
-
-.detail-identity__meta {
-  display: inline-flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 8px;
-  color: var(--muted);
 }
 
 .detail-timeline {
@@ -497,6 +508,17 @@
   box-shadow: 0 10px 24px rgba(84, 28, 22, 0.12);
   backdrop-filter: blur(12px);
   z-index: 6;
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease,
+    visibility 180ms ease;
+}
+
+.floating-contact.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 24px);
+  pointer-events: none;
 }
 
 .floating-contact__copy {
