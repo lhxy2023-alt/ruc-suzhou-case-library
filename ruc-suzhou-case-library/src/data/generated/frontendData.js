@@ -7114,9 +7114,9 @@ export const pageConfig = {
   "contact.modalTitle": "选择一种方式联系我们",
   "contact.modalDescription": "可直接添加微信，或填写问卷星后等待我们联系。",
   "contact.wechatQrLabel": "添加顾问微信",
-  "contact.wechatQrImage": "http://127.0.0.1:8011/ruc-suzhou-case-library/public/contact-qrs/wechat-qr.jpg",
+  "contact.wechatQrImage": "http://127.0.0.1:8011/ruc-suzhou-case-library/public/contact-qrs/wechat-qr-v2.jpg",
   "contact.formQrLabel": "填写问卷星表单",
-  "contact.formQrImage": "http://127.0.0.1:8011/ruc-suzhou-case-library/public/contact-qrs/form-qr.jpg"
+  "contact.formQrImage": "http://127.0.0.1:8011/ruc-suzhou-case-library/public/contact-qrs/form-qr-v2.jpg"
 };
 
 export const articles = [];
