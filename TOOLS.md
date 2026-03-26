@@ -41,6 +41,45 @@ browser-use doctor
 
 ---
 
+## feishu-bitable-sync
+
+**Status:** ✅ Important shared tool
+
+**Location:**
+```bash
+feishu-bitable-sync/
+```
+
+**Role:**
+- Workspace-level shared tool for **agent writing to Feishu Bitable / syncing Feishu Base data**
+- Should be treated as a default capability support directory for all agents, including future agents created later
+
+**Use it for:**
+```bash
+- 写入飞书多维表格
+- 同步 Feishu Base 数据
+- 导出前台数据给案例库/前台项目
+- 重建案例表、offer 表或相关后台数据
+```
+
+**Boundary:**
+- It is a shared tool engineering directory, not a normal frontend business project
+- Do not casually delete, relocate, or refactor it during workspace cleanup
+- If future reorganization is needed, preserve cross-agent usability first
+
+**Known Files:**
+```bash
+feishu-bitable-sync/sync.py
+feishu-bitable-sync/export_frontend_data.py
+feishu-bitable-sync/rebuild_offer_tables.py
+feishu-bitable-sync/retry_rebuild_offer_tables.py
+feishu-bitable-sync/bootstrap_case_backend.py
+```
+
+**Config Notes:**
+- Sensitive config belongs in `feishu-bitable-sync/config.json` and should not be committed
+- Existing ignore rule already covers `feishu-bitable-sync/config.json`
+
 ## Writing Preferences
 
 [Document any preferences about writing style, voice, etc.]

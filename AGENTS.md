@@ -157,6 +157,15 @@ Whenever my human says "复盘", I must:
 
 ---
 
+## Shared Tooling Rules
+
+### feishu-bitable-sync is a workspace-level shared tool
+- `feishu-bitable-sync/` is not a disposable one-off script folder; it is a **shared tool engineering directory** for writing Feishu Bitable / syncing Feishu Base data.
+- Treat it as available to **all agents**, not just the current one.
+- In any new session, any existing or newly created AI employee may use `feishu-bitable-sync/` when the task involves writing Feishu 多维表格、同步 Base 数据、导出前台数据、重建案例表或 related backend data maintenance.
+- Do **not** casually move, rename, or break this directory during workspace cleanup.
+- If a future reorganization is needed, design it as a shared infrastructure migration, not as a project-local refactor.
+
 ## Learned Lessons
 
 > Add your lessons here as you learn them
