@@ -24,6 +24,10 @@
   padding: 18px 18px 28px;
 }
 
+.detail-page {
+  padding-top: 12px;
+}
+
 .page-body {
   padding: 0 18px calc(124px + env(safe-area-inset-bottom));
 }
@@ -34,6 +38,10 @@
 
 .detail-page {
   padding-bottom: calc(156px + env(safe-area-inset-bottom));
+}
+
+.detail-hero {
+  padding-bottom: 2px;
 }
 
 @media (min-width: 768px) {

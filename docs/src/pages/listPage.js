@@ -1,7 +1,5 @@
 import { pageConfig } from "../data/index.js";
 
-const BRAND_LOGO_PATH = "./public/brand-lehu-logo.svg";
-
 function hasActiveFilters(state) {
   return (
     state.filters.applicationSeason !== "不限" ||
@@ -56,27 +54,6 @@ function buildFilterChipLabel(group, state, filterGroups) {
     return buildRegionFilterLabel(state);
   }
   return state.filters[group.field] === "不限" ? group.label : state.filters[group.field];
-}
-
-function getArticleTimestamp(item) {
-  const timestamp = Date.parse(item.uploadTime || "");
-  return Number.isNaN(timestamp) ? Number.NEGATIVE_INFINITY : timestamp;
-}
-
-function compareArticles(left, right) {
-  return (
-    (right.weight || 0) - (left.weight || 0) ||
-    getArticleTimestamp(right) - getArticleTimestamp(left) ||
-    (left.id || "").localeCompare(right.id || "")
-  );
-}
-
-function selectFeaturedArticle(articles) {
-  const hotArticles = articles.filter((item) => item.isHot).sort(compareArticles);
-  if (hotArticles.length) {
-    return hotArticles[0];
-  }
-  return [...articles].sort(compareArticles)[0] || null;
 }
 
 function renderTagList(tags = []) {
@@ -137,6 +114,25 @@ function renderLineIcon(type) {
   `;
 }
 
+function renderBrandLogo() {
+  return `
+    <span class="hero-brand__logo" aria-label="i乐湖">
+      <img src="./public/brand-lehu-logo.svg" alt="i乐湖" loading="lazy" />
+    </span>
+  `;
+}
+
+function renderSearchIcon() {
+  return `
+    <span class="search-box__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="6.5"></circle>
+        <path d="M16 16l4.5 4.5"></path>
+      </svg>
+    </span>
+  `;
+}
+
 function renderCaseCard(item) {
   const scoreLine = buildScoreLine(item);
 
@@ -187,21 +183,23 @@ function renderArticleCard(item) {
 }
 
 function renderFeaturedArticle(item) {
-  const backgroundVisual = item.backgroundImageUrl
-    ? `
-        <div class="interview-featured__image-wrap" aria-hidden="true">
-          <img class="interview-featured__image" src="${item.backgroundImageUrl}" alt="" loading="lazy" />
-        </div>
-      `
-    : `
-        <div class="interview-featured__image-wrap interview-featured__image-wrap--logo" aria-hidden="true">
-          <img class="interview-featured__logo-mark" src="${BRAND_LOGO_PATH}" alt="" loading="lazy" />
-        </div>
-      `;
+  const hasBackground = Boolean(item.backgroundImageUrl);
 
   return `
     <a class="interview-featured" href="${item.url}" target="_blank" rel="noreferrer">
-      ${backgroundVisual}
+      ${
+        hasBackground
+          ? `
+            <div class="interview-featured__image-wrap" aria-hidden="true">
+              <img class="interview-featured__image" src="${item.backgroundImageUrl}" alt="" loading="lazy" />
+            </div>
+          `
+          : `
+            <div class="interview-featured__logo-fallback" aria-hidden="true">
+              <img src="./public/brand-lehu-logo.svg" alt="" loading="lazy" />
+            </div>
+          `
+      }
       <div class="interview-featured__visual">
         <div class="interview-featured__copy">
           <h2>${item.subject}</h2>
@@ -213,7 +211,7 @@ function renderFeaturedArticle(item) {
 }
 
 function renderArticlesContent(articles) {
-  const featuredArticle = selectFeaturedArticle(articles);
+  const featuredArticle = articles.find((item) => item.isFeatured) || articles[0];
   const otherArticles = articles.filter((item) => item.id !== featuredArticle?.id);
 
   return `
@@ -243,7 +241,7 @@ function renderArticlesContent(articles) {
     ${
       !featuredArticle
         ? `<div class="empty-card">专访内容导出后会显示在这里。</div>`
-      : ""
+        : ""
     }
   `;
 }
@@ -270,19 +268,14 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
   return `
     <header class="hero hero--brand">
       <div class="hero-brand">
-        <img class="hero-brand__logo" src="${BRAND_LOGO_PATH}" alt="i乐湖品牌标识" />
+        ${renderBrandLogo()}
         <h1>${pageConfig["home.heroTitle"] || "i乐湖案例库"}</h1>
       </div>
       ${
         state.activeTab === "cases"
           ? `
             <label class="search-box">
-              <span class="search-box__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="11" cy="11" r="6.5" />
-                  <path d="m16 16 4.5 4.5" />
-                </svg>
-              </span>
+              ${renderSearchIcon()}
               <input
                 id="searchInput"
                 type="search"
