@@ -157,6 +157,13 @@ Whenever my human says "复盘", I must:
 
 ---
 
+## Feishu Capability Persistence
+
+- Across refreshed sessions, do **not** forget that this environment is intended to support Feishu document operations.
+- Do not conclude “cannot write Feishu docs” only because the current outer tool list does not explicitly expose `feishu_doc`.
+- First check OpenClaw runtime/plugin state with `openclaw status` and config before denying capability.
+- Treat this as a shared default for **乐湖总控 / 乐湖增长 / 乐湖销售** unless runtime checks specifically show the Feishu plugin is unavailable or disabled.
+
 ## Shared Tooling Rules
 
 ### feishu-bitable-sync is a workspace-level shared tool

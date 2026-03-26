@@ -41,6 +41,21 @@ browser-use doctor
 
 ---
 
+## Feishu plugin tools
+
+**Status:** ✅ Working
+
+**Important runtime rule:**
+- Do **not** assume Feishu document capability is unavailable just because the current outer session tool list does not explicitly show `feishu_doc`.
+- In this environment, Feishu doc/drive/perm/wiki/bitable abilities may be available through the OpenClaw gateway runtime/plugin layer even when they are not surfaced as first-class outer-harness tools.
+- Before telling the user that Feishu doc writing is unavailable, first verify runtime/plugin state with `openclaw status` and config checks (especially `channels.feishu.tools.doc`).
+- This rule applies across refreshed sessions and across agents, including **乐湖总控 / 乐湖增长 / 乐湖销售**.
+
+**Current expected capability:**
+- `channels.feishu.tools.doc = true`
+- Feishu plugin should register `feishu_doc`, `feishu_drive`, `feishu_perm`, `feishu_wiki`, and related tools at runtime.
+- Default behavior expectation: when the user asks to create/write a Feishu doc, treat it as a supported capability unless runtime checks prove otherwise.
+
 ## feishu-bitable-sync
 
 **Status:** ✅ Important shared tool

@@ -50,3 +50,30 @@ When memory_search is flaky or unavailable, first verify whether the issue is pr
 - Last-Seen: 2026-03-26
 
 ---
+
+## [LRN-20260326-001] correction
+
+**Logged**: 2026-03-26T06:10:00Z
+**Priority**: high
+**Status**: pending
+**Area**: config
+
+### Summary
+Do not claim Feishu doc writing is unavailable just because no first-class feishu_doc tool appears in the session tool list.
+
+### Details
+The user corrected that Feishu doc writing had worked repeatedly in prior sessions. Investigation showed the Feishu plugin is loaded, `channels.feishu.tools.doc=true`, and `openclaw status` reports `feishu_doc: Registered feishu_doc, feishu_app_scopes`. The real issue is that plugin-backed skills/tools may be available through the gateway runtime even when they are not exposed as a first-class developer tool in the current outer harness listing. I incorrectly concluded the capability was unavailable instead of checking gateway/plugin state first.
+
+### Suggested Action
+When Feishu doc actions are expected to exist, first verify plugin/runtime status with `openclaw status` and config checks before telling the user the capability is unavailable. Treat missing first-class tool exposure and missing runtime capability as different problems. Persist a rule that new sessions for main/growth/sales should assume Feishu doc capability is intended to be present and must be verified at config/runtime level before denying.
+
+### Metadata
+- Source: user_feedback
+- Related Files: /Users/taofangzheng/.openclaw/openclaw.json
+- Tags: feishu, docx, tool-exposure, runtime-capability
+- Pattern-Key: feishu.doc.exposure-vs-runtime
+- Recurrence-Count: 1
+- First-Seen: 2026-03-26
+- Last-Seen: 2026-03-26
+
+---
