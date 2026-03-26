@@ -269,3 +269,25 @@ For Feishu docs and Feishu bitable/base in this workspace:
 ---
 
 *Make this your own. Add conventions, rules, and patterns as you figure out what works.*
+
+## Cross-workspace shared policy source
+- The highest-level shared policy file is: `~/.openclaw/ALL_AGENTS_SHARED.md`
+- If a rule should apply to **all agents**, it should be written there first (or updated there first), then mirrored here as needed.
+- Current platform reality: there is no verified built-in guarantee yet that every independent workspace session auto-reads that shared file directly on startup.
+- Therefore, this workspace's `AGENTS.md` / `TOOLS.md` remain the reliable per-session enforcement layer.
+
+## Feishu strict template source
+- Exact request templates for Feishu Doc / Bitable live at: `~/.openclaw/ALL_AGENTS_FEISHU_API_TEMPLATES.md`
+- For Feishu OpenAPI work, agents should copy the verified request shapes from that file instead of re-inventing parameters.
+- If another agent reports parameter errors after "using the verified method", compare its actual request against that template file field-by-field.
+
+## Shared Feishu execution layer
+- Use the shared script: `~/.openclaw/workspace/scripts/feishu_openapi_write.py`
+- This script is the preferred execution layer for Feishu doc / bitable OpenAPI writes.
+- Do not re-invent the full request flow unless the script is missing or needs extension.
+- For docs:
+  - `python3 ~/.openclaw/workspace/scripts/feishu_openapi_write.py doc --account-id <default|growth|sales> --title "..." --markdown-file <path>`
+- For bitables:
+  - `python3 ~/.openclaw/workspace/scripts/feishu_openapi_write.py bitable --account-id <default|growth|sales> --name "..."`
+- This execution layer is intended to reduce failures across refreshed sessions and across agents.
+
