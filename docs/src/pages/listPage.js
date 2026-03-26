@@ -147,28 +147,99 @@ function renderCaseCard(item) {
 }
 
 function renderArticleCard(item) {
+  const tagMarkup = renderTagList((item.tags || []).map((label) => ({ label })));
+  const readHint = item.readHint || "阅读全文";
+  const coverToneClass = item.coverTone ? ` interview-card__cover--${item.coverTone}` : "";
+
   return `
-    <article class="news-card">
-      <div class="news-card__head">
-        <span class="pill">${item.category}</span>
-        <span>${item.readTime}</span>
+    <a class="interview-card" href="${item.url}" target="_blank" rel="noreferrer">
+      <div class="interview-card__cover${coverToneClass}" aria-hidden="true">
+        <span>${item.coverLabel || item.category || "乐湖专访"}</span>
       </div>
-      <h3>${item.title}</h3>
-      <p>${item.summary}</p>
-      <div class="news-card__foot">${item.publishDate}</div>
-    </article>
+      <div class="interview-card__body">
+        <div class="interview-card__meta">
+          <span class="pill">${item.category}</span>
+          <span>${item.readTime}</span>
+        </div>
+        <h3>${item.title}</h3>
+        <p>${item.summary}</p>
+        ${tagMarkup}
+        <div class="interview-card__foot">
+          <span>${item.publishDate}</span>
+          <span>${readHint}</span>
+        </div>
+      </div>
+    </a>
+  `;
+}
+
+function renderFeaturedArticle(item) {
+  const tagMarkup = renderTagList((item.tags || []).map((label) => ({ label })));
+  const readHint = item.readHint || "阅读全文";
+  const coverToneClass = item.coverTone ? ` interview-featured__visual--${item.coverTone}` : "";
+
+  return `
+    <a class="interview-featured" href="${item.url}" target="_blank" rel="noreferrer">
+      <div class="interview-featured__visual${coverToneClass}" aria-hidden="true">
+        <span class="interview-featured__eyebrow">${item.featuredLabel || "精选专访"}</span>
+        <strong>${item.coverLabel || item.category || "学员故事"}</strong>
+      </div>
+      <div class="interview-featured__content">
+        <div class="interview-featured__meta">
+          <span class="pill pill--accent">${item.category}</span>
+          <span>${item.readTime}</span>
+        </div>
+        <h3>${item.title}</h3>
+        <p>${item.summary}</p>
+        ${tagMarkup}
+        <div class="interview-featured__foot">
+          <span>${item.publishDate}</span>
+          <span>${readHint}</span>
+        </div>
+      </div>
+    </a>
+  `;
+}
+
+function renderArticlesContent(articles) {
+  const [featuredArticle, ...otherArticles] = articles;
+
+  return `
+    <section class="interview-hero">
+      <span class="interview-hero__eyebrow">${pageConfig["articles.heroEyebrow"] || "i乐湖 · 学员专访"}</span>
+      <h2>${pageConfig["articles.heroTitle"] || pageConfig["articles.sectionTitle"] || "乐湖专访"}</h2>
+      <p>${pageConfig["articles.heroDescription"] || pageConfig["articles.sectionDescription"] || "在真实申请经历里，看见路径选择、准备节奏与结果背后的判断。"}</p>
+    </section>
+    ${
+      featuredArticle
+        ? `
+          <section class="interview-section">
+            ${renderFeaturedArticle(featuredArticle)}
+          </section>
+        `
+        : ""
+    }
+    ${
+      otherArticles.length
+        ? `
+          <section class="interview-section">
+            <div class="interview-section__head">
+              <h3>更多专访</h3>
+              <p>真实学员故事，适合按兴趣继续阅读。</p>
+            </div>
+            <div class="interview-list">
+              ${otherArticles.map(renderArticleCard).join("")}
+            </div>
+          </section>
+        `
+        : ""
+    }
   `;
 }
 
 export function renderListContent({ cases, articles, state }) {
   if (state.activeTab === "articles") {
-    return `
-      <section class="section-header section-header--empty">
-        <div>
-          <h2>${pageConfig["articles.sectionTitle"] || "乐湖专访"}</h2>
-        </div>
-      </section>
-    `;
+    return renderArticlesContent(articles);
   }
 
   return `
@@ -191,17 +262,23 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
         <p class="hero-brand__eyebrow">${pageConfig["home.heroEyebrow"] || "i乐湖"}</p>
         <h1>${pageConfig["home.heroTitle"] || "i乐湖案例库"}</h1>
       </div>
-      <label class="search-box">
-        <span class="search-box__icon">搜</span>
-        <input
-          id="searchInput"
-          type="search"
-          value="${state.query}"
-          placeholder="${pageConfig["home.searchPlaceholder"] || "搜索学校、专业、成绩、国家（地区）"}"
-          autocomplete="off"
-          spellcheck="false"
-        />
-      </label>
+      ${
+        state.activeTab === "cases"
+          ? `
+            <label class="search-box">
+              <span class="search-box__icon">搜</span>
+              <input
+                id="searchInput"
+                type="search"
+                value="${state.query}"
+                placeholder="${pageConfig["home.searchPlaceholder"] || "搜索学校、专业、成绩、国家（地区）"}"
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </label>
+          `
+          : ""
+      }
       <nav class="top-tabs" aria-label="顶部导航">
         ${tabs
           .map(
