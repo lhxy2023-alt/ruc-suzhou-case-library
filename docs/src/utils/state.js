@@ -3,6 +3,7 @@ export const state = {
   query: "",
   searchFocused: false,
   selectedCaseId: null,
+  listScrollTop: 0,
   openFilterId: null,
   filterPanelStyle: null,
   previewImage: null,

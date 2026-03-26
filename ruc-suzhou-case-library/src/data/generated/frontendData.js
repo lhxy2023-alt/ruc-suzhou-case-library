@@ -8925,4 +8925,115 @@ export const pageConfig = {
   "contact.formQrImage": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/contact-qrs/form-qr-v2.jpg"
 };
 
-export const articles = [];
+export const articles = [
+  {
+    "id": "article-5",
+    "subject": "21级金融X学长",
+    "summary": "绩点2.5压哨上港大，2个月斩获7offer",
+    "backgroundImageUrl": null,
+    "url": "https://mp.weixin.qq.com/s/5AazPbVSkK_3ejR0rKTCog",
+    "weight": 90,
+    "uploadTime": "2025-05-27",
+    "tagCodes": [
+      "hot"
+    ],
+    "isHot": true,
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "article-6",
+    "subject": "21级金融Z学姐",
+    "summary": "转换赛道，拿遍亚洲最好金工项目",
+    "backgroundImageUrl": null,
+    "url": "https://mp.weixin.qq.com/s/kBRhFUMSCUetrsVg3KtTAQ",
+    "weight": 70,
+    "uploadTime": "2025-05-22",
+    "tagCodes": [
+      "hot"
+    ],
+    "isHot": true,
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "article-7",
+    "subject": "21级金融C学长",
+    "summary": "放弃剑桥选择IC，只为RMFE量化梦",
+    "backgroundImageUrl": null,
+    "url": "https://mp.weixin.qq.com/s/6od4s-g_Q2xYhhZTCRirvg",
+    "weight": 70,
+    "uploadTime": "2025-05-01",
+    "tagCodes": [
+      "hot"
+    ],
+    "isHot": true,
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "article-3",
+    "subject": "21级金融S学长",
+    "summary": "不卷不焦虑，绩点2.7也能上港大",
+    "backgroundImageUrl": null,
+    "url": "https://mp.weixin.qq.com/s/E05exCoe6Y5p7zCzJkNEUw",
+    "weight": 80,
+    "uploadTime": "2025-06-01",
+    "tagCodes": [],
+    "isHot": false,
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "article-8",
+    "subject": "21级金融H学姐",
+    "summary": "文科生走向美国的金工项目",
+    "backgroundImageUrl": null,
+    "url": "https://mp.weixin.qq.com/s/LNr2Uy4PRAIDFnw61Y8pKg",
+    "weight": 69,
+    "uploadTime": "2025-04-14",
+    "tagCodes": [],
+    "isHot": false,
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "article-1",
+    "subject": "20级数学X学长",
+    "summary": "放弃跟项目，自主申请索邦的背后缘由",
+    "backgroundImageUrl": null,
+    "url": "https://mp.weixin.qq.com/s/382g7JFdpbSs-zDrZcJiqA",
+    "weight": 60,
+    "uploadTime": "2025-07-10",
+    "tagCodes": [],
+    "isHot": false,
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "article-2",
+    "subject": "21级数学Z学长",
+    "summary": "GPA2.9轻松拿下港三新二多offer",
+    "backgroundImageUrl": null,
+    "url": "https://mp.weixin.qq.com/s/8GS2dnHrkAIvAW1I71GlRQ",
+    "weight": 60,
+    "uploadTime": "2025-06-15",
+    "tagCodes": [],
+    "isHot": false,
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "article-4",
+    "subject": "21级人管C学长",
+    "summary": "人管转商科，3.1拿下港中大MKT提前批",
+    "backgroundImageUrl": null,
+    "url": "https://mp.weixin.qq.com/s/V386GV1JeyUDNt5A7tOQzQ",
+    "weight": 60,
+    "uploadTime": "2025-05-29",
+    "tagCodes": [],
+    "isHot": false,
+    "isNew": false,
+    "isFeatured": false
+  }
+];

@@ -97,10 +97,12 @@ function updateFilterVisibility(nextFilterId, anchorRect = null) {
 function bindListActionEvents() {
   root.querySelectorAll("[data-action='open-case']").forEach((button) => {
     button.addEventListener("click", () => {
+      state.listScrollTop = window.scrollY;
       state.searchFocused = false;
       state.selectedCaseId = button.dataset.caseId;
       state.openFilterId = null;
       render();
+      window.scrollTo({ top: 0, behavior: "auto" });
     });
   });
 }
@@ -216,6 +218,9 @@ function bindEvents() {
       state.selectedCaseId = null;
       state.searchFocused = false;
       render();
+      window.requestAnimationFrame(() => {
+        window.scrollTo({ top: state.listScrollTop || 0, behavior: "auto" });
+      });
     });
   });
 

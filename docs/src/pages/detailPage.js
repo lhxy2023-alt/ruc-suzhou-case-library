@@ -89,7 +89,11 @@ export function renderDetailPage({ item }) {
   return `
     <main class="detail-page">
       <header class="detail-hero">
-        <button class="ghost-btn" data-action="back-to-list">返回</button>
+        <button class="detail-back-btn" type="button" data-action="back-to-list" aria-label="返回案例列表">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 18 9 12l6-6" />
+          </svg>
+        </button>
       </header>
 
       <section class="detail-section detail-card detail-sheet">
