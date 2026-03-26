@@ -164,6 +164,46 @@ Whenever my human says "复盘", I must:
 - First check OpenClaw runtime/plugin state with `openclaw status` and config before denying capability.
 - Treat this as a shared default for **乐湖总控 / 乐湖增长 / 乐湖销售** unless runtime checks specifically show the Feishu plugin is unavailable or disabled.
 
+### Feishu Doc writing fallback path (shared default)
+
+When a user asks to create/write a Feishu document, follow this order:
+
+1. **Preferred path:** if the runtime/tool surface exposes `feishu_doc`, use it directly.
+2. **Do not stop at tool-surface absence:** if `feishu_doc` is not exposed in the current outer tool list, check runtime/plugin state first (`openclaw status`, config, plugin registration).
+3. **If runtime is healthy but current session still lacks direct `feishu_doc`: use the proven fallback path**:
+   - generate the document body in the agent session
+   - then write the document via **Feishu OpenAPI / Docx API directly** from a workspace script
+   - if needed, add user permission via **Drive permissions API**
+4. Treat this fallback as the default recovery path for **乐湖总控 / 乐湖增长 / 乐湖销售**, not as an exceptional one-off.
+
+### Known-good Feishu Docx API pattern
+
+The currently verified working pattern in this workspace is:
+
+- read `appId` / `appSecret` from `~/.openclaw/openclaw.json`
+- obtain `tenant_access_token` via:
+  - `POST /open-apis/auth/v3/tenant_access_token/internal`
+- create/write doc via Docx API:
+  - `POST /open-apis/docx/v1/documents`
+  - `GET /open-apis/docx/v1/documents/{doc_token}/blocks/{doc_token}/children`
+  - `DELETE /open-apis/docx/v1/documents/{doc_token}/blocks/{doc_token}/children/batch_delete`
+  - `POST /open-apis/docx/v1/documents/blocks/convert` with `content_type=markdown`
+  - `POST /open-apis/docx/v1/documents/{doc_token}/blocks/{doc_token}/descendant`
+- add陶方正管理权限（full_access）via:
+  - `POST /open-apis/drive/v1/permissions/{doc_token}/members?type=docx`
+  - body:
+    - `type: user`
+    - `member_type: openid`
+    - `member_id: ou_0df2af8a7fece7c45f0ff62122efa38f`
+    - `perm: full_access`
+    - `need_notification: false`
+
+### Important rule
+
+If a future session cannot directly call `feishu_doc`, **do not tell the user the environment cannot write Feishu docs** until both of these have failed:
+- direct tool path
+- Docx API fallback path
+
 ## Shared Tooling Rules
 
 ### feishu-bitable-sync is a workspace-level shared tool

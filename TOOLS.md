@@ -56,6 +56,54 @@ browser-use doctor
 - Feishu plugin should register `feishu_doc`, `feishu_drive`, `feishu_perm`, `feishu_wiki`, and related tools at runtime.
 - Default behavior expectation: when the user asks to create/write a Feishu doc, treat it as a supported capability unless runtime checks prove otherwise.
 
+## Feishu Docx API fallback (workspace-standard)
+
+**Status:** ✅ Verified working in this workspace
+
+When `feishu_doc` is not directly exposed in the current session tool surface, do **not** stop there if runtime/plugin checks are healthy. Use the workspace-standard fallback:
+
+1. Generate the document body in the agent session
+2. Use a workspace script to call **Feishu OpenAPI / Docx API** directly
+3. If needed, add user permission via **Drive permissions API**
+
+**Verified working sequence:**
+```bash
+POST /open-apis/auth/v3/tenant_access_token/internal
+POST /open-apis/docx/v1/documents
+GET  /open-apis/docx/v1/documents/{doc_token}/blocks/{doc_token}/children
+DELETE /open-apis/docx/v1/documents/{doc_token}/blocks/{doc_token}/children/batch_delete
+POST /open-apis/docx/v1/documents/blocks/convert   # content_type=markdown
+POST /open-apis/docx/v1/documents/{doc_token}/blocks/{doc_token}/descendant
+POST /open-apis/drive/v1/permissions/{doc_token}/members?type=docx
+```
+
+**Credential source:**
+```bash
+~/.openclaw/openclaw.json
+channels.feishu.accounts.default.appId
+channels.feishu.accounts.default.appSecret
+```
+
+**Known-good permission payload for 陶方正 full_access:**
+```json
+{
+  "type": "user",
+  "member_type": "openid",
+  "member_id": "ou_0df2af8a7fece7c45f0ff62122efa38f",
+  "perm": "full_access",
+  "need_notification": false
+}
+```
+
+**Known-good permission endpoint:**
+```bash
+POST /open-apis/drive/v1/permissions/{doc_token}/members?type=docx
+```
+
+**Important distinction:**
+- "Current session does not expose `feishu_doc`" ≠ "This environment cannot write Feishu docs"
+- In this workspace, the **Docx API fallback path is a first-class recovery path** and should be used by **乐湖总控 / 乐湖增长 / 乐湖销售** when direct tool exposure is missing.
+
 ## feishu-bitable-sync
 
 **Status:** ✅ Important shared tool
