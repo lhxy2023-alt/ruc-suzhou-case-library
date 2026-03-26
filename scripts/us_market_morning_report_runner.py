@@ -143,7 +143,20 @@ def write_doc(markdown: str):
 
 
 def notify(text: str):
-    print(f'NOTIFY_SKIPPED: {text}')
+    try:
+        token = get_tenant_access_token()
+        feishu_request(
+            'POST',
+            f'https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type=open_id',
+            token=token,
+            json_body={
+                'receive_id': FEISHU_TO,
+                'msg_type': 'text',
+                'content': json.dumps({'text': text}, ensure_ascii=False),
+            },
+        )
+    except Exception as e:
+        print(f'NOTIFY_FAILED: {e}')
 
 
 def build_report_via_agent() -> str:
