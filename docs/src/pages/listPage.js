@@ -159,10 +159,20 @@ function renderCaseCard(item) {
 
 function renderArticleCard(item) {
   const badgeLabel = item.isHot ? "HOT" : item.isNew ? "NEW" : "";
+  const hasBackground = Boolean(item.backgroundImageUrl);
 
   return `
-    <a class="interview-card" href="${item.url}" target="_blank" rel="noreferrer">
-      <div class="interview-card__body">
+    <a class="interview-card ${hasBackground ? "interview-card--with-image" : ""}" href="${item.url}" target="_blank" rel="noreferrer">
+      ${
+        hasBackground
+          ? `
+            <div class="interview-card__image-wrap" aria-hidden="true">
+              <img class="interview-card__image" src="${item.backgroundImageUrl}" alt="" loading="lazy" />
+            </div>
+          `
+          : ""
+      }
+      <div class="interview-card__body ${hasBackground ? "interview-card__body--with-image" : ""}">
         <div class="interview-card__head">
           <span class="interview-card__date">${item.uploadTime || ""}</span>
           ${badgeLabel ? `<span class="interview-card__badge interview-card__badge--${badgeLabel.toLowerCase()}">${badgeLabel}</span>` : ""}
