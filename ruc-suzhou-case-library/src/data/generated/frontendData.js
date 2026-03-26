@@ -8930,7 +8930,7 @@ export const articles = [
     "id": "article-5",
     "subject": "21级金融X学长",
     "summary": "绩点2.5压哨上港大，2个月斩获7offer",
-    "backgroundImageUrl": null,
+    "backgroundImageUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/brand/lehu-logo.jpg",
     "url": "https://mp.weixin.qq.com/s/5AazPbVSkK_3ejR0rKTCog",
     "weight": 90,
     "uploadTime": "2025-05-27",
