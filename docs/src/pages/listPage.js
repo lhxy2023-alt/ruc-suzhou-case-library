@@ -114,14 +114,6 @@ function renderLineIcon(type) {
   `;
 }
 
-function renderBrandLogo() {
-  return `
-    <span class="hero-brand__logo" aria-label="i乐湖">
-      <img src="./public/brand-lehu-logo.svg" alt="i乐湖" loading="lazy" />
-    </span>
-  `;
-}
-
 function renderSearchIcon() {
   return `
     <span class="search-box__icon" aria-hidden="true">
@@ -268,7 +260,6 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
   return `
     <header class="hero hero--brand">
       <div class="hero-brand">
-        ${renderBrandLogo()}
         <h1>${pageConfig["home.heroTitle"] || "i乐湖案例库"}</h1>
       </div>
       ${

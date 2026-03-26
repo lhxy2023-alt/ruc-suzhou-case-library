@@ -13,6 +13,23 @@ let isComposing = false;
 const FLOATING_HIDE_DURATION = 180;
 const FILTER_PANEL_WIDTH = 336;
 
+function restoreListPosition() {
+  const targetCaseId = state.lastOpenedCaseId;
+
+  window.requestAnimationFrame(() => {
+    const targetButton = targetCaseId
+      ? root.querySelector(`[data-action='open-case'][data-case-id='${targetCaseId}']`)
+      : null;
+
+    if (targetButton) {
+      targetButton.scrollIntoView({ block: "center", behavior: "auto" });
+      return;
+    }
+
+    window.scrollTo({ top: state.listScrollTop || 0, behavior: "auto" });
+  });
+}
+
 function resetFilters() {
   state.filters = {
     applicationSeason: "不限",
@@ -98,6 +115,7 @@ function bindListActionEvents() {
   root.querySelectorAll("[data-action='open-case']").forEach((button) => {
     button.addEventListener("click", () => {
       state.listScrollTop = window.scrollY;
+      state.lastOpenedCaseId = button.dataset.caseId;
       state.searchFocused = false;
       state.selectedCaseId = button.dataset.caseId;
       state.openFilterId = null;
@@ -218,9 +236,7 @@ function bindEvents() {
       state.selectedCaseId = null;
       state.searchFocused = false;
       render();
-      window.requestAnimationFrame(() => {
-        window.scrollTo({ top: state.listScrollTop || 0, behavior: "auto" });
-      });
+      restoreListPosition();
     });
   });
 

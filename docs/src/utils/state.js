@@ -4,6 +4,7 @@ export const state = {
   searchFocused: false,
   selectedCaseId: null,
   listScrollTop: 0,
+  lastOpenedCaseId: null,
   openFilterId: null,
   filterPanelStyle: null,
   previewImage: null,

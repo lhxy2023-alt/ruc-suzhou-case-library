@@ -9001,7 +9001,7 @@ export const articles = [
     "id": "article-1",
     "subject": "20级数学X学长",
     "summary": "放弃跟项目，自主申请索邦的背后缘由",
-    "backgroundImageUrl": null,
+    "backgroundImageUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/brand/lehu-logo.jpg",
     "url": "https://mp.weixin.qq.com/s/382g7JFdpbSs-zDrZcJiqA",
     "weight": 60,
     "uploadTime": "2025-07-10",
