@@ -216,6 +216,33 @@ The currently verified working pattern in this workspace is:
     - `perm: full_access`
     - `need_notification: false`
 
+### Known-good Feishu Bitable editing pattern for existing user-provided bases
+
+This workspace has also verified that agents can edit an **existing Feishu base provided by the user**, not only create a new one.
+
+Verified actions:
+- parse `app_token` from a user-provided base URL like:
+  - `https://...feishu.cn/base/{app_token}`
+- create a new child table inside the existing base via:
+  - `POST /open-apis/bitable/v1/apps/{app_token}/tables`
+- add fields to that table via:
+  - `POST /open-apis/bitable/v1/apps/{app_token}/tables/{table_id}/fields`
+  - use top-level payload keys such as:
+    - `field_name`
+    - `type`
+    - optional `property`
+- insert records via:
+  - `POST /open-apis/bitable/v1/apps/{app_token}/tables/{table_id}/records/batch_create`
+
+Verified successful test case:
+- existing base: `RaubbCK5NagOFzsG7qXcKgt2nyc`
+- created child table: `API测试子表格`
+- created fields:
+  - `测试文本` (type=1)
+  - `测试数字` (type=2)
+  - `测试单选` (type=3, with options)
+- inserted test rows successfully
+
 ### Important rule
 
 For Feishu docs and Feishu bitable/base in this workspace:

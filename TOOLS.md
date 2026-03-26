@@ -86,6 +86,48 @@ POST /open-apis/bitable/v1/apps
 POST /open-apis/drive/v1/permissions/{app_token}/members?type=bitable
 ```
 
+### Feishu Bitable verified editing sequence for an existing user-provided base
+```bash
+# 1) parse app_token from the user-provided Feishu base URL
+POST /open-apis/auth/v3/tenant_access_token/internal
+POST /open-apis/bitable/v1/apps/{app_token}/tables
+POST /open-apis/bitable/v1/apps/{app_token}/tables/{table_id}/fields
+POST /open-apis/bitable/v1/apps/{app_token}/tables/{table_id}/records/batch_create
+```
+
+**Verified payload details:**
+```json
+{
+  "field_name": "测试文本",
+  "type": 1
+}
+```
+
+```json
+{
+  "field_name": "测试数字",
+  "type": 2
+}
+```
+
+```json
+{
+  "field_name": "测试单选",
+  "type": 3,
+  "property": {
+    "options": [
+      {"name": "正常"},
+      {"name": "待确认"}
+    ]
+  }
+}
+```
+
+**Verified existing-base success example:**
+- base app_token: `RaubbCK5NagOFzsG7qXcKgt2nyc`
+- child table created: `API测试子表格`
+- records inserted successfully
+
 **Credential source:**
 ```bash
 ~/.openclaw/openclaw.json
