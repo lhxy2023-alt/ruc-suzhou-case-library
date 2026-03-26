@@ -1,1 +1,25 @@
+# Existing ignore rules
 feishu-bitable-sync/config.json
+
+# macOS junk
+.DS_Store
+
+# Local secrets / credentials
+.credentials/
+skills/.env
+
+# Temporary work dirs
+.tmp/
+tmp/
+
+# Temporary images / debug artifacts
+tmp-*.png
+tmp_ocr_test.jpg
+
+# Debug scratch files accidentally created at workspace root
+:3is_debug
+:echo
+
+# Codex / ACP scratch verification files
+.acp_codex_write_test.txt
+.codex_write_test_*.txt
