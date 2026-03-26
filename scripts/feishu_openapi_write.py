@@ -114,6 +114,41 @@ def create_bitable(account_id: str, name: str, owner_open_id: str) -> dict[str, 
     }
 
 
+def edit_existing_bitable(account_id: str, app_token: str, table_name: str, owner_open_id: str) -> dict[str, Any]:
+    token = get_token(account_id)
+    create_table = api('POST', f'/bitable/v1/apps/{app_token}/tables', token, body={
+        'table': {'name': table_name}
+    })
+    table_id = create_table['data']['table_id']
+    field_defs = [
+        {'field_name': '测试文本', 'type': 1},
+        {'field_name': '测试数字', 'type': 2},
+        {'field_name': '测试单选', 'type': 3, 'property': {'options': [{'name': '正常'}, {'name': '待确认'}]}},
+    ]
+    created_fields = []
+    for field in field_defs:
+        resp = api('POST', f'/bitable/v1/apps/{app_token}/tables/{table_id}/fields', token, body=field)
+        created_fields.append(resp.get('data', {}))
+    api('POST', f'/bitable/v1/apps/{app_token}/tables/{table_id}/records/batch_create', token, body={
+        'records': [
+            {'fields': {'测试文本': '第一行测试', '测试数字': 1, '测试单选': '正常'}},
+            {'fields': {'测试文本': '第二行测试', '测试数字': 2, '测试单选': '待确认'}},
+        ]
+    })
+    try:
+        grant_bitable_permission(app_token, token, owner_open_id)
+    except Exception:
+        pass
+    return {
+        'kind': 'bitable-edit-existing',
+        'accountId': account_id,
+        'app_token': app_token,
+        'table_id': table_id,
+        'url': f'https://jcnrrmayyxzf.feishu.cn/base/{app_token}?table={table_id}',
+        'table_name': table_name,
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description='Shared Feishu OpenAPI writer for docs and bitables')
     sub = parser.add_subparsers(dest='cmd', required=True)
@@ -130,6 +165,12 @@ def main() -> None:
     p_bitable.add_argument('--name', required=True)
     p_bitable.add_argument('--owner-open-id', default=DEFAULT_OWNER_OPEN_ID)
 
+    p_existing = sub.add_parser('bitable-existing')
+    p_existing.add_argument('--account-id', required=True)
+    p_existing.add_argument('--app-token', required=True)
+    p_existing.add_argument('--table-name', required=True)
+    p_existing.add_argument('--owner-open-id', default=DEFAULT_OWNER_OPEN_ID)
+
     args = parser.parse_args()
 
     if args.cmd == 'doc':
@@ -141,6 +182,8 @@ def main() -> None:
         result = write_doc(args.account_id, args.title, markdown, args.owner_open_id)
     elif args.cmd == 'bitable':
         result = create_bitable(args.account_id, args.name, args.owner_open_id)
+    elif args.cmd == 'bitable-existing':
+        result = edit_existing_bitable(args.account_id, args.app_token, args.table_name, args.owner_open_id)
     else:
         raise SystemExit(f'Unknown command: {args.cmd}')
 

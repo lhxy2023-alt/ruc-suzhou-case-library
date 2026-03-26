@@ -289,5 +289,12 @@ For Feishu docs and Feishu bitable/base in this workspace:
   - `python3 ~/.openclaw/workspace/scripts/feishu_openapi_write.py doc --account-id <default|growth|sales> --title "..." --markdown-file <path>`
 - For bitables:
   - `python3 ~/.openclaw/workspace/scripts/feishu_openapi_write.py bitable --account-id <default|growth|sales> --name "..."`
+
+- For editing an existing base:
+  - `python3 ~/.openclaw/workspace/scripts/feishu_openapi_write.py bitable-existing --account-id <default|growth|sales> --app-token <app_token> --table-name "..."`
+- The current shared script can now:
+  - create docs
+  - create new bitables
+  - edit existing user-provided bitables by creating a child table, adding test fields, and inserting test rows
 - This execution layer is intended to reduce failures across refreshed sessions and across agents.
 
