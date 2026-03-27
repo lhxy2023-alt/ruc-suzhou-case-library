@@ -8928,7 +8928,7 @@ export const pageConfig = {
 export const articles = [
   {
     "id": "article-10",
-    "subject": "咨询分享：最后的机会！",
+    "subject": "资讯分享：最后的机会！",
     "summary": "港新26Fall末班车&27Spring新通道",
     "backgroundImageUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/brand/lehu-logo.jpg",
     "url": "https://mp.weixin.qq.com/s/qLVPbVw_GhgQbbMMD4DM8A",
