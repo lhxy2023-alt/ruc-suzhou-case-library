@@ -1,5 +1,26 @@
 import { pageConfig } from "../data/index.js";
 
+function getArticleTimestamp(item) {
+  const timestamp = Date.parse(item.uploadTime || "");
+  return Number.isNaN(timestamp) ? Number.NEGATIVE_INFINITY : timestamp;
+}
+
+function sortArticlesForDisplay(items) {
+  return [...items].sort((left, right) => {
+    const hotRank = Number(Boolean(right.isHot)) - Number(Boolean(left.isHot));
+    if (hotRank !== 0) {
+      return hotRank;
+    }
+
+    const timestampRank = getArticleTimestamp(right) - getArticleTimestamp(left);
+    if (timestampRank !== 0) {
+      return timestampRank;
+    }
+
+    return (left.id || "").localeCompare(right.id || "");
+  });
+}
+
 function hasActiveFilters(state) {
   return (
     state.filters.applicationSeason !== "不限" ||
@@ -213,8 +234,9 @@ function renderFeaturedArticle(item) {
 }
 
 function renderArticlesContent(articles) {
-  const featuredArticle = articles.find((item) => item.isFeatured) || articles[0];
-  const otherArticles = articles.filter((item) => item.id !== featuredArticle?.id);
+  const sortedArticles = sortArticlesForDisplay(articles);
+  const featuredArticle = sortedArticles.find((item) => item.isFeatured) || sortedArticles[0];
+  const otherArticles = sortedArticles.filter((item) => item.id !== featuredArticle?.id);
 
   return `
     ${
