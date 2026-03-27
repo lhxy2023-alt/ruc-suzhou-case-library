@@ -8927,19 +8927,34 @@ export const pageConfig = {
 
 export const articles = [
   {
+    "id": "article-10",
+    "subject": "咨询分享：最后的机会！",
+    "summary": "港新26Fall末班车&27Spring新通道",
+    "backgroundImageUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/brand/lehu-logo.jpg",
+    "url": "https://mp.weixin.qq.com/s/qLVPbVw_GhgQbbMMD4DM8A",
+    "weight": 100,
+    "uploadTime": "2026-03-27",
+    "tagCodes": [
+      "hot"
+    ],
+    "isHot": true,
+    "isNew": true,
+    "isFeatured": true
+  },
+  {
     "id": "article-5",
     "subject": "21级金融X学长",
     "summary": "绩点2.5压哨上港大，2个月斩获7offer",
-    "backgroundImageUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/brand/lehu-logo.jpg",
+    "backgroundImageUrl": null,
     "url": "https://mp.weixin.qq.com/s/5AazPbVSkK_3ejR0rKTCog",
-    "weight": 90,
+    "weight": 80,
     "uploadTime": "2025-05-27",
     "tagCodes": [
       "hot"
     ],
     "isHot": true,
     "isNew": false,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": "article-6",
@@ -8981,7 +8996,7 @@ export const articles = [
     "uploadTime": "2025-06-01",
     "tagCodes": [],
     "isHot": false,
-    "isNew": true,
+    "isNew": false,
     "isFeatured": false
   },
   {
