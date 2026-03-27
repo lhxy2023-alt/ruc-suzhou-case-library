@@ -573,7 +573,8 @@
   display: flex;
   align-items: center;
   min-height: 36px;
-  padding: 7px 0 2px;
+  min-height: 40px;
+  padding: 11px 0 4px;
 }
 
 .detail-back-btn {
@@ -586,8 +587,8 @@
 }
 
 .detail-back-btn svg {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 }
 
 .detail-sheet {
@@ -706,6 +707,21 @@
   padding: 10px 14px;
 }
 
+.modal-icon-btn {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-deep);
+  flex: none;
+}
+
+.modal-icon-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
 .primary-btn {
   padding: 12px 16px;
   border-radius: 999px;
@@ -789,6 +805,13 @@
 
 .modal__body {
   margin-top: 14px;
+}
+
+.modal__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .contact-modal__description {
