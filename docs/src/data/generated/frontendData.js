@@ -354,7 +354,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.1",
     "ielts": null,
-    "toefl": "托福98",
+    "toefl": null,
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "中国发展研究",
@@ -379,10 +379,8 @@ export const cases = [
       "copy": "Q同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [
-      "托福98"
-    ],
-    "languageScoreText": "托福98",
+    "scoreList": [],
+    "languageScoreText": null,
     "tags": [
       {
         "label": "26fall",
@@ -421,15 +419,11 @@ export const cases = [
         "value": "3.1"
       },
       {
-        "label": "托福",
-        "value": "托福98"
-      },
-      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall Q同学 中法 中法 金融 3.1 托福98 香港大学 中国发展研究 香港 低分高录 乐湖案例"
+    "searchText": "26fall Q同学 中法 中法 金融 3.1 香港大学 中国发展研究 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-086",
@@ -447,7 +441,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.1",
     "ielts": null,
-    "toefl": "托福98",
+    "toefl": null,
     "greGmat": null,
     "offerSchool": "香港中文大学（深圳校区）",
     "offerProgram": "可持续发展",
@@ -472,10 +466,8 @@ export const cases = [
       "copy": "Q同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [
-      "托福98"
-    ],
-    "languageScoreText": "托福98",
+    "scoreList": [],
+    "languageScoreText": null,
     "tags": [
       {
         "label": "26fall",
@@ -514,15 +506,11 @@ export const cases = [
         "value": "3.1"
       },
       {
-        "label": "托福",
-        "value": "托福98"
-      },
-      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall Q同学 中法 中法 金融 3.1 托福98 香港中文大学（深圳校区） 可持续发展 香港 低分高录 乐湖案例"
+    "searchText": "26fall Q同学 中法 中法 金融 3.1 香港中文大学（深圳校区） 可持续发展 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-087",
@@ -540,7 +528,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.1",
     "ielts": null,
-    "toefl": "托福98",
+    "toefl": null,
     "greGmat": null,
     "offerSchool": "香港中文大学（深圳校区）",
     "offerProgram": "公共政策",
@@ -565,10 +553,8 @@ export const cases = [
       "copy": "Q同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [
-      "托福98"
-    ],
-    "languageScoreText": "托福98",
+    "scoreList": [],
+    "languageScoreText": null,
     "tags": [
       {
         "label": "26fall",
@@ -607,10 +593,6 @@ export const cases = [
         "value": "3.1"
       },
       {
-        "label": "托福",
-        "value": "托福98"
-      },
-      {
         "label": "实习经历",
         "value": "2段"
       },
@@ -619,7 +601,7 @@ export const cases = [
         "value": "带奖*80000RMB"
       }
     ],
-    "searchText": "26fall Q同学 中法 中法 金融 3.1 托福98 香港中文大学（深圳校区） 公共政策 香港 带奖*80000RMB 低分高录 乐湖案例"
+    "searchText": "26fall Q同学 中法 中法 金融 3.1 香港中文大学（深圳校区） 公共政策 香港 带奖*80000RMB 低分高录 乐湖案例"
   },
   {
     "id": "26fall-088",
@@ -637,7 +619,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.1",
     "ielts": null,
-    "toefl": "托福98",
+    "toefl": null,
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "中国与全球治理",
@@ -662,10 +644,8 @@ export const cases = [
       "copy": "Q同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [
-      "托福98"
-    ],
-    "languageScoreText": "托福98",
+    "scoreList": [],
+    "languageScoreText": null,
     "tags": [
       {
         "label": "26fall",
@@ -704,15 +684,11 @@ export const cases = [
         "value": "3.1"
       },
       {
-        "label": "托福",
-        "value": "托福98"
-      },
-      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall Q同学 中法 中法 金融 3.1 托福98 南洋理工大学 中国与全球治理 新加坡 低分高录 乐湖案例"
+    "searchText": "26fall Q同学 中法 中法 金融 3.1 南洋理工大学 中国与全球治理 新加坡 低分高录 乐湖案例"
   },
   {
     "id": "26fall-095",
@@ -817,7 +793,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.1",
     "ielts": null,
-    "toefl": "托福98",
+    "toefl": null,
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "政府与政治（大中华地区）",
@@ -842,10 +818,8 @@ export const cases = [
       "copy": "Q同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [
-      "托福98"
-    ],
-    "languageScoreText": "托福98",
+    "scoreList": [],
+    "languageScoreText": null,
     "tags": [
       {
         "label": "26fall",
@@ -884,15 +858,11 @@ export const cases = [
         "value": "3.1"
       },
       {
-        "label": "托福",
-        "value": "托福98"
-      },
-      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall Q同学 中法 中法 金融 3.1 托福98 香港中文大学 政府与政治（大中华地区） 香港 低分高录 乐湖案例"
+    "searchText": "26fall Q同学 中法 中法 金融 3.1 香港中文大学 政府与政治（大中华地区） 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-107",
@@ -2473,7 +2443,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.7",
     "ielts": null,
-    "toefl": "托福105",
+    "toefl": null,
     "greGmat": "GRE 330",
     "offerSchool": "杜克大学",
     "offerProgram": "金融科技",
@@ -2499,10 +2469,9 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
-      "托福105",
       "GRE 330"
     ],
-    "languageScoreText": "托福105 / GRE 330",
+    "languageScoreText": "GRE 330",
     "tags": [
       {
         "label": "25fall",
@@ -2541,10 +2510,6 @@ export const cases = [
         "value": "3.7"
       },
       {
-        "label": "托福",
-        "value": "托福105"
-      },
-      {
         "label": "GRE/GMAT",
         "value": "GRE 330"
       },
@@ -2561,7 +2526,7 @@ export const cases = [
         "value": "带5000USD奖学金"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE 330 杜克大学 金融科技 美国 带5000USD奖学金 商科转量化 乐湖案例"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 GRE 330 杜克大学 金融科技 美国 带5000USD奖学金 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-048",
@@ -2579,7 +2544,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.7",
     "ielts": null,
-    "toefl": "托福105",
+    "toefl": null,
     "greGmat": "GRE 330",
     "offerSchool": "纽约大学",
     "offerProgram": "金融工程",
@@ -2605,10 +2570,9 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
-      "托福105",
       "GRE 330"
     ],
-    "languageScoreText": "托福105 / GRE 330",
+    "languageScoreText": "GRE 330",
     "tags": [
       {
         "label": "25fall",
@@ -2647,10 +2611,6 @@ export const cases = [
         "value": "3.7"
       },
       {
-        "label": "托福",
-        "value": "托福105"
-      },
-      {
         "label": "GRE/GMAT",
         "value": "GRE 330"
       },
@@ -2667,7 +2627,7 @@ export const cases = [
         "value": "带3000USD奖学金"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE 330 纽约大学 金融工程 美国 带3000USD奖学金 商科转量化 乐湖案例"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 GRE 330 纽约大学 金融工程 美国 带3000USD奖学金 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-049",
@@ -2685,7 +2645,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.7",
     "ielts": null,
-    "toefl": "托福105",
+    "toefl": null,
     "greGmat": "GRE 330",
     "offerSchool": "康奈尔大学",
     "offerProgram": "运筹与信息工程",
@@ -2711,10 +2671,9 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
-      "托福105",
       "GRE 330"
     ],
-    "languageScoreText": "托福105 / GRE 330",
+    "languageScoreText": "GRE 330",
     "tags": [
       {
         "label": "25fall",
@@ -2753,10 +2712,6 @@ export const cases = [
         "value": "3.7"
       },
       {
-        "label": "托福",
-        "value": "托福105"
-      },
-      {
         "label": "GRE/GMAT",
         "value": "GRE 330"
       },
@@ -2773,7 +2728,7 @@ export const cases = [
         "value": "数据科学分支"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE 330 康奈尔大学 运筹与信息工程 美国 数据科学分支 商科转量化 乐湖案例"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 GRE 330 康奈尔大学 运筹与信息工程 美国 数据科学分支 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-050",
@@ -2791,7 +2746,7 @@ export const cases = [
     "undergradMajor": "金融",
     "gpa": "3.7",
     "ielts": null,
-    "toefl": "托福105",
+    "toefl": null,
     "greGmat": "GRE 330",
     "offerSchool": "哥伦比亚大学",
     "offerProgram": "统计",
@@ -2817,10 +2772,9 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
-      "托福105",
       "GRE 330"
     ],
-    "languageScoreText": "托福105 / GRE 330",
+    "languageScoreText": "GRE 330",
     "tags": [
       {
         "label": "25fall",
@@ -2859,10 +2813,6 @@ export const cases = [
         "value": "3.7"
       },
       {
-        "label": "托福",
-        "value": "托福105"
-      },
-      {
         "label": "GRE/GMAT",
         "value": "GRE 330"
       },
@@ -2875,7 +2825,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE 330 哥伦比亚大学 统计 美国 商科转量化 乐湖案例"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 GRE 330 哥伦比亚大学 统计 美国 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-035",
@@ -5437,6 +5387,88 @@ export const cases = [
       }
     ],
     "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 香港大学 全球管理 香港 乐湖案例"
+  },
+  {
+    "id": "25fall-108",
+    "recordId": "recvfeRgmm2PAL",
+    "applicationSeason": "25fall",
+    "seasonKey": "25fall",
+    "sourceRow": 108,
+    "studentDisplayName": "H同学",
+    "studentNameMasked": "H同学",
+    "anonymousMode": false,
+    "internalStudentName": "侯全益",
+    "studentKey": "侯全益",
+    "undergradCollege": "商院",
+    "undergradCollegeLabel": "商院",
+    "undergradMajor": "会计",
+    "gpa": "3.6",
+    "ielts": null,
+    "toefl": null,
+    "greGmat": null,
+    "offerSchool": "香港中文大学（深圳校区）",
+    "offerProgram": "金融工程",
+    "schoolLogoUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/school-logos/cuhk-icon-v2-fixed.jpg",
+    "offerRegion": "香港",
+    "description": null,
+    "internships": "1段",
+    "research": null,
+    "applicationRound": null,
+    "applicationAt": null,
+    "admissionAt": null,
+    "notes": null,
+    "finalDestination": null,
+    "isFinalOffer": false,
+    "sortOrder": 50,
+    "isPinned": false,
+    "displayTags": [
+      "乐湖案例"
+    ],
+    "studentCard": {
+      "copy": "H同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
+      "contactLabel": "与我咨询"
+    },
+    "scoreList": [],
+    "languageScoreText": null,
+    "tags": [
+      {
+        "label": "25fall",
+        "type": "season"
+      },
+      {
+        "label": "乐湖案例",
+        "type": "default"
+      }
+    ],
+    "listTitle": "香港中文大学（深圳校区） 金融工程",
+    "logoText": "香港",
+    "detailSections": [
+      {
+        "label": "录取学校",
+        "value": "香港中文大学（深圳校区）"
+      },
+      {
+        "label": "录取专业",
+        "value": "金融工程"
+      },
+      {
+        "label": "本科学院",
+        "value": "商院"
+      },
+      {
+        "label": "本科专业",
+        "value": "会计"
+      },
+      {
+        "label": "GPA/均分",
+        "value": "3.6"
+      },
+      {
+        "label": "实习经历",
+        "value": "1段"
+      }
+    ],
+    "searchText": "25fall H同学 商院 商院 会计 3.6 香港中文大学（深圳校区） 金融工程 香港 乐湖案例"
   },
   {
     "id": "26fall-074",
@@ -8873,6 +8905,13 @@ export const filterGroups = [
           "国管",
           "数学",
           "人管"
+        ]
+      },
+      {
+        "value": "商院",
+        "label": "商院",
+        "majors": [
+          "会计"
         ]
       },
       {
