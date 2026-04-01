@@ -1,26 +1,5 @@
 import { pageConfig } from "../data/index.js";
 
-function getArticleTimestamp(item) {
-  const timestamp = Date.parse(item.uploadTime || "");
-  return Number.isNaN(timestamp) ? Number.NEGATIVE_INFINITY : timestamp;
-}
-
-function sortArticlesForDisplay(items) {
-  return [...items].sort((left, right) => {
-    const hotRank = Number(Boolean(right.isHot)) - Number(Boolean(left.isHot));
-    if (hotRank !== 0) {
-      return hotRank;
-    }
-
-    const timestampRank = getArticleTimestamp(right) - getArticleTimestamp(left);
-    if (timestampRank !== 0) {
-      return timestampRank;
-    }
-
-    return (left.id || "").localeCompare(right.id || "");
-  });
-}
-
 function hasActiveFilters(state) {
   return (
     state.filters.applicationSeason !== "不限" ||
@@ -34,12 +13,12 @@ function buildProgramFilterLabel(state, filterGroups) {
   const group = filterGroups.find((item) => item.id === "program");
 
   if (state.filters.undergradCollege === "不限") {
-    return group?.label || "学院专业";
+    return group?.label || "";
   }
 
   const college = group?.colleges?.find((item) => item.value === state.filters.undergradCollege);
   if (!college) {
-    return group?.label || "学院专业";
+    return group?.label || "";
   }
 
   if (state.filters.undergradMajor === "不限") {
@@ -96,15 +75,11 @@ function renderTagList(tags = []) {
 }
 
 function renderSchoolBadge(item) {
-  if (item.schoolLogoUrl) {
-    return `
-      <div class="school-badge school-badge--image" aria-hidden="true">
-        <img src="${item.schoolLogoUrl}" alt="${item.offerSchool} 校徽" loading="lazy" />
-      </div>
-    `;
-  }
-
-  return `<div class="school-badge" aria-hidden="true">${item.logoText}</div>`;
+  return `
+    <div class="school-badge school-badge--image" aria-hidden="true">
+      ${item.schoolLogoUrl ? `<img src="${item.schoolLogoUrl}" alt="${item.offerSchool} 校徽" loading="lazy" />` : ""}
+    </div>
+  `;
 }
 
 function renderLineIcon(type) {
@@ -217,11 +192,7 @@ function renderFeaturedArticle(item) {
               <img class="interview-featured__image" src="${item.backgroundImageUrl}" alt="" loading="lazy" />
             </div>
           `
-          : `
-            <div class="interview-featured__logo-fallback" aria-hidden="true">
-              <img src="./public/brand-lehu-logo.svg" alt="" loading="lazy" />
-            </div>
-          `
+          : ""
       }
       <div class="interview-featured__visual">
         <div class="interview-featured__copy">
@@ -234,9 +205,8 @@ function renderFeaturedArticle(item) {
 }
 
 function renderArticlesContent(articles) {
-  const sortedArticles = sortArticlesForDisplay(articles);
-  const featuredArticle = sortedArticles.find((item) => item.isFeatured) || sortedArticles[0];
-  const otherArticles = sortedArticles.filter((item) => item.id !== featuredArticle?.id);
+  const featuredArticle = articles.find((item) => item.isFeatured) || articles[0];
+  const otherArticles = articles.filter((item) => item.id !== featuredArticle?.id);
 
   return `
     ${
@@ -253,7 +223,7 @@ function renderArticlesContent(articles) {
         ? `
           <section class="interview-section">
             <div class="interview-section__head">
-              <h3>${pageConfig["articles.sectionTitle"] || "更多专访"}</h3>
+              <h3>${pageConfig["articles.sectionTitle"] || ""}</h3>
             </div>
             <div class="interview-list">
               ${otherArticles.map(renderArticleCard).join("")}
@@ -264,7 +234,7 @@ function renderArticlesContent(articles) {
     }
     ${
       !featuredArticle
-        ? `<div class="empty-card">专访内容导出后会显示在这里。</div>`
+        ? `<div class="empty-card"></div>`
         : ""
     }
   `;
@@ -292,7 +262,7 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
   return `
     <header class="hero hero--brand">
       <div class="hero-brand">
-        <h1>${pageConfig["home.heroTitle"] || "i乐湖案例库"}</h1>
+        <h1>${pageConfig["home.heroTitle"] || ""}</h1>
       </div>
       ${
         state.activeTab === "cases"
@@ -303,7 +273,7 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
                 id="searchInput"
                 type="search"
                 value="${state.query}"
-                placeholder="${pageConfig["home.searchPlaceholder"] || "搜索学校、专业、成绩、国家（地区）"}"
+                placeholder="${pageConfig["home.searchPlaceholder"] || ""}"
                 autocomplete="off"
                 spellcheck="false"
               />
@@ -362,10 +332,10 @@ export function renderListPage({ cases, articles, state, filterGroups }) {
     </main>
     <aside class="floating-contact floating-contact--home ${state.openFilterId || state.searchFocused ? "is-hidden" : ""}">
       <div class="floating-contact__copy">
-        <strong>${pageConfig["home.contactTitle"] || "联系我们"}</strong>
-        <span>${pageConfig["home.contactDescription"] || "想了解案例匹配、申请规划或合作方式，可直接联系顾问。"}</span>
+        <strong>${pageConfig["home.contactTitle"] || ""}</strong>
+        <span>${pageConfig["home.contactDescription"] || ""}</span>
       </div>
-      <button class="primary-btn" type="button" data-action="open-contact-modal">${pageConfig["home.contactButtonText"] || "立即联系"}</button>
+      <button class="primary-btn" type="button" data-action="open-contact-modal">${pageConfig["home.contactButtonText"] || ""}</button>
     </aside>
   `;
 }

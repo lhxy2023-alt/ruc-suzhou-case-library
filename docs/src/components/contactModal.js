@@ -16,16 +16,20 @@ export function renderContactModal(isOpen) {
     return "";
   }
 
-  const wechatLabel = pageConfig["contact.wechatQrLabel"] || "微信二维码";
+  const wechatLabel = pageConfig["contact.wechatQrLabel"] || "";
   const wechatImage = pageConfig["contact.wechatQrImage"] || "";
-  const wenjuanxingLabel = pageConfig["contact.formQrLabel"] || pageConfig["contact.wenjuanxingQrLabel"] || "问卷星二维码";
-  const wenjuanxingImage = pageConfig["contact.formQrImage"] || pageConfig["contact.wenjuanxingQrImage"] || "";
+  const wenjuanxingLabel = pageConfig["contact.formQrLabel"] || "";
+  const wenjuanxingImage = pageConfig["contact.formQrImage"] || "";
+  const qrCards = [
+    wechatImage ? renderQrCard(wechatLabel, wechatImage) : "",
+    wenjuanxingImage ? renderQrCard(wenjuanxingLabel, wenjuanxingImage) : "",
+  ].filter(Boolean).join("");
 
   return `
     <div class="modal-backdrop" data-action="close-contact-modal"></div>
     <section class="modal contact-modal">
       <div class="modal__head">
-        <h3>${pageConfig["contact.modalTitle"] || "联系顾问"}</h3>
+        <h3>${pageConfig["contact.modalTitle"] || ""}</h3>
         <button class="modal-icon-btn" data-action="close-contact-modal" aria-label="关闭弹窗">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M18 6 6 18" />
@@ -34,10 +38,9 @@ export function renderContactModal(isOpen) {
         </button>
       </div>
       <div class="modal__body">
-        <p class="contact-modal__description">${pageConfig["contact.modalDescription"] || "可扫码添加微信，或填写问卷星表单。"}</p>
+        <p class="contact-modal__description">${pageConfig["contact.modalDescription"] || ""}</p>
         <div class="contact-modal__grid">
-          ${renderQrCard(wechatLabel, wechatImage)}
-          ${renderQrCard(wenjuanxingLabel, wenjuanxingImage)}
+          ${qrCards}
         </div>
       </div>
     </section>

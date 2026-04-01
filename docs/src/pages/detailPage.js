@@ -1,12 +1,9 @@
 import { pageConfig } from "../data/index.js";
 
 function getDetailContactButtonText(hasCard) {
-  if (hasCard) {
-    return pageConfig["detail.contactButtonTextWithCard"] || "立即咨询";
-  }
-
-  const text = pageConfig["detail.contactButtonTextWithoutCard"] || "立即咨询";
-  return text === "咨询入口待接入" ? "立即咨询" : text;
+  return hasCard
+    ? pageConfig["detail.contactButtonTextWithCard"] || ""
+    : pageConfig["detail.contactButtonTextWithoutCard"] || "";
 }
 
 function renderInlineTags(tags = []) {
@@ -59,7 +56,7 @@ function renderStudentCard(card) {
   return `
     <section class="detail-section detail-card student-card">
       <div class="student-card__top">
-        <button class="primary-btn" type="button" data-action="open-contact-modal">${card.contactLabel || "与我咨询"}</button>
+        <button class="primary-btn" type="button" data-action="open-contact-modal">${card.contactLabel || ""}</button>
       </div>
       <div class="student-card__copy">
         <p>${card.copy}</p>
@@ -73,11 +70,11 @@ function renderFloatingConsult(item) {
   return `
     <aside class="floating-contact">
       <div class="floating-contact__copy">
-        <strong>${pageConfig["detail.contactTitle"] || "案例咨询"}</strong>
+        <strong>${pageConfig["detail.contactTitle"] || ""}</strong>
         <span>${
           hasCard
-            ? pageConfig["detail.contactDescriptionWithCard"] || "可继续了解申请节奏与准备重点"
-            : pageConfig["detail.contactDescriptionWithoutCard"] || "咨询入口与二维码后续接入"
+            ? pageConfig["detail.contactDescriptionWithCard"] || ""
+            : pageConfig["detail.contactDescriptionWithoutCard"] || ""
         }</span>
       </div>
       <button class="primary-btn" type="button" data-action="open-contact-modal">${getDetailContactButtonText(hasCard)}</button>

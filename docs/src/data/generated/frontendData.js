@@ -15,8 +15,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.52",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "数字城市管理",
@@ -41,8 +40,10 @@ export const cases = [
       "copy": "J同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "25fall",
@@ -81,11 +82,19 @@ export const cases = [
         "value": "2.52"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall J同学 中法 中法 金融 2.52 香港大学 数字城市管理 香港 超低分录港三 乐湖案例"
+    "searchText": "25fall J同学 中法 中法 金融 2.52 雅思6.5 香港大学 数字城市管理 香港 超低分录港三 乐湖案例"
   },
   {
     "id": "25fall-033",
@@ -102,8 +111,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.79",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7.5",
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "知识管理",
@@ -127,8 +135,10 @@ export const cases = [
       "copy": "F同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7.5"
+    ],
+    "languageScoreText": "雅思7.5",
     "tags": [
       {
         "label": "25fall",
@@ -163,11 +173,19 @@ export const cases = [
         "value": "2.79"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "4段"
       }
     ],
-    "searchText": "25fall F同学 中法 中法 金融 2.79 南洋理工大学 知识管理 新加坡 乐湖案例"
+    "searchText": "25fall F同学 中法 中法 金融 2.79 雅思7.5 南洋理工大学 知识管理 新加坡 乐湖案例"
   },
   {
     "id": "25fall-034",
@@ -184,8 +202,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.79",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7.5",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "气候治理与风险管理",
@@ -209,8 +226,10 @@ export const cases = [
       "copy": "F同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7.5"
+    ],
+    "languageScoreText": "雅思7.5",
     "tags": [
       {
         "label": "25fall",
@@ -245,11 +264,19 @@ export const cases = [
         "value": "2.79"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "4段"
       }
     ],
-    "searchText": "25fall F同学 中法 中法 金融 2.79 香港大学 气候治理与风险管理 香港 乐湖案例"
+    "searchText": "25fall F同学 中法 中法 金融 2.79 雅思7.5 香港大学 气候治理与风险管理 香港 乐湖案例"
   },
   {
     "id": "26fall-085",
@@ -266,8 +293,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.53",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "生物科技企业领导力",
@@ -292,8 +318,10 @@ export const cases = [
       "copy": "P同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "26fall",
@@ -332,11 +360,19 @@ export const cases = [
         "value": "2.53"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall P同学 中法 中法 金融 2.53 香港科技大学 生物科技企业领导力 香港 超低分录港三 乐湖案例"
+    "searchText": "26fall P同学 中法 中法 金融 2.53 雅思6.5 香港科技大学 生物科技企业领导力 香港 超低分录港三 乐湖案例"
   },
   {
     "id": "26fall-089",
@@ -353,8 +389,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.1",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "托福98",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "中国发展研究",
@@ -379,8 +414,10 @@ export const cases = [
       "copy": "Q同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "托福98"
+    ],
+    "languageScoreText": "托福98",
     "tags": [
       {
         "label": "26fall",
@@ -419,11 +456,19 @@ export const cases = [
         "value": "3.1"
       },
       {
+        "label": "英语成绩",
+        "value": "托福98"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall Q同学 中法 中法 金融 3.1 香港大学 中国发展研究 香港 低分高录 乐湖案例"
+    "searchText": "26fall Q同学 中法 中法 金融 3.1 托福98 香港大学 中国发展研究 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-086",
@@ -440,8 +485,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.1",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "托福98",
     "greGmat": null,
     "offerSchool": "香港中文大学（深圳校区）",
     "offerProgram": "可持续发展",
@@ -466,8 +510,10 @@ export const cases = [
       "copy": "Q同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "托福98"
+    ],
+    "languageScoreText": "托福98",
     "tags": [
       {
         "label": "26fall",
@@ -506,11 +552,19 @@ export const cases = [
         "value": "3.1"
       },
       {
+        "label": "英语成绩",
+        "value": "托福98"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall Q同学 中法 中法 金融 3.1 香港中文大学（深圳校区） 可持续发展 香港 低分高录 乐湖案例"
+    "searchText": "26fall Q同学 中法 中法 金融 3.1 托福98 香港中文大学（深圳校区） 可持续发展 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-087",
@@ -527,8 +581,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.1",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "托福98",
     "greGmat": null,
     "offerSchool": "香港中文大学（深圳校区）",
     "offerProgram": "公共政策",
@@ -553,8 +606,10 @@ export const cases = [
       "copy": "Q同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "托福98"
+    ],
+    "languageScoreText": "托福98",
     "tags": [
       {
         "label": "26fall",
@@ -593,6 +648,14 @@ export const cases = [
         "value": "3.1"
       },
       {
+        "label": "英语成绩",
+        "value": "托福98"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       },
@@ -601,7 +664,7 @@ export const cases = [
         "value": "带奖*80000RMB"
       }
     ],
-    "searchText": "26fall Q同学 中法 中法 金融 3.1 香港中文大学（深圳校区） 公共政策 香港 带奖*80000RMB 低分高录 乐湖案例"
+    "searchText": "26fall Q同学 中法 中法 金融 3.1 托福98 香港中文大学（深圳校区） 公共政策 香港 带奖*80000RMB 低分高录 乐湖案例"
   },
   {
     "id": "26fall-088",
@@ -618,8 +681,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.1",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "托福98",
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "中国与全球治理",
@@ -644,8 +706,10 @@ export const cases = [
       "copy": "Q同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "托福98"
+    ],
+    "languageScoreText": "托福98",
     "tags": [
       {
         "label": "26fall",
@@ -684,11 +748,19 @@ export const cases = [
         "value": "3.1"
       },
       {
+        "label": "英语成绩",
+        "value": "托福98"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall Q同学 中法 中法 金融 3.1 南洋理工大学 中国与全球治理 新加坡 低分高录 乐湖案例"
+    "searchText": "26fall Q同学 中法 中法 金融 3.1 托福98 南洋理工大学 中国与全球治理 新加坡 低分高录 乐湖案例"
   },
   {
     "id": "26fall-095",
@@ -705,8 +777,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.02",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "房地产理学",
@@ -731,8 +802,10 @@ export const cases = [
       "copy": "T同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -771,11 +844,19 @@ export const cases = [
         "value": "3.02"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "26fall T同学 中法 中法 金融 3.02 香港中文大学 房地产理学 香港 低分高录 乐湖案例"
+    "searchText": "26fall T同学 中法 中法 金融 3.02 雅思7 香港中文大学 房地产理学 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-103",
@@ -792,8 +873,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.1",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "托福98",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "政府与政治（大中华地区）",
@@ -818,8 +898,10 @@ export const cases = [
       "copy": "Q同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "托福98"
+    ],
+    "languageScoreText": "托福98",
     "tags": [
       {
         "label": "26fall",
@@ -858,11 +940,19 @@ export const cases = [
         "value": "3.1"
       },
       {
+        "label": "英语成绩",
+        "value": "托福98"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall Q同学 中法 中法 金融 3.1 香港中文大学 政府与政治（大中华地区） 香港 低分高录 乐湖案例"
+    "searchText": "26fall Q同学 中法 中法 金融 3.1 托福98 香港中文大学 政府与政治（大中华地区） 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-107",
@@ -879,8 +969,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.02",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "体验经济领导力",
@@ -905,8 +994,10 @@ export const cases = [
       "copy": "T同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -945,11 +1036,19 @@ export const cases = [
         "value": "3.02"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "26fall T同学 中法 中法 金融 3.02 香港中文大学 体验经济领导力 香港 低分高录 乐湖案例"
+    "searchText": "26fall T同学 中法 中法 金融 3.02 雅思7 香港中文大学 体验经济领导力 香港 低分高录 乐湖案例"
   },
   {
     "id": "24fall-020",
@@ -966,8 +1065,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.8",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "中国发展研究",
@@ -989,8 +1087,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "24fall",
@@ -1027,9 +1127,17 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "2.8"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 金融 2.8 香港大学 中国发展研究 香港 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 金融 2.8 雅思6.5 香港大学 中国发展研究 香港 低分高录 乐湖案例"
   },
   {
     "id": "24fall-021",
@@ -1046,8 +1154,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.8",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": null,
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "信息系统管理",
@@ -1107,6 +1214,10 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "2.8"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
     "searchText": "24fall 匿名 中法 中法 金融 2.8 香港科技大学 信息系统管理 香港 低分高录 乐湖案例"
@@ -1126,8 +1237,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "2.9/82",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5(6)",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "信息科学与技术管理",
@@ -1152,8 +1262,10 @@ export const cases = [
       "copy": "I同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5(6)"
+    ],
+    "languageScoreText": "雅思6.5(6)",
     "tags": [
       {
         "label": "25fall",
@@ -1192,6 +1304,14 @@ export const cases = [
         "value": "2.9/82"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5(6)"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "4段"
       },
@@ -1200,7 +1320,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall I同学 中法 中法 国管 2.9/82 香港中文大学 信息科学与技术管理 香港 低分高录 乐湖案例"
+    "searchText": "25fall I同学 中法 中法 国管 2.9/82 雅思6.5(6) 香港中文大学 信息科学与技术管理 香港 低分高录 乐湖案例"
   },
   {
     "id": "25fall-064",
@@ -1217,8 +1337,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "2.9/82",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5(6)",
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "信息系统管理",
@@ -1243,8 +1362,10 @@ export const cases = [
       "copy": "I同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5(6)"
+    ],
+    "languageScoreText": "雅思6.5(6)",
     "tags": [
       {
         "label": "25fall",
@@ -1283,6 +1404,14 @@ export const cases = [
         "value": "2.9/82"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5(6)"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "4段"
       },
@@ -1291,7 +1420,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall I同学 中法 中法 国管 2.9/82 香港科技大学 信息系统管理 香港 低分高录 乐湖案例"
+    "searchText": "25fall I同学 中法 中法 国管 2.9/82 雅思6.5(6) 香港科技大学 信息系统管理 香港 低分高录 乐湖案例"
   },
   {
     "id": "25fall-066",
@@ -1308,8 +1437,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "2.9/82",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5(6)",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "统计",
@@ -1334,8 +1462,10 @@ export const cases = [
       "copy": "I同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5(6)"
+    ],
+    "languageScoreText": "雅思6.5(6)",
     "tags": [
       {
         "label": "25fall",
@@ -1374,6 +1504,14 @@ export const cases = [
         "value": "2.9/82"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5(6)"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "4段"
       },
@@ -1382,7 +1520,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall I同学 中法 中法 国管 2.9/82 香港大学 统计 香港 低分高录 乐湖案例"
+    "searchText": "25fall I同学 中法 中法 国管 2.9/82 雅思6.5(6) 香港大学 统计 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-096",
@@ -1399,8 +1537,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.14/84.33",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "可持续全球商业",
@@ -1425,8 +1562,10 @@ export const cases = [
       "copy": "R同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -1465,11 +1604,19 @@ export const cases = [
         "value": "3.14/84.33"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "26fall R同学 中法 中法 金融 3.14/84.33 香港中文大学 可持续全球商业 香港 低分高录 乐湖案例"
+    "searchText": "26fall R同学 中法 中法 金融 3.14/84.33 雅思7 香港中文大学 可持续全球商业 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-098",
@@ -1486,8 +1633,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.14/84.33",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "气候治理与风险管理",
@@ -1512,8 +1658,10 @@ export const cases = [
       "copy": "R同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -1552,11 +1700,19 @@ export const cases = [
         "value": "3.14/84.33"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "26fall R同学 中法 中法 金融 3.14/84.33 香港大学 气候治理与风险管理 香港 低分高录 乐湖案例"
+    "searchText": "26fall R同学 中法 中法 金融 3.14/84.33 雅思7 香港大学 气候治理与风险管理 香港 低分高录 乐湖案例"
   },
   {
     "id": "24fall-029",
@@ -1573,8 +1729,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7(6)",
     "greGmat": "GRE 320",
     "offerSchool": "南洋理工大学",
     "offerProgram": "科技创业和创新",
@@ -1597,9 +1752,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思7(6)",
       "GRE 320"
     ],
-    "languageScoreText": "GRE 320",
+    "languageScoreText": "雅思7(6) / GRE 320",
     "tags": [
       {
         "label": "24fall",
@@ -1638,11 +1794,19 @@ export const cases = [
         "value": "3"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7(6)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 320"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 3 GRE 320 南洋理工大学 科技创业和创新 新加坡 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 3 雅思7(6) GRE 320 南洋理工大学 科技创业和创新 新加坡 低分高录 乐湖案例"
   },
   {
     "id": "25fall-030",
@@ -1659,8 +1823,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "数学",
     "gpa": "2.9",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "分析学",
@@ -1681,8 +1844,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "25fall",
@@ -1717,11 +1882,19 @@ export const cases = [
         "value": "2.9"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall D同学 中法 中法 数学 2.9 南洋理工大学 分析学 新加坡 乐湖案例"
+    "searchText": "25fall D同学 中法 中法 数学 2.9 雅思7 南洋理工大学 分析学 新加坡 乐湖案例"
   },
   {
     "id": "25fall-031",
@@ -1738,8 +1911,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "数学",
     "gpa": "2.9",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "数学",
@@ -1760,8 +1932,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "25fall",
@@ -1796,11 +1970,19 @@ export const cases = [
         "value": "2.9"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall D同学 中法 中法 数学 2.9 新加坡国立大学 数学 新加坡 乐湖案例"
+    "searchText": "25fall D同学 中法 中法 数学 2.9 雅思7 新加坡国立大学 数学 新加坡 乐湖案例"
   },
   {
     "id": "25fall-032",
@@ -1817,8 +1999,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "数学",
     "gpa": "2.9",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "数学教育",
@@ -1839,8 +2020,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "25fall",
@@ -1875,11 +2058,19 @@ export const cases = [
         "value": "2.9"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall D同学 中法 中法 数学 2.9 香港科技大学 数学教育 香港 乐湖案例"
+    "searchText": "25fall D同学 中法 中法 数学 2.9 雅思7 香港科技大学 数学教育 香港 乐湖案例"
   },
   {
     "id": "25fall-044",
@@ -1896,8 +2087,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.9",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思8(6.5)",
     "greGmat": "GRE 339",
     "offerSchool": "伦敦政治经济学院",
     "offerProgram": "金融",
@@ -1922,9 +2112,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思8(6.5)",
       "GRE 339"
     ],
-    "languageScoreText": "GRE 339",
+    "languageScoreText": "雅思8(6.5) / GRE 339",
     "tags": [
       {
         "label": "25fall",
@@ -1959,8 +2150,16 @@ export const cases = [
         "value": "3.9"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思8(6.5)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 339"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "英国"
       },
       {
         "label": "实习经历",
@@ -1971,7 +2170,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall A同学 中法 中法 金融 3.9 GRE 339 伦敦政治经济学院 金融 英国 乐湖案例"
+    "searchText": "25fall A同学 中法 中法 金融 3.9 雅思8(6.5) GRE 339 伦敦政治经济学院 金融 英国 乐湖案例"
   },
   {
     "id": "25fall-045",
@@ -1988,8 +2187,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.9",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思8(6.5)",
     "greGmat": "GRE 339",
     "offerSchool": "帝国理工学院",
     "offerProgram": "金融科技",
@@ -2015,9 +2213,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思8(6.5)",
       "GRE 339"
     ],
-    "languageScoreText": "GRE 339",
+    "languageScoreText": "雅思8(6.5) / GRE 339",
     "tags": [
       {
         "label": "25fall",
@@ -2056,8 +2255,16 @@ export const cases = [
         "value": "3.9"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思8(6.5)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 339"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "英国"
       },
       {
         "label": "实习经历",
@@ -2068,7 +2275,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall A同学 中法 中法 金融 3.9 GRE 339 帝国理工学院 金融科技 英国 商科转量化 乐湖案例"
+    "searchText": "25fall A同学 中法 中法 金融 3.9 雅思8(6.5) GRE 339 帝国理工学院 金融科技 英国 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-046",
@@ -2085,8 +2292,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.9",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思8(6.5)",
     "greGmat": "GRE 339",
     "offerSchool": "剑桥大学",
     "offerProgram": "金融经济",
@@ -2111,9 +2317,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思8(6.5)",
       "GRE 339"
     ],
-    "languageScoreText": "GRE 339",
+    "languageScoreText": "雅思8(6.5) / GRE 339",
     "tags": [
       {
         "label": "25fall",
@@ -2148,8 +2355,16 @@ export const cases = [
         "value": "3.9"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思8(6.5)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 339"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "英国"
       },
       {
         "label": "实习经历",
@@ -2160,7 +2375,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall A同学 中法 中法 金融 3.9 GRE 339 剑桥大学 金融经济 英国 乐湖案例"
+    "searchText": "25fall A同学 中法 中法 金融 3.9 雅思8(6.5) GRE 339 剑桥大学 金融经济 英国 乐湖案例"
   },
   {
     "id": "25fall-054",
@@ -2177,8 +2392,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.7/89",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7.5",
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "金融工程",
@@ -2203,8 +2417,10 @@ export const cases = [
       "copy": "G同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7.5"
+    ],
+    "languageScoreText": "雅思7.5",
     "tags": [
       {
         "label": "25fall",
@@ -2243,11 +2459,19 @@ export const cases = [
         "value": "3.7/89"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall G同学 中法 中法 金融 3.7/89 新加坡国立大学 金融工程 新加坡 商科转量化 乐湖案例"
+    "searchText": "25fall G同学 中法 中法 金融 3.7/89 雅思7.5 新加坡国立大学 金融工程 新加坡 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-055",
@@ -2264,8 +2488,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.7/89",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7.5",
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "数量金融",
@@ -2290,8 +2513,10 @@ export const cases = [
       "copy": "G同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7.5"
+    ],
+    "languageScoreText": "雅思7.5",
     "tags": [
       {
         "label": "25fall",
@@ -2330,6 +2555,14 @@ export const cases = [
         "value": "3.7/89"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       },
@@ -2338,7 +2571,7 @@ export const cases = [
         "value": "该项目与交大合作"
       }
     ],
-    "searchText": "25fall G同学 中法 中法 金融 3.7/89 新加坡国立大学 数量金融 新加坡 该项目与交大合作 商科转量化 乐湖案例"
+    "searchText": "25fall G同学 中法 中法 金融 3.7/89 雅思7.5 新加坡国立大学 数量金融 新加坡 该项目与交大合作 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-056",
@@ -2355,8 +2588,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.7/89",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7.5",
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "金融工程",
@@ -2381,8 +2613,10 @@ export const cases = [
       "copy": "G同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7.5"
+    ],
+    "languageScoreText": "雅思7.5",
     "tags": [
       {
         "label": "25fall",
@@ -2421,11 +2655,19 @@ export const cases = [
         "value": "3.7/89"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall G同学 中法 中法 金融 3.7/89 南洋理工大学 金融工程 新加坡 商科转量化 乐湖案例"
+    "searchText": "25fall G同学 中法 中法 金融 3.7/89 雅思7.5 南洋理工大学 金融工程 新加坡 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-047",
@@ -2442,8 +2684,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.7",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "托福105",
     "greGmat": "GRE 330",
     "offerSchool": "杜克大学",
     "offerProgram": "金融科技",
@@ -2469,9 +2710,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "托福105",
       "GRE 330"
     ],
-    "languageScoreText": "GRE 330",
+    "languageScoreText": "托福105 / GRE 330",
     "tags": [
       {
         "label": "25fall",
@@ -2510,8 +2752,16 @@ export const cases = [
         "value": "3.7"
       },
       {
+        "label": "英语成绩",
+        "value": "托福105"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 330"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "美国"
       },
       {
         "label": "实习经历",
@@ -2526,7 +2776,7 @@ export const cases = [
         "value": "带5000USD奖学金"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 GRE 330 杜克大学 金融科技 美国 带5000USD奖学金 商科转量化 乐湖案例"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE 330 杜克大学 金融科技 美国 带5000USD奖学金 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-048",
@@ -2543,8 +2793,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.7",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "托福105",
     "greGmat": "GRE 330",
     "offerSchool": "纽约大学",
     "offerProgram": "金融工程",
@@ -2570,9 +2819,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "托福105",
       "GRE 330"
     ],
-    "languageScoreText": "GRE 330",
+    "languageScoreText": "托福105 / GRE 330",
     "tags": [
       {
         "label": "25fall",
@@ -2611,8 +2861,16 @@ export const cases = [
         "value": "3.7"
       },
       {
+        "label": "英语成绩",
+        "value": "托福105"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 330"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "美国"
       },
       {
         "label": "实习经历",
@@ -2627,7 +2885,7 @@ export const cases = [
         "value": "带3000USD奖学金"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 GRE 330 纽约大学 金融工程 美国 带3000USD奖学金 商科转量化 乐湖案例"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE 330 纽约大学 金融工程 美国 带3000USD奖学金 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-049",
@@ -2644,8 +2902,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.7",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "托福105",
     "greGmat": "GRE 330",
     "offerSchool": "康奈尔大学",
     "offerProgram": "运筹与信息工程",
@@ -2671,9 +2928,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "托福105",
       "GRE 330"
     ],
-    "languageScoreText": "GRE 330",
+    "languageScoreText": "托福105 / GRE 330",
     "tags": [
       {
         "label": "25fall",
@@ -2712,8 +2970,16 @@ export const cases = [
         "value": "3.7"
       },
       {
+        "label": "英语成绩",
+        "value": "托福105"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 330"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "美国"
       },
       {
         "label": "实习经历",
@@ -2728,7 +2994,7 @@ export const cases = [
         "value": "数据科学分支"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 GRE 330 康奈尔大学 运筹与信息工程 美国 数据科学分支 商科转量化 乐湖案例"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE 330 康奈尔大学 运筹与信息工程 美国 数据科学分支 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-050",
@@ -2745,8 +3011,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.7",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "托福105",
     "greGmat": "GRE 330",
     "offerSchool": "哥伦比亚大学",
     "offerProgram": "统计",
@@ -2772,9 +3037,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "托福105",
       "GRE 330"
     ],
-    "languageScoreText": "GRE 330",
+    "languageScoreText": "托福105 / GRE 330",
     "tags": [
       {
         "label": "25fall",
@@ -2813,8 +3079,16 @@ export const cases = [
         "value": "3.7"
       },
       {
+        "label": "英语成绩",
+        "value": "托福105"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 330"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "美国"
       },
       {
         "label": "实习经历",
@@ -2825,7 +3099,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall C同学 中法 中法 金融 3.7 GRE 330 哥伦比亚大学 统计 美国 商科转量化 乐湖案例"
+    "searchText": "25fall C同学 中法 中法 金融 3.7 托福105 GRE 330 哥伦比亚大学 统计 美国 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-035",
@@ -2842,8 +3116,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.32",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "财富管理",
@@ -2867,8 +3140,10 @@ export const cases = [
       "copy": "H同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "25fall",
@@ -2903,11 +3178,19 @@ export const cases = [
         "value": "3.32"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall H同学 中法 中法 人管 3.32 香港大学 财富管理 香港 乐湖案例"
+    "searchText": "25fall H同学 中法 中法 人管 3.32 雅思7 香港大学 财富管理 香港 乐湖案例"
   },
   {
     "id": "25fall-036",
@@ -2924,8 +3207,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.32",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "气候治理与风险管理",
@@ -2949,8 +3231,10 @@ export const cases = [
       "copy": "H同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "25fall",
@@ -2985,11 +3269,19 @@ export const cases = [
         "value": "3.32"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall H同学 中法 中法 人管 3.32 香港大学 气候治理与风险管理 香港 乐湖案例"
+    "searchText": "25fall H同学 中法 中法 人管 3.32 雅思7 香港大学 气候治理与风险管理 香港 乐湖案例"
   },
   {
     "id": "25fall-037",
@@ -3006,8 +3298,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.32",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "可持续会计与金融",
@@ -3031,8 +3322,10 @@ export const cases = [
       "copy": "H同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "25fall",
@@ -3067,11 +3360,19 @@ export const cases = [
         "value": "3.32"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall H同学 中法 中法 人管 3.32 香港大学 可持续会计与金融 香港 乐湖案例"
+    "searchText": "25fall H同学 中法 中法 人管 3.32 雅思7 香港大学 可持续会计与金融 香港 乐湖案例"
   },
   {
     "id": "25fall-038",
@@ -3088,8 +3389,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.32",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "全球管理",
@@ -3113,8 +3413,10 @@ export const cases = [
       "copy": "H同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "25fall",
@@ -3149,11 +3451,19 @@ export const cases = [
         "value": "3.32"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall H同学 中法 中法 人管 3.32 香港大学 全球管理 香港 乐湖案例"
+    "searchText": "25fall H同学 中法 中法 人管 3.32 雅思7 香港大学 全球管理 香港 乐湖案例"
   },
   {
     "id": "25fall-041",
@@ -3170,8 +3480,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.0/82",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7(6.5)",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "市场营销",
@@ -3195,8 +3504,10 @@ export const cases = [
       "copy": "L同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7(6.5)"
+    ],
+    "languageScoreText": "雅思7(6.5)",
     "tags": [
       {
         "label": "25fall",
@@ -3231,11 +3542,19 @@ export const cases = [
         "value": "3.0/82"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7(6.5)"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall L同学 中法 中法 人管 3.0/82 香港中文大学 市场营销 香港 乐湖案例"
+    "searchText": "25fall L同学 中法 中法 人管 3.0/82 雅思7(6.5) 香港中文大学 市场营销 香港 乐湖案例"
   },
   {
     "id": "25fall-042",
@@ -3252,8 +3571,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.0/82",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7(6.5)",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "气候治理与风险管理",
@@ -3277,8 +3595,10 @@ export const cases = [
       "copy": "L同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7(6.5)"
+    ],
+    "languageScoreText": "雅思7(6.5)",
     "tags": [
       {
         "label": "25fall",
@@ -3313,11 +3633,19 @@ export const cases = [
         "value": "3.0/82"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7(6.5)"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall L同学 中法 中法 人管 3.0/82 香港大学 气候治理与风险管理 香港 乐湖案例"
+    "searchText": "25fall L同学 中法 中法 人管 3.0/82 雅思7(6.5) 香港大学 气候治理与风险管理 香港 乐湖案例"
   },
   {
     "id": "25fall-043",
@@ -3334,8 +3662,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.0/82",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7(6.5)",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "可持续全球商业",
@@ -3359,8 +3686,10 @@ export const cases = [
       "copy": "L同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7(6.5)"
+    ],
+    "languageScoreText": "雅思7(6.5)",
     "tags": [
       {
         "label": "25fall",
@@ -3395,11 +3724,19 @@ export const cases = [
         "value": "3.0/82"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7(6.5)"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall L同学 中法 中法 人管 3.0/82 香港中文大学 可持续全球商业 香港 乐湖案例"
+    "searchText": "25fall L同学 中法 中法 人管 3.0/82 雅思7(6.5) 香港中文大学 可持续全球商业 香港 乐湖案例"
   },
   {
     "id": "26fall-090",
@@ -3416,8 +3753,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.58",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "财富管理",
@@ -3441,8 +3777,10 @@ export const cases = [
       "copy": "W同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -3477,11 +3815,19 @@ export const cases = [
         "value": "3.58"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall W同学 中法 中法 国管 3.58 香港大学 财富管理 香港 乐湖案例"
+    "searchText": "26fall W同学 中法 中法 国管 3.58 雅思7 香港大学 财富管理 香港 乐湖案例"
   },
   {
     "id": "26fall-091",
@@ -3498,8 +3844,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.58",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "科技管理与创新",
@@ -3523,8 +3868,10 @@ export const cases = [
       "copy": "W同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -3559,11 +3906,19 @@ export const cases = [
         "value": "3.58"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall W同学 中法 中法 国管 3.58 新加坡国立大学 科技管理与创新 新加坡 乐湖案例"
+    "searchText": "26fall W同学 中法 中法 国管 3.58 雅思7 新加坡国立大学 科技管理与创新 新加坡 乐湖案例"
   },
   {
     "id": "26fall-092",
@@ -3580,8 +3935,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.58",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "全球管理",
@@ -3605,8 +3959,10 @@ export const cases = [
       "copy": "W同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -3641,11 +3997,19 @@ export const cases = [
         "value": "3.58"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall W同学 中法 中法 国管 3.58 香港大学 全球管理 香港 乐湖案例"
+    "searchText": "26fall W同学 中法 中法 国管 3.58 雅思7 香港大学 全球管理 香港 乐湖案例"
   },
   {
     "id": "26fall-093",
@@ -3662,8 +4026,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.58",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "应用经济学",
@@ -3687,8 +4050,10 @@ export const cases = [
       "copy": "W同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -3723,11 +4088,19 @@ export const cases = [
         "value": "3.58"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall W同学 中法 中法 国管 3.58 南洋理工大学 应用经济学 新加坡 乐湖案例"
+    "searchText": "26fall W同学 中法 中法 国管 3.58 雅思7 南洋理工大学 应用经济学 新加坡 乐湖案例"
   },
   {
     "id": "26fall-097",
@@ -3744,8 +4117,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.58",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "管理学",
@@ -3769,8 +4141,10 @@ export const cases = [
       "copy": "W同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -3805,11 +4179,19 @@ export const cases = [
         "value": "3.58"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall W同学 中法 中法 国管 3.58 香港中文大学 管理学 香港 乐湖案例"
+    "searchText": "26fall W同学 中法 中法 国管 3.58 雅思7 香港中文大学 管理学 香港 乐湖案例"
   },
   {
     "id": "24fall-002",
@@ -3826,8 +4208,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "81",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": "GRE 320",
     "offerSchool": "香港大学",
     "offerProgram": "房地产",
@@ -3850,9 +4231,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思7",
       "GRE 320"
     ],
-    "languageScoreText": "GRE 320",
+    "languageScoreText": "雅思7 / GRE 320",
     "tags": [
       {
         "label": "24fall",
@@ -3891,11 +4273,19 @@ export const cases = [
         "value": "81"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 320"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 81 GRE 320 香港大学 房地产 香港 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 81 雅思7 GRE 320 香港大学 房地产 香港 低分高录 乐湖案例"
   },
   {
     "id": "24fall-017",
@@ -3912,8 +4302,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.9",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思8(7)",
     "greGmat": "GMAT 710",
     "offerSchool": "香港科技大学",
     "offerProgram": "国际管理",
@@ -3936,9 +4325,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思8(7)",
       "GMAT 710"
     ],
-    "languageScoreText": "GMAT 710",
+    "languageScoreText": "雅思8(7) / GMAT 710",
     "tags": [
       {
         "label": "24fall",
@@ -3977,11 +4367,19 @@ export const cases = [
         "value": "2.9"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思8(7)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT 710"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 金融 2.9 GMAT 710 香港科技大学 国际管理 香港 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 金融 2.9 雅思8(7) GMAT 710 香港科技大学 国际管理 香港 低分高录 乐湖案例"
   },
   {
     "id": "24fall-001",
@@ -3998,8 +4396,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "83",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7(6)",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "哲学政治与经济学",
@@ -4021,8 +4418,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7(6)"
+    ],
+    "languageScoreText": "雅思7(6)",
     "tags": [
       {
         "label": "24fall",
@@ -4059,9 +4458,17 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "83"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7(6)"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 83 香港大学 哲学政治与经济学 香港 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 83 雅思7(6) 香港大学 哲学政治与经济学 香港 低分高录 乐湖案例"
   },
   {
     "id": "24fall-007",
@@ -4078,8 +4485,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "81",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "可持续全球商业",
@@ -4101,8 +4507,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "24fall",
@@ -4139,9 +4547,17 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "81"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 81 香港中文大学 可持续全球商业 香港 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 81 雅思7 香港中文大学 可持续全球商业 香港 低分高录 乐湖案例"
   },
   {
     "id": "24fall-009",
@@ -4158,8 +4574,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.0",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": "GRE 320",
     "offerSchool": "香港中文大学",
     "offerProgram": "房地产金融",
@@ -4182,9 +4597,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思7",
       "GRE 320"
     ],
-    "languageScoreText": "GRE 320",
+    "languageScoreText": "雅思7 / GRE 320",
     "tags": [
       {
         "label": "24fall",
@@ -4223,11 +4639,19 @@ export const cases = [
         "value": "3.0"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 320"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 3.0 GRE 320 香港中文大学 房地产金融 香港 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 3.0 雅思7 GRE 320 香港中文大学 房地产金融 香港 低分高录 乐湖案例"
   },
   {
     "id": "24fall-011",
@@ -4244,8 +4668,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.0",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": "GRE 320",
     "offerSchool": "香港大学",
     "offerProgram": "中国发展研究",
@@ -4268,9 +4691,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思7",
       "GRE 320"
     ],
-    "languageScoreText": "GRE 320",
+    "languageScoreText": "雅思7 / GRE 320",
     "tags": [
       {
         "label": "24fall",
@@ -4309,11 +4733,19 @@ export const cases = [
         "value": "3.0"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 320"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 3.0 GRE 320 香港大学 中国发展研究 香港 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 3.0 雅思7 GRE 320 香港大学 中国发展研究 香港 低分高录 乐湖案例"
   },
   {
     "id": "24fall-027",
@@ -4330,8 +4762,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": "GRE 320",
     "offerSchool": "新加坡国立大学",
     "offerProgram": "创新与技术管理",
@@ -4354,9 +4785,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思7",
       "GRE 320"
     ],
-    "languageScoreText": "GRE 320",
+    "languageScoreText": "雅思7 / GRE 320",
     "tags": [
       {
         "label": "24fall",
@@ -4395,11 +4827,19 @@ export const cases = [
         "value": "3"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 320"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 3 GRE 320 新加坡国立大学 创新与技术管理 新加坡 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 3 雅思7 GRE 320 新加坡国立大学 创新与技术管理 新加坡 低分高录 乐湖案例"
   },
   {
     "id": "25fall-039",
@@ -4416,8 +4856,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.58/87.3",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "经济学",
@@ -4441,8 +4880,10 @@ export const cases = [
       "copy": "E同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "25fall",
@@ -4477,11 +4918,19 @@ export const cases = [
         "value": "3.58/87.3"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall E同学 中法 中法 人管 3.58/87.3 香港大学 经济学 香港 乐湖案例"
+    "searchText": "25fall E同学 中法 中法 人管 3.58/87.3 雅思6.5 香港大学 经济学 香港 乐湖案例"
   },
   {
     "id": "25fall-040",
@@ -4498,8 +4947,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.58/87.3",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "经济学",
@@ -4523,8 +4971,10 @@ export const cases = [
       "copy": "E同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "25fall",
@@ -4559,11 +5009,19 @@ export const cases = [
         "value": "3.58/87.3"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall E同学 中法 中法 人管 3.58/87.3 香港科技大学 经济学 香港 乐湖案例"
+    "searchText": "25fall E同学 中法 中法 人管 3.58/87.3 雅思6.5 香港科技大学 经济学 香港 乐湖案例"
   },
   {
     "id": "25fall-051",
@@ -4580,8 +5038,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.5",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": "GMAT 695",
     "offerSchool": "香港科技大学",
     "offerProgram": "经济",
@@ -4606,9 +5063,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思7",
       "GMAT 695"
     ],
-    "languageScoreText": "GMAT 695",
+    "languageScoreText": "雅思7 / GMAT 695",
     "tags": [
       {
         "label": "25fall",
@@ -4643,8 +5101,16 @@ export const cases = [
         "value": "3.5"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT 695"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       },
       {
         "label": "实习经历",
@@ -4659,7 +5125,7 @@ export const cases = [
         "value": "带64000HKD奖学金"
       }
     ],
-    "searchText": "25fall B同学 中法 中法 金融 3.5 GMAT 695 香港科技大学 经济 香港 带64000HKD奖学金 乐湖案例"
+    "searchText": "25fall B同学 中法 中法 金融 3.5 雅思7 GMAT 695 香港科技大学 经济 香港 带64000HKD奖学金 乐湖案例"
   },
   {
     "id": "25fall-052",
@@ -4676,8 +5142,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.5",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": "GMAT 695",
     "offerSchool": "香港科技大学",
     "offerProgram": "金融科技",
@@ -4703,9 +5168,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思7",
       "GMAT 695"
     ],
-    "languageScoreText": "GMAT 695",
+    "languageScoreText": "雅思7 / GMAT 695",
     "tags": [
       {
         "label": "25fall",
@@ -4744,8 +5210,16 @@ export const cases = [
         "value": "3.5"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT 695"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       },
       {
         "label": "实习经历",
@@ -4756,7 +5230,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall B同学 中法 中法 金融 3.5 GMAT 695 香港科技大学 金融科技 香港 商科转量化 乐湖案例"
+    "searchText": "25fall B同学 中法 中法 金融 3.5 雅思7 GMAT 695 香港科技大学 金融科技 香港 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-053",
@@ -4773,8 +5247,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.5",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": "GMAT 695",
     "offerSchool": "南洋理工大学",
     "offerProgram": "分析学",
@@ -4800,9 +5273,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思7",
       "GMAT 695"
     ],
-    "languageScoreText": "GMAT 695",
+    "languageScoreText": "雅思7 / GMAT 695",
     "tags": [
       {
         "label": "25fall",
@@ -4841,8 +5315,16 @@ export const cases = [
         "value": "3.5"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT 695"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
       },
       {
         "label": "实习经历",
@@ -4853,7 +5335,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall B同学 中法 中法 金融 3.5 GMAT 695 南洋理工大学 分析学 新加坡 商科转量化 乐湖案例"
+    "searchText": "25fall B同学 中法 中法 金融 3.5 雅思7 GMAT 695 南洋理工大学 分析学 新加坡 商科转量化 乐湖案例"
   },
   {
     "id": "25fall-057",
@@ -4870,8 +5352,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.6",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思8(7)",
     "greGmat": "GMAT680",
     "offerSchool": "欧洲高等商学院",
     "offerProgram": "管理学GE",
@@ -4896,9 +5377,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思8(7)",
       "GMAT680"
     ],
-    "languageScoreText": "GMAT680",
+    "languageScoreText": "雅思8(7) / GMAT680",
     "tags": [
       {
         "label": "25fall",
@@ -4933,15 +5415,23 @@ export const cases = [
         "value": "3.6"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思8(7)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT680"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "法国"
       },
       {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 欧洲高等商学院 管理学GE 法国 乐湖案例"
+    "searchText": "25fall K同学 中法 中法 人管 3.6 雅思8(7) GMAT680 欧洲高等商学院 管理学GE 法国 乐湖案例"
   },
   {
     "id": "25fall-058",
@@ -4958,8 +5448,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.6",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思8(7)",
     "greGmat": "GMAT680",
     "offerSchool": "新加坡国立大学",
     "offerProgram": "战略分析与创新",
@@ -4984,9 +5473,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思8(7)",
       "GMAT680"
     ],
-    "languageScoreText": "GMAT680",
+    "languageScoreText": "雅思8(7) / GMAT680",
     "tags": [
       {
         "label": "25fall",
@@ -5021,15 +5511,23 @@ export const cases = [
         "value": "3.6"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思8(7)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT680"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
       },
       {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 新加坡国立大学 战略分析与创新 新加坡 乐湖案例"
+    "searchText": "25fall K同学 中法 中法 人管 3.6 雅思8(7) GMAT680 新加坡国立大学 战略分析与创新 新加坡 乐湖案例"
   },
   {
     "id": "25fall-059",
@@ -5046,8 +5544,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.6",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思8(7)",
     "greGmat": "GMAT680",
     "offerSchool": "芝加哥大学",
     "offerProgram": "公共政策",
@@ -5073,9 +5570,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思8(7)",
       "GMAT680"
     ],
-    "languageScoreText": "GMAT680",
+    "languageScoreText": "雅思8(7) / GMAT680",
     "tags": [
       {
         "label": "25fall",
@@ -5114,15 +5612,23 @@ export const cases = [
         "value": "3.6"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思8(7)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT680"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "美国"
       },
       {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 芝加哥大学 公共政策 美国 低分高录 乐湖案例"
+    "searchText": "25fall K同学 中法 中法 人管 3.6 雅思8(7) GMAT680 芝加哥大学 公共政策 美国 低分高录 乐湖案例"
   },
   {
     "id": "25fall-060",
@@ -5139,8 +5645,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.6",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思8(7)",
     "greGmat": "GMAT680",
     "offerSchool": "埃塞克高等商学院",
     "offerProgram": "DSBA joint program",
@@ -5165,9 +5670,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思8(7)",
       "GMAT680"
     ],
-    "languageScoreText": "GMAT680",
+    "languageScoreText": "雅思8(7) / GMAT680",
     "tags": [
       {
         "label": "25fall",
@@ -5202,15 +5708,23 @@ export const cases = [
         "value": "3.6"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思8(7)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT680"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "法国"
       },
       {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 埃塞克高等商学院 DSBA joint program 法国 乐湖案例"
+    "searchText": "25fall K同学 中法 中法 人管 3.6 雅思8(7) GMAT680 埃塞克高等商学院 DSBA joint program 法国 乐湖案例"
   },
   {
     "id": "25fall-061",
@@ -5227,8 +5741,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.6",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思8(7)",
     "greGmat": "GMAT680",
     "offerSchool": "博科尼大学",
     "offerProgram": "国际管理",
@@ -5253,9 +5766,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思8(7)",
       "GMAT680"
     ],
-    "languageScoreText": "GMAT680",
+    "languageScoreText": "雅思8(7) / GMAT680",
     "tags": [
       {
         "label": "25fall",
@@ -5290,15 +5804,23 @@ export const cases = [
         "value": "3.6"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思8(7)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT680"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "意大利"
       },
       {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 博科尼大学 国际管理 意大利 乐湖案例"
+    "searchText": "25fall K同学 中法 中法 人管 3.6 雅思8(7) GMAT680 博科尼大学 国际管理 意大利 乐湖案例"
   },
   {
     "id": "25fall-062",
@@ -5315,8 +5837,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "人管",
     "gpa": "3.6",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思8(7)",
     "greGmat": "GMAT680",
     "offerSchool": "香港大学",
     "offerProgram": "全球管理",
@@ -5341,9 +5862,10 @@ export const cases = [
       "contactLabel": "与我咨询"
     },
     "scoreList": [
+      "雅思8(7)",
       "GMAT680"
     ],
-    "languageScoreText": "GMAT680",
+    "languageScoreText": "雅思8(7) / GMAT680",
     "tags": [
       {
         "label": "25fall",
@@ -5378,15 +5900,23 @@ export const cases = [
         "value": "3.6"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思8(7)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT680"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       },
       {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "25fall K同学 中法 中法 人管 3.6 GMAT680 香港大学 全球管理 香港 乐湖案例"
+    "searchText": "25fall K同学 中法 中法 人管 3.6 雅思8(7) GMAT680 香港大学 全球管理 香港 乐湖案例"
   },
   {
     "id": "25fall-108",
@@ -5403,8 +5933,7 @@ export const cases = [
     "undergradCollegeLabel": "商院",
     "undergradMajor": "会计",
     "gpa": "3.6",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "六级539",
     "greGmat": null,
     "offerSchool": "香港中文大学（深圳校区）",
     "offerProgram": "金融工程",
@@ -5428,8 +5957,10 @@ export const cases = [
       "copy": "H同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "六级539"
+    ],
+    "languageScoreText": "六级539",
     "tags": [
       {
         "label": "25fall",
@@ -5464,11 +5995,19 @@ export const cases = [
         "value": "3.6"
       },
       {
+        "label": "英语成绩",
+        "value": "六级539"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "1段"
       }
     ],
-    "searchText": "25fall H同学 商院 商院 会计 3.6 香港中文大学（深圳校区） 金融工程 香港 乐湖案例"
+    "searchText": "25fall H同学 商院 商院 会计 3.6 六级539 香港中文大学（深圳校区） 金融工程 香港 乐湖案例"
   },
   {
     "id": "26fall-074",
@@ -5485,8 +6024,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "数学",
     "gpa": "3.66",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "统计",
@@ -5510,8 +6048,10 @@ export const cases = [
       "copy": "U同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -5546,11 +6086,19 @@ export const cases = [
         "value": "3.66"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall U同学 中法 中法 数学 3.66 新加坡国立大学 统计 新加坡 乐湖案例"
+    "searchText": "26fall U同学 中法 中法 数学 3.66 雅思7 新加坡国立大学 统计 新加坡 乐湖案例"
   },
   {
     "id": "26fall-075",
@@ -5567,8 +6115,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.61",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "科技管理与创新",
@@ -5592,8 +6139,10 @@ export const cases = [
       "copy": "N同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -5628,11 +6177,19 @@ export const cases = [
         "value": "3.61"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "26fall N同学 中法 中法 金融 3.61 新加坡国立大学 科技管理与创新 新加坡 乐湖案例"
+    "searchText": "26fall N同学 中法 中法 金融 3.61 雅思7 新加坡国立大学 科技管理与创新 新加坡 乐湖案例"
   },
   {
     "id": "26fall-078",
@@ -5649,8 +6206,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.62",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "家族财富管理",
@@ -5674,8 +6230,10 @@ export const cases = [
       "copy": "S同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -5710,11 +6268,19 @@ export const cases = [
         "value": "3.62"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "26fall S同学 中法 中法 金融 3.62 香港大学 家族财富管理 香港 乐湖案例"
+    "searchText": "26fall S同学 中法 中法 金融 3.62 雅思7 香港大学 家族财富管理 香港 乐湖案例"
   },
   {
     "id": "26fall-079",
@@ -5731,8 +6297,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.62",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "可持续会计与金融",
@@ -5756,8 +6321,10 @@ export const cases = [
       "copy": "S同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -5792,11 +6359,19 @@ export const cases = [
         "value": "3.62"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "26fall S同学 中法 中法 金融 3.62 香港大学 可持续会计与金融 香港 乐湖案例"
+    "searchText": "26fall S同学 中法 中法 金融 3.62 雅思7 香港大学 可持续会计与金融 香港 乐湖案例"
   },
   {
     "id": "26fall-080",
@@ -5813,8 +6388,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.03",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "气候治理与风险管理",
@@ -5838,8 +6412,10 @@ export const cases = [
       "copy": "O同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "26fall",
@@ -5874,11 +6450,19 @@ export const cases = [
         "value": "3.03"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall O同学 中法 中法 金融 3.03 香港大学 气候治理与风险管理 香港 乐湖案例"
+    "searchText": "26fall O同学 中法 中法 金融 3.03 雅思6.5 香港大学 气候治理与风险管理 香港 乐湖案例"
   },
   {
     "id": "26fall-081",
@@ -5895,8 +6479,7 @@ export const cases = [
     "undergradCollegeLabel": "财金",
     "undergradMajor": "金融",
     "gpa": "3.44",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "新加坡国立大学",
     "offerProgram": "统计",
@@ -5920,8 +6503,10 @@ export const cases = [
       "copy": "M同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "26fall",
@@ -5956,11 +6541,19 @@ export const cases = [
         "value": "3.44"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall M同学 财金 财金 金融 3.44 新加坡国立大学 统计 新加坡 乐湖案例"
+    "searchText": "26fall M同学 财金 财金 金融 3.44 雅思6.5 新加坡国立大学 统计 新加坡 乐湖案例"
   },
   {
     "id": "26fall-082",
@@ -5977,8 +6570,7 @@ export const cases = [
     "undergradCollegeLabel": "财金",
     "undergradMajor": "金融",
     "gpa": "3.44",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "经济学",
@@ -6002,8 +6594,10 @@ export const cases = [
       "copy": "M同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "26fall",
@@ -6038,11 +6632,19 @@ export const cases = [
         "value": "3.44"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall M同学 财金 财金 金融 3.44 香港中文大学 经济学 香港 乐湖案例"
+    "searchText": "26fall M同学 财金 财金 金融 3.44 雅思6.5 香港中文大学 经济学 香港 乐湖案例"
   },
   {
     "id": "26fall-100",
@@ -6059,8 +6661,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.62",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "会计数据分析",
@@ -6084,8 +6685,10 @@ export const cases = [
       "copy": "S同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -6120,11 +6723,19 @@ export const cases = [
         "value": "3.62"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "26fall S同学 中法 中法 金融 3.62 香港大学 会计数据分析 香港 乐湖案例"
+    "searchText": "26fall S同学 中法 中法 金融 3.62 雅思7 香港大学 会计数据分析 香港 乐湖案例"
   },
   {
     "id": "26fall-101",
@@ -6141,8 +6752,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.61",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "经济学",
@@ -6166,8 +6776,10 @@ export const cases = [
       "copy": "N同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -6202,11 +6814,19 @@ export const cases = [
         "value": "3.61"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "26fall N同学 中法 中法 金融 3.61 香港大学 经济学 香港 乐湖案例"
+    "searchText": "26fall N同学 中法 中法 金融 3.61 雅思7 香港大学 经济学 香港 乐湖案例"
   },
   {
     "id": "26fall-102",
@@ -6223,8 +6843,7 @@ export const cases = [
     "undergradCollegeLabel": "财金",
     "undergradMajor": "金融",
     "gpa": "3.44",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "金融",
@@ -6248,8 +6867,10 @@ export const cases = [
       "copy": "M同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "26fall",
@@ -6284,11 +6905,19 @@ export const cases = [
         "value": "3.44"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall M同学 财金 财金 金融 3.44 香港中文大学 金融 香港 乐湖案例"
+    "searchText": "26fall M同学 财金 财金 金融 3.44 雅思6.5 香港中文大学 金融 香港 乐湖案例"
   },
   {
     "id": "26fall-105",
@@ -6305,8 +6934,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.03",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "房地产理学",
@@ -6330,8 +6958,10 @@ export const cases = [
       "copy": "O同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "26fall",
@@ -6366,11 +6996,19 @@ export const cases = [
         "value": "3.03"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall O同学 中法 中法 金融 3.03 香港中文大学 房地产理学 香港 乐湖案例"
+    "searchText": "26fall O同学 中法 中法 金融 3.03 雅思6.5 香港中文大学 房地产理学 香港 乐湖案例"
   },
   {
     "id": "26fall-106",
@@ -6387,8 +7025,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "数学",
     "gpa": "3.66",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港中文大学（深圳校区）",
     "offerProgram": "金融数学",
@@ -6412,8 +7049,10 @@ export const cases = [
       "copy": "U同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -6448,6 +7087,14 @@ export const cases = [
         "value": "3.66"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       },
@@ -6456,7 +7103,7 @@ export const cases = [
         "value": "带奖*150000RMB"
       }
     ],
-    "searchText": "26fall U同学 中法 中法 数学 3.66 香港中文大学（深圳校区） 金融数学 香港 带奖*150000RMB 乐湖案例"
+    "searchText": "26fall U同学 中法 中法 数学 3.66 雅思7 香港中文大学（深圳校区） 金融数学 香港 带奖*150000RMB 乐湖案例"
   },
   {
     "id": "25fall-065",
@@ -6473,8 +7120,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "2.9/82",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5(6)",
     "greGmat": null,
     "offerSchool": "墨尔本大学",
     "offerProgram": "数据科学",
@@ -6498,8 +7144,10 @@ export const cases = [
       "copy": "I同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5(6)"
+    ],
+    "languageScoreText": "雅思6.5(6)",
     "tags": [
       {
         "label": "25fall",
@@ -6534,6 +7182,14 @@ export const cases = [
         "value": "2.9/82"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5(6)"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "澳大利亚"
+      },
+      {
         "label": "实习经历",
         "value": "4段"
       },
@@ -6542,7 +7198,7 @@ export const cases = [
         "value": "1段"
       }
     ],
-    "searchText": "25fall I同学 中法 中法 国管 2.9/82 墨尔本大学 数据科学 澳大利亚 乐湖案例"
+    "searchText": "25fall I同学 中法 中法 国管 2.9/82 雅思6.5(6) 墨尔本大学 数据科学 澳大利亚 乐湖案例"
   },
   {
     "id": "25fall-067",
@@ -6559,8 +7215,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.52",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "环球企业管理",
@@ -6585,8 +7240,10 @@ export const cases = [
       "copy": "J同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "25fall",
@@ -6625,11 +7282,19 @@ export const cases = [
         "value": "2.52"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall J同学 中法 中法 金融 2.52 香港城市大学 环球企业管理 香港 低分高录 乐湖案例"
+    "searchText": "25fall J同学 中法 中法 金融 2.52 雅思6.5 香港城市大学 环球企业管理 香港 低分高录 乐湖案例"
   },
   {
     "id": "25fall-068",
@@ -6646,8 +7311,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.52",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "数字化转型及科技创新",
@@ -6672,8 +7336,10 @@ export const cases = [
       "copy": "J同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "25fall",
@@ -6712,11 +7378,19 @@ export const cases = [
         "value": "2.52"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall J同学 中法 中法 金融 2.52 香港城市大学 数字化转型及科技创新 香港 低分高录 乐湖案例"
+    "searchText": "25fall J同学 中法 中法 金融 2.52 雅思6.5 香港城市大学 数字化转型及科技创新 香港 低分高录 乐湖案例"
   },
   {
     "id": "25fall-069",
@@ -6733,8 +7407,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.52",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "商务资讯系统",
@@ -6759,8 +7432,10 @@ export const cases = [
       "copy": "J同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "25fall",
@@ -6799,11 +7474,19 @@ export const cases = [
         "value": "2.52"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall J同学 中法 中法 金融 2.52 香港城市大学 商务资讯系统 香港 低分高录 乐湖案例"
+    "searchText": "25fall J同学 中法 中法 金融 2.52 雅思6.5 香港城市大学 商务资讯系统 香港 低分高录 乐湖案例"
   },
   {
     "id": "25fall-072",
@@ -6820,8 +7503,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.52",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港理工大学",
     "offerProgram": "国际管理与领导",
@@ -6846,8 +7528,10 @@ export const cases = [
       "copy": "J同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "25fall",
@@ -6886,11 +7570,19 @@ export const cases = [
         "value": "2.52"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall J同学 中法 中法 金融 2.52 香港理工大学 国际管理与领导 香港 低分高录 乐湖案例"
+    "searchText": "25fall J同学 中法 中法 金融 2.52 雅思6.5 香港理工大学 国际管理与领导 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-083",
@@ -6907,8 +7599,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.53",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "管理与创新",
@@ -6933,8 +7624,10 @@ export const cases = [
       "copy": "P同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "26fall",
@@ -6973,11 +7666,19 @@ export const cases = [
         "value": "2.53"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall P同学 中法 中法 金融 2.53 香港城市大学 管理与创新 香港 低分高录 乐湖案例"
+    "searchText": "26fall P同学 中法 中法 金融 2.53 雅思6.5 香港城市大学 管理与创新 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-084",
@@ -6994,8 +7695,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.53",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "商业人工智能",
@@ -7020,8 +7720,10 @@ export const cases = [
       "copy": "P同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "26fall",
@@ -7060,11 +7762,19 @@ export const cases = [
         "value": "2.53"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall P同学 中法 中法 金融 2.53 香港城市大学 商业人工智能 香港 低分高录 乐湖案例"
+    "searchText": "26fall P同学 中法 中法 金融 2.53 雅思6.5 香港城市大学 商业人工智能 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-094",
@@ -7081,8 +7791,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.02",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港理工大学",
     "offerProgram": "全球供应链管理",
@@ -7107,8 +7816,10 @@ export const cases = [
       "copy": "T同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "26fall",
@@ -7147,11 +7858,19 @@ export const cases = [
         "value": "3.02"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "26fall T同学 中法 中法 金融 3.02 香港理工大学 全球供应链管理 香港 低分高录 乐湖案例"
+    "searchText": "26fall T同学 中法 中法 金融 3.02 雅思7 香港理工大学 全球供应链管理 香港 低分高录 乐湖案例"
   },
   {
     "id": "26fall-104",
@@ -7168,8 +7887,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.53",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "香港城市大学",
     "offerProgram": "全球商业管理",
@@ -7194,8 +7912,10 @@ export const cases = [
       "copy": "P同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "26fall",
@@ -7234,11 +7954,19 @@ export const cases = [
         "value": "2.53"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "实习经历",
         "value": "2段"
       }
     ],
-    "searchText": "26fall P同学 中法 中法 金融 2.53 香港城市大学 全球商业管理 香港 低分高录 乐湖案例"
+    "searchText": "26fall P同学 中法 中法 金融 2.53 雅思6.5 香港城市大学 全球商业管理 香港 低分高录 乐湖案例"
   },
   {
     "id": "24fall-003",
@@ -7255,8 +7983,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.0",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "伦敦国王学院",
     "offerProgram": "环境政治与发展",
@@ -7277,8 +8004,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "24fall",
@@ -7311,9 +8040,17 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.0"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "英国"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 3.0 伦敦国王学院 环境政治与发展 英国 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 3.0 雅思7 伦敦国王学院 环境政治与发展 英国 乐湖案例"
   },
   {
     "id": "24fall-004",
@@ -7330,8 +8067,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.35",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "经济学",
@@ -7352,8 +8088,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
     "tags": [
       {
         "label": "24fall",
@@ -7386,9 +8124,17 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.35"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 金融 3.35 香港科技大学 经济学 香港 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 金融 3.35 雅思7 香港科技大学 经济学 香港 乐湖案例"
   },
   {
     "id": "24fall-005",
@@ -7405,8 +8151,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "86",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7(6)",
     "greGmat": "GRE 320",
     "offerSchool": "香港大学",
     "offerProgram": "商业分析",
@@ -7428,9 +8173,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思7(6)",
       "GRE 320"
     ],
-    "languageScoreText": "GRE 320",
+    "languageScoreText": "雅思7(6) / GRE 320",
     "tags": [
       {
         "label": "24fall",
@@ -7465,11 +8211,19 @@ export const cases = [
         "value": "86"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7(6)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GRE 320"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 金融 86 GRE 320 香港大学 商业分析 香港 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 金融 86 雅思7(6) GRE 320 香港大学 商业分析 香港 乐湖案例"
   },
   {
     "id": "24fall-006",
@@ -7486,8 +8240,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.4",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": null,
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "全球管理",
@@ -7542,6 +8295,10 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.4"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
     "searchText": "24fall 匿名 中法 中法 金融 3.4 香港大学 全球管理 香港 乐湖案例"
@@ -7561,8 +8318,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.63",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": null,
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "经济学",
@@ -7617,6 +8373,10 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.63"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
     "searchText": "24fall 匿名 中法 中法 国管 3.63 香港大学 经济学 香港 乐湖案例"
@@ -7636,8 +8396,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.1",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": "GMAT 710",
     "offerSchool": "华威大学",
     "offerProgram": "电子商务",
@@ -7659,9 +8418,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思7",
       "GMAT 710"
     ],
-    "languageScoreText": "GMAT 710",
+    "languageScoreText": "雅思7 / GMAT 710",
     "tags": [
       {
         "label": "24fall",
@@ -7696,11 +8456,19 @@ export const cases = [
         "value": "3.1"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT 710"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "英国"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 3.1 GMAT 710 华威大学 电子商务 英国 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 3.1 雅思7 GMAT 710 华威大学 电子商务 英国 乐湖案例"
   },
   {
     "id": "24fall-012",
@@ -7717,8 +8485,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.5",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7.5",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "经济学",
@@ -7739,8 +8506,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7.5"
+    ],
+    "languageScoreText": "雅思7.5",
     "tags": [
       {
         "label": "24fall",
@@ -7773,9 +8542,17 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.5"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 金融 3.5 香港大学 经济学 香港 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 金融 3.5 雅思7.5 香港大学 经济学 香港 乐湖案例"
   },
   {
     "id": "24fall-013",
@@ -7792,8 +8569,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "83",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7(6.5)",
     "greGmat": "GMAT 710",
     "offerSchool": "香港中文大学",
     "offerProgram": "可持续全球商业",
@@ -7815,9 +8591,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思7(6.5)",
       "GMAT 710"
     ],
-    "languageScoreText": "GMAT 710",
+    "languageScoreText": "雅思7(6.5) / GMAT 710",
     "tags": [
       {
         "label": "24fall",
@@ -7852,11 +8629,19 @@ export const cases = [
         "value": "83"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7(6.5)"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT 710"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 83 GMAT 710 香港中文大学 可持续全球商业 香港 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 83 雅思7(6.5) GMAT 710 香港中文大学 可持续全球商业 香港 乐湖案例"
   },
   {
     "id": "24fall-014",
@@ -7873,8 +8658,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.5",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": null,
     "greGmat": null,
     "offerSchool": "香港中文大学",
     "offerProgram": "房地产",
@@ -7929,6 +8713,10 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
     "searchText": "24fall 匿名 中法 中法 金融 3.5 香港中文大学 房地产 香港 乐湖案例"
@@ -7948,8 +8736,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.63",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": null,
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "应用经济学",
@@ -8004,6 +8791,10 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.63"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
       }
     ],
     "searchText": "24fall 匿名 中法 中法 国管 3.63 南洋理工大学 应用经济学 新加坡 乐湖案例"
@@ -8023,8 +8814,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.0",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7(6)",
     "greGmat": null,
     "offerSchool": "华威大学",
     "offerProgram": "全球脱碳和气候管理",
@@ -8045,8 +8835,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7(6)"
+    ],
+    "languageScoreText": "雅思7(6)",
     "tags": [
       {
         "label": "24fall",
@@ -8079,9 +8871,17 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.0"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7(6)"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "英国"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 3.0 华威大学 全球脱碳和气候管理 英国 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 3.0 雅思7(6) 华威大学 全球脱碳和气候管理 英国 乐湖案例"
   },
   {
     "id": "24fall-018",
@@ -8098,8 +8898,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.5",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7.5",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "全球管理",
@@ -8120,8 +8919,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7.5"
+    ],
+    "languageScoreText": "雅思7.5",
     "tags": [
       {
         "label": "24fall",
@@ -8154,9 +8955,17 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.5"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 金融 3.5 香港大学 全球管理 香港 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 金融 3.5 雅思7.5 香港大学 全球管理 香港 乐湖案例"
   },
   {
     "id": "24fall-019",
@@ -8173,8 +8982,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.63",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": null,
     "greGmat": null,
     "offerSchool": "香港科技大学",
     "offerProgram": "经济学",
@@ -8231,6 +9039,10 @@ export const cases = [
         "value": "3.63"
       },
       {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
         "label": "备注",
         "value": "带奖学金"
       }
@@ -8252,8 +9064,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "3.6",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7.5",
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "商业分析",
@@ -8274,8 +9085,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思7.5"
+    ],
+    "languageScoreText": "雅思7.5",
     "tags": [
       {
         "label": "24fall",
@@ -8308,9 +9121,17 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.6"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 金融 3.6 香港大学 商业分析 香港 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 金融 3.6 雅思7.5 香港大学 商业分析 香港 乐湖案例"
   },
   {
     "id": "24fall-023",
@@ -8327,8 +9148,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.8",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": null,
     "greGmat": null,
     "offerSchool": "华威大学",
     "offerProgram": "项目管理",
@@ -8383,6 +9203,10 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "2.8"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "英国"
       }
     ],
     "searchText": "24fall 匿名 中法 中法 金融 2.8 华威大学 项目管理 英国 乐湖案例"
@@ -8402,8 +9226,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "83",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": "GMAT 700",
     "offerSchool": "新加坡国立大学",
     "offerProgram": "人力资源管理与分析",
@@ -8426,9 +9249,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思7",
       "GMAT 700"
     ],
-    "languageScoreText": "GMAT 700",
+    "languageScoreText": "雅思7 / GMAT 700",
     "tags": [
       {
         "label": "24fall",
@@ -8467,11 +9291,19 @@ export const cases = [
         "value": "83"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT 700"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 83 GMAT 700 新加坡国立大学 人力资源管理与分析 新加坡 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 83 雅思7 GMAT 700 新加坡国立大学 人力资源管理与分析 新加坡 低分高录 乐湖案例"
   },
   {
     "id": "24fall-025",
@@ -8488,8 +9320,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "81",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5(6)",
     "greGmat": null,
     "offerSchool": "南洋理工大学",
     "offerProgram": "KM知识管理",
@@ -8511,8 +9342,10 @@ export const cases = [
       "乐湖案例"
     ],
     "studentCard": null,
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5(6)"
+    ],
+    "languageScoreText": "雅思6.5(6)",
     "tags": [
       {
         "label": "24fall",
@@ -8549,9 +9382,17 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "81"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思6.5(6)"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "新加坡"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 81 南洋理工大学 KM知识管理 新加坡 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 81 雅思6.5(6) 南洋理工大学 KM知识管理 新加坡 低分高录 乐湖案例"
   },
   {
     "id": "24fall-026",
@@ -8568,8 +9409,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "82",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思7",
     "greGmat": "GMAT 710",
     "offerSchool": "埃塞克高等商学院",
     "offerProgram": "SMIB",
@@ -8592,9 +9432,10 @@ export const cases = [
     ],
     "studentCard": null,
     "scoreList": [
+      "雅思7",
       "GMAT 710"
     ],
-    "languageScoreText": "GMAT 710",
+    "languageScoreText": "雅思7 / GMAT 710",
     "tags": [
       {
         "label": "24fall",
@@ -8633,11 +9474,19 @@ export const cases = [
         "value": "82"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
         "label": "GRE/GMAT",
         "value": "GMAT 710"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "法国"
       }
     ],
-    "searchText": "24fall 匿名 中法 中法 国管 82 GMAT 710 埃塞克高等商学院 SMIB 法国 低分高录 乐湖案例"
+    "searchText": "24fall 匿名 中法 中法 国管 82 雅思7 GMAT 710 埃塞克高等商学院 SMIB 法国 低分高录 乐湖案例"
   },
   {
     "id": "24fall-028",
@@ -8654,8 +9503,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "国管",
     "gpa": "3.63",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": null,
     "greGmat": null,
     "offerSchool": "香港大学",
     "offerProgram": "商业分析",
@@ -8710,6 +9558,10 @@ export const cases = [
       {
         "label": "GPA/均分",
         "value": "3.63"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
       }
     ],
     "searchText": "24fall 匿名 中法 中法 国管 3.63 香港大学 商业分析 香港 乐湖案例"
@@ -8729,8 +9581,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.52",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "澳大利亚国立大学",
     "offerProgram": "商务资讯系统",
@@ -8754,8 +9605,10 @@ export const cases = [
       "copy": "J同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "25fall",
@@ -8790,11 +9643,19 @@ export const cases = [
         "value": "2.52"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "澳大利亚"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall J同学 中法 中法 金融 2.52 澳大利亚国立大学 商务资讯系统 澳大利亚 乐湖案例"
+    "searchText": "25fall J同学 中法 中法 金融 2.52 雅思6.5 澳大利亚国立大学 商务资讯系统 澳大利亚 乐湖案例"
   },
   {
     "id": "25fall-071",
@@ -8811,8 +9672,7 @@ export const cases = [
     "undergradCollegeLabel": "中法",
     "undergradMajor": "金融",
     "gpa": "2.52",
-    "ielts": null,
-    "toefl": null,
+    "englishScore": "雅思6.5",
     "greGmat": null,
     "offerSchool": "悉尼大学",
     "offerProgram": "商业",
@@ -8836,8 +9696,10 @@ export const cases = [
       "copy": "J同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
       "contactLabel": "与我咨询"
     },
-    "scoreList": [],
-    "languageScoreText": null,
+    "scoreList": [
+      "雅思6.5"
+    ],
+    "languageScoreText": "雅思6.5",
     "tags": [
       {
         "label": "25fall",
@@ -8872,11 +9734,19 @@ export const cases = [
         "value": "2.52"
       },
       {
+        "label": "英语成绩",
+        "value": "雅思6.5"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "澳大利亚"
+      },
+      {
         "label": "实习经历",
         "value": "3段"
       }
     ],
-    "searchText": "25fall J同学 中法 中法 金融 2.52 悉尼大学 商业 澳大利亚 乐湖案例"
+    "searchText": "25fall J同学 中法 中法 金融 2.52 雅思6.5 悉尼大学 商业 澳大利亚 乐湖案例"
   }
 ];
 
@@ -8964,130 +9834,4 @@ export const pageConfig = {
   "contact.formQrImage": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/contact-qrs/form-qr-v2.jpg"
 };
 
-export const articles = [
-  {
-    "id": "article-10",
-    "subject": "资讯分享：最后的机会！",
-    "summary": "港新26Fall末班车&27Spring新通道",
-    "backgroundImageUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/brand/lehu-logo.jpg",
-    "url": "https://mp.weixin.qq.com/s/qLVPbVw_GhgQbbMMD4DM8A",
-    "weight": 100,
-    "uploadTime": "2026-03-27",
-    "tagCodes": [
-      "hot"
-    ],
-    "isHot": true,
-    "isNew": true,
-    "isFeatured": true
-  },
-  {
-    "id": "article-5",
-    "subject": "21级金融X学长",
-    "summary": "绩点2.5压哨上港大，2个月斩获7offer",
-    "backgroundImageUrl": null,
-    "url": "https://mp.weixin.qq.com/s/5AazPbVSkK_3ejR0rKTCog",
-    "weight": 90,
-    "uploadTime": "2025-05-27",
-    "tagCodes": [
-      "hot"
-    ],
-    "isHot": true,
-    "isNew": false,
-    "isFeatured": false
-  },
-  {
-    "id": "article-6",
-    "subject": "21级金融Z学姐",
-    "summary": "转换赛道，拿遍亚洲最好金工项目",
-    "backgroundImageUrl": null,
-    "url": "https://mp.weixin.qq.com/s/kBRhFUMSCUetrsVg3KtTAQ",
-    "weight": 80,
-    "uploadTime": "2025-05-22",
-    "tagCodes": [
-      "hot"
-    ],
-    "isHot": true,
-    "isNew": false,
-    "isFeatured": false
-  },
-  {
-    "id": "article-7",
-    "subject": "21级金融C学长",
-    "summary": "放弃剑桥选择IC，只为RMFE量化梦",
-    "backgroundImageUrl": null,
-    "url": "https://mp.weixin.qq.com/s/6od4s-g_Q2xYhhZTCRirvg",
-    "weight": 70,
-    "uploadTime": "2025-05-01",
-    "tagCodes": [
-      "hot"
-    ],
-    "isHot": true,
-    "isNew": false,
-    "isFeatured": false
-  },
-  {
-    "id": "article-1",
-    "subject": "20级数学X学长",
-    "summary": "放弃跟项目，自主申请索邦的背后缘由",
-    "backgroundImageUrl": null,
-    "url": "https://mp.weixin.qq.com/s/382g7JFdpbSs-zDrZcJiqA",
-    "weight": 0,
-    "uploadTime": "2025-07-10",
-    "tagCodes": [],
-    "isHot": false,
-    "isNew": true,
-    "isFeatured": false
-  },
-  {
-    "id": "article-2",
-    "subject": "21级数学Z学长",
-    "summary": "GPA2.9轻松拿下港三新二多offer",
-    "backgroundImageUrl": null,
-    "url": "https://mp.weixin.qq.com/s/8GS2dnHrkAIvAW1I71GlRQ",
-    "weight": 0,
-    "uploadTime": "2025-06-15",
-    "tagCodes": [],
-    "isHot": false,
-    "isNew": true,
-    "isFeatured": false
-  },
-  {
-    "id": "article-3",
-    "subject": "21级金融S学长",
-    "summary": "不卷不焦虑，绩点2.7也能上港大",
-    "backgroundImageUrl": null,
-    "url": "https://mp.weixin.qq.com/s/E05exCoe6Y5p7zCzJkNEUw",
-    "weight": 0,
-    "uploadTime": "2025-06-01",
-    "tagCodes": [],
-    "isHot": false,
-    "isNew": false,
-    "isFeatured": false
-  },
-  {
-    "id": "article-4",
-    "subject": "21级人管C学长",
-    "summary": "人管转商科，3.1拿下港中大MKT提前批",
-    "backgroundImageUrl": null,
-    "url": "https://mp.weixin.qq.com/s/V386GV1JeyUDNt5A7tOQzQ",
-    "weight": 0,
-    "uploadTime": "2025-05-29",
-    "tagCodes": [],
-    "isHot": false,
-    "isNew": false,
-    "isFeatured": false
-  },
-  {
-    "id": "article-8",
-    "subject": "21级金融H学姐",
-    "summary": "文科生走向美国的金工项目",
-    "backgroundImageUrl": null,
-    "url": "https://mp.weixin.qq.com/s/LNr2Uy4PRAIDFnw61Y8pKg",
-    "weight": 0,
-    "uploadTime": "2025-04-14",
-    "tagCodes": [],
-    "isHot": false,
-    "isNew": false,
-    "isFeatured": false
-  }
-];
+export const articles = [];
