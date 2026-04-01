@@ -1223,6 +1223,196 @@ export const cases = [
     "searchText": "24fall 匿名 中法 中法 金融 2.8 香港科技大学 信息系统管理 香港 低分高录 乐湖案例"
   },
   {
+    "id": "26fall-112",
+    "recordId": "recvfjlaMvEnQ2",
+    "applicationSeason": "26fall",
+    "seasonKey": "26fall",
+    "sourceRow": 112,
+    "studentDisplayName": "Y同学",
+    "studentNameMasked": "Y同学",
+    "anonymousMode": false,
+    "internalStudentName": "杨嘉仪",
+    "studentKey": "杨嘉仪",
+    "undergradCollege": "中法",
+    "undergradCollegeLabel": "中法",
+    "undergradMajor": "金融",
+    "gpa": "3.8",
+    "englishScore": "雅思8",
+    "greGmat": null,
+    "offerSchool": "法国埃塞克商学院",
+    "offerProgram": "数据科学与商业分析",
+    "schoolLogoUrl": null,
+    "offerRegion": "欧洲",
+    "description": null,
+    "internships": "4段",
+    "research": "1段",
+    "applicationRound": null,
+    "applicationAt": null,
+    "admissionAt": null,
+    "notes": null,
+    "finalDestination": null,
+    "isFinalOffer": false,
+    "sortOrder": 70,
+    "isPinned": false,
+    "displayTags": [
+      "乐湖案例"
+    ],
+    "studentCard": {
+      "copy": "Y同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
+      "contactLabel": "与我咨询"
+    },
+    "scoreList": [
+      "雅思8"
+    ],
+    "languageScoreText": "雅思8",
+    "tags": [
+      {
+        "label": "26fall",
+        "type": "season"
+      },
+      {
+        "label": "乐湖案例",
+        "type": "default"
+      }
+    ],
+    "listTitle": "法国埃塞克商学院 数据科学与商业分析",
+    "logoText": "法国",
+    "detailSections": [
+      {
+        "label": "录取学校",
+        "value": "法国埃塞克商学院"
+      },
+      {
+        "label": "录取专业",
+        "value": "数据科学与商业分析"
+      },
+      {
+        "label": "本科学院",
+        "value": "中法"
+      },
+      {
+        "label": "本科专业",
+        "value": "金融"
+      },
+      {
+        "label": "GPA/均分",
+        "value": "3.8"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思8"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "欧洲"
+      },
+      {
+        "label": "实习经历",
+        "value": "4段"
+      },
+      {
+        "label": "科研经历",
+        "value": "1段"
+      }
+    ],
+    "searchText": "26fall Y同学 中法 中法 金融 3.8 雅思8 法国埃塞克商学院 数据科学与商业分析 欧洲 乐湖案例"
+  },
+  {
+    "id": "26fall-114",
+    "recordId": "recvfjljlGAhVE",
+    "applicationSeason": "26fall",
+    "seasonKey": "26fall",
+    "sourceRow": 114,
+    "studentDisplayName": "Y同学",
+    "studentNameMasked": "Y同学",
+    "anonymousMode": false,
+    "internalStudentName": "杨嘉仪",
+    "studentKey": "杨嘉仪",
+    "undergradCollege": "中法",
+    "undergradCollegeLabel": "中法",
+    "undergradMajor": "金融",
+    "gpa": "3.8",
+    "englishScore": "雅思8",
+    "greGmat": null,
+    "offerSchool": "法国埃塞克商学院",
+    "offerProgram": "国际商务战略与管理",
+    "schoolLogoUrl": null,
+    "offerRegion": "欧洲",
+    "description": null,
+    "internships": "4段",
+    "research": "1段",
+    "applicationRound": null,
+    "applicationAt": null,
+    "admissionAt": null,
+    "notes": null,
+    "finalDestination": null,
+    "isFinalOffer": false,
+    "sortOrder": 70,
+    "isPinned": false,
+    "displayTags": [
+      "乐湖案例"
+    ],
+    "studentCard": {
+      "copy": "Y同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
+      "contactLabel": "与我咨询"
+    },
+    "scoreList": [
+      "雅思8"
+    ],
+    "languageScoreText": "雅思8",
+    "tags": [
+      {
+        "label": "26fall",
+        "type": "season"
+      },
+      {
+        "label": "乐湖案例",
+        "type": "default"
+      }
+    ],
+    "listTitle": "法国埃塞克商学院 国际商务战略与管理",
+    "logoText": "法国",
+    "detailSections": [
+      {
+        "label": "录取学校",
+        "value": "法国埃塞克商学院"
+      },
+      {
+        "label": "录取专业",
+        "value": "国际商务战略与管理"
+      },
+      {
+        "label": "本科学院",
+        "value": "中法"
+      },
+      {
+        "label": "本科专业",
+        "value": "金融"
+      },
+      {
+        "label": "GPA/均分",
+        "value": "3.8"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思8"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "欧洲"
+      },
+      {
+        "label": "实习经历",
+        "value": "4段"
+      },
+      {
+        "label": "科研经历",
+        "value": "1段"
+      }
+    ],
+    "searchText": "26fall Y同学 中法 中法 金融 3.8 雅思8 法国埃塞克商学院 国际商务战略与管理 欧洲 乐湖案例"
+  },
+  {
     "id": "25fall-063",
     "recordId": "recveN0oJwQXNu",
     "applicationSeason": "25fall",
@@ -1713,6 +1903,378 @@ export const cases = [
       }
     ],
     "searchText": "26fall R同学 中法 中法 金融 3.14/84.33 雅思7 香港大学 气候治理与风险管理 香港 低分高录 乐湖案例"
+  },
+  {
+    "id": "26fall-110",
+    "recordId": "recvfjghKAxJeg",
+    "applicationSeason": "26fall",
+    "seasonKey": "26fall",
+    "sourceRow": 110,
+    "studentDisplayName": "W同学",
+    "studentNameMasked": "W同学",
+    "anonymousMode": false,
+    "internalStudentName": "王佳茵",
+    "studentKey": "王佳茵",
+    "undergradCollege": "中法",
+    "undergradCollegeLabel": "中法",
+    "undergradMajor": "金融",
+    "gpa": "3.07",
+    "englishScore": "雅思7",
+    "greGmat": null,
+    "offerSchool": "香港中文大学",
+    "offerProgram": "可持续全球商业",
+    "schoolLogoUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/school-logos/cuhk-icon-v2-fixed.jpg",
+    "offerRegion": "香港",
+    "description": null,
+    "internships": "4段",
+    "research": null,
+    "applicationRound": null,
+    "applicationAt": null,
+    "admissionAt": null,
+    "notes": null,
+    "finalDestination": null,
+    "isFinalOffer": false,
+    "sortOrder": 66,
+    "isPinned": false,
+    "displayTags": [
+      "乐湖案例"
+    ],
+    "studentCard": {
+      "copy": "W同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
+      "contactLabel": "与我咨询"
+    },
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
+    "tags": [
+      {
+        "label": "26fall",
+        "type": "season"
+      },
+      {
+        "label": "乐湖案例",
+        "type": "default"
+      }
+    ],
+    "listTitle": "香港中文大学 可持续全球商业",
+    "logoText": "香港",
+    "detailSections": [
+      {
+        "label": "录取学校",
+        "value": "香港中文大学"
+      },
+      {
+        "label": "录取专业",
+        "value": "可持续全球商业"
+      },
+      {
+        "label": "本科学院",
+        "value": "中法"
+      },
+      {
+        "label": "本科专业",
+        "value": "金融"
+      },
+      {
+        "label": "GPA/均分",
+        "value": "3.07"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
+        "label": "实习经历",
+        "value": "4段"
+      }
+    ],
+    "searchText": "26fall W同学 中法 中法 金融 3.07 雅思7 香港中文大学 可持续全球商业 香港 乐湖案例"
+  },
+  {
+    "id": "26fall-111",
+    "recordId": "recvfjl7HH6Coq",
+    "applicationSeason": "26fall",
+    "seasonKey": "26fall",
+    "sourceRow": 111,
+    "studentDisplayName": "Y同学",
+    "studentNameMasked": "Y同学",
+    "anonymousMode": false,
+    "internalStudentName": "杨嘉仪",
+    "studentKey": "杨嘉仪",
+    "undergradCollege": "中法",
+    "undergradCollegeLabel": "中法",
+    "undergradMajor": "金融",
+    "gpa": "3.8",
+    "englishScore": "雅思8",
+    "greGmat": null,
+    "offerSchool": "欧洲高等商学院",
+    "offerProgram": "管理学硕士",
+    "schoolLogoUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/school-logos/ebs-european-business-school-icon-v2.png",
+    "offerRegion": "欧洲",
+    "description": null,
+    "internships": "4段",
+    "research": "1段",
+    "applicationRound": null,
+    "applicationAt": null,
+    "admissionAt": null,
+    "notes": null,
+    "finalDestination": null,
+    "isFinalOffer": false,
+    "sortOrder": 66,
+    "isPinned": false,
+    "displayTags": [
+      "乐湖案例"
+    ],
+    "studentCard": {
+      "copy": "Y同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
+      "contactLabel": "与我咨询"
+    },
+    "scoreList": [
+      "雅思8"
+    ],
+    "languageScoreText": "雅思8",
+    "tags": [
+      {
+        "label": "26fall",
+        "type": "season"
+      },
+      {
+        "label": "乐湖案例",
+        "type": "default"
+      }
+    ],
+    "listTitle": "欧洲高等商学院 管理学硕士",
+    "logoText": "欧洲",
+    "detailSections": [
+      {
+        "label": "录取学校",
+        "value": "欧洲高等商学院"
+      },
+      {
+        "label": "录取专业",
+        "value": "管理学硕士"
+      },
+      {
+        "label": "本科学院",
+        "value": "中法"
+      },
+      {
+        "label": "本科专业",
+        "value": "金融"
+      },
+      {
+        "label": "GPA/均分",
+        "value": "3.8"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思8"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "欧洲"
+      },
+      {
+        "label": "实习经历",
+        "value": "4段"
+      },
+      {
+        "label": "科研经历",
+        "value": "1段"
+      }
+    ],
+    "searchText": "26fall Y同学 中法 中法 金融 3.8 雅思8 欧洲高等商学院 管理学硕士 欧洲 乐湖案例"
+  },
+  {
+    "id": "26fall-113",
+    "recordId": "recvfjlj4f6une",
+    "applicationSeason": "26fall",
+    "seasonKey": "26fall",
+    "sourceRow": 113,
+    "studentDisplayName": "Y同学",
+    "studentNameMasked": "Y同学",
+    "anonymousMode": false,
+    "internalStudentName": "杨嘉仪",
+    "studentKey": "杨嘉仪",
+    "undergradCollege": "中法",
+    "undergradCollegeLabel": "中法",
+    "undergradMajor": "金融",
+    "gpa": "3.8",
+    "englishScore": "雅思8",
+    "greGmat": null,
+    "offerSchool": "法国埃塞克商学院",
+    "offerProgram": "奢侈品管理",
+    "schoolLogoUrl": null,
+    "offerRegion": "欧洲",
+    "description": null,
+    "internships": "4段",
+    "research": "1段",
+    "applicationRound": null,
+    "applicationAt": null,
+    "admissionAt": null,
+    "notes": null,
+    "finalDestination": null,
+    "isFinalOffer": false,
+    "sortOrder": 66,
+    "isPinned": false,
+    "displayTags": [
+      "乐湖案例"
+    ],
+    "studentCard": {
+      "copy": "Y同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
+      "contactLabel": "与我咨询"
+    },
+    "scoreList": [
+      "雅思8"
+    ],
+    "languageScoreText": "雅思8",
+    "tags": [
+      {
+        "label": "26fall",
+        "type": "season"
+      },
+      {
+        "label": "乐湖案例",
+        "type": "default"
+      }
+    ],
+    "listTitle": "法国埃塞克商学院 奢侈品管理",
+    "logoText": "法国",
+    "detailSections": [
+      {
+        "label": "录取学校",
+        "value": "法国埃塞克商学院"
+      },
+      {
+        "label": "录取专业",
+        "value": "奢侈品管理"
+      },
+      {
+        "label": "本科学院",
+        "value": "中法"
+      },
+      {
+        "label": "本科专业",
+        "value": "金融"
+      },
+      {
+        "label": "GPA/均分",
+        "value": "3.8"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思8"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "欧洲"
+      },
+      {
+        "label": "实习经历",
+        "value": "4段"
+      },
+      {
+        "label": "科研经历",
+        "value": "1段"
+      }
+    ],
+    "searchText": "26fall Y同学 中法 中法 金融 3.8 雅思8 法国埃塞克商学院 奢侈品管理 欧洲 乐湖案例"
+  },
+  {
+    "id": "26fall-117",
+    "recordId": "recvfyMUiv88wt",
+    "applicationSeason": "26fall",
+    "seasonKey": "26fall",
+    "sourceRow": 117,
+    "studentDisplayName": "W同学",
+    "studentNameMasked": "W同学",
+    "anonymousMode": false,
+    "internalStudentName": "王佳茵",
+    "studentKey": "王佳茵",
+    "undergradCollege": "中法",
+    "undergradCollegeLabel": "中法",
+    "undergradMajor": "金融",
+    "gpa": "3.07",
+    "englishScore": "雅思7",
+    "greGmat": null,
+    "offerSchool": "香港中文大学",
+    "offerProgram": "房地产理学",
+    "schoolLogoUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/school-logos/cuhk-icon-v2-fixed.jpg",
+    "offerRegion": "香港",
+    "description": null,
+    "internships": "4段",
+    "research": null,
+    "applicationRound": null,
+    "applicationAt": null,
+    "admissionAt": null,
+    "notes": null,
+    "finalDestination": null,
+    "isFinalOffer": false,
+    "sortOrder": 66,
+    "isPinned": false,
+    "displayTags": [
+      "乐湖案例"
+    ],
+    "studentCard": {
+      "copy": "W同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
+      "contactLabel": "与我咨询"
+    },
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
+    "tags": [
+      {
+        "label": "26fall",
+        "type": "season"
+      },
+      {
+        "label": "乐湖案例",
+        "type": "default"
+      }
+    ],
+    "listTitle": "香港中文大学 房地产理学",
+    "logoText": "香港",
+    "detailSections": [
+      {
+        "label": "录取学校",
+        "value": "香港中文大学"
+      },
+      {
+        "label": "录取专业",
+        "value": "房地产理学"
+      },
+      {
+        "label": "本科学院",
+        "value": "中法"
+      },
+      {
+        "label": "本科专业",
+        "value": "金融"
+      },
+      {
+        "label": "GPA/均分",
+        "value": "3.07"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
+        "label": "实习经历",
+        "value": "4段"
+      }
+    ],
+    "searchText": "26fall W同学 中法 中法 金融 3.07 雅思7 香港中文大学 房地产理学 香港 乐湖案例"
   },
   {
     "id": "24fall-029",
@@ -4192,6 +4754,97 @@ export const cases = [
       }
     ],
     "searchText": "26fall W同学 中法 中法 国管 3.58 雅思7 香港中文大学 管理学 香港 乐湖案例"
+  },
+  {
+    "id": "26fall-109",
+    "recordId": "recvfjghqEZ7OH",
+    "applicationSeason": "26fall",
+    "seasonKey": "26fall",
+    "sourceRow": 109,
+    "studentDisplayName": "W同学",
+    "studentNameMasked": "W同学",
+    "anonymousMode": false,
+    "internalStudentName": "王佳茵",
+    "studentKey": "王佳茵",
+    "undergradCollege": "中法",
+    "undergradCollegeLabel": "中法",
+    "undergradMajor": "金融",
+    "gpa": "3.07",
+    "englishScore": "雅思7",
+    "greGmat": null,
+    "offerSchool": "香港大学",
+    "offerProgram": "气候治理与风险管理",
+    "schoolLogoUrl": "https://lhxy2023-alt.github.io/ruc-suzhou-case-library/public/school-logos/hku-icon-v2-fixed.jpg",
+    "offerRegion": "香港",
+    "description": null,
+    "internships": "4段",
+    "research": null,
+    "applicationRound": null,
+    "applicationAt": null,
+    "admissionAt": null,
+    "notes": null,
+    "finalDestination": null,
+    "isFinalOffer": false,
+    "sortOrder": 55,
+    "isPinned": false,
+    "displayTags": [
+      "乐湖案例"
+    ],
+    "studentCard": {
+      "copy": "W同学愿意分享选校定位、申请节奏、文书推进与拿到 offer 后的真实体验。",
+      "contactLabel": "与我咨询"
+    },
+    "scoreList": [
+      "雅思7"
+    ],
+    "languageScoreText": "雅思7",
+    "tags": [
+      {
+        "label": "26fall",
+        "type": "season"
+      },
+      {
+        "label": "乐湖案例",
+        "type": "default"
+      }
+    ],
+    "listTitle": "香港大学 气候治理与风险管理",
+    "logoText": "香港",
+    "detailSections": [
+      {
+        "label": "录取学校",
+        "value": "香港大学"
+      },
+      {
+        "label": "录取专业",
+        "value": "气候治理与风险管理"
+      },
+      {
+        "label": "本科学院",
+        "value": "中法"
+      },
+      {
+        "label": "本科专业",
+        "value": "金融"
+      },
+      {
+        "label": "GPA/均分",
+        "value": "3.07"
+      },
+      {
+        "label": "英语成绩",
+        "value": "雅思7"
+      },
+      {
+        "label": "国家（地区）",
+        "value": "香港"
+      },
+      {
+        "label": "实习经历",
+        "value": "4段"
+      }
+    ],
+    "searchText": "26fall W同学 中法 中法 金融 3.07 雅思7 香港大学 气候治理与风险管理 香港 乐湖案例"
   },
   {
     "id": "24fall-002",
@@ -9801,6 +10454,7 @@ export const filterGroups = [
     "options": [
       "香港",
       "新加坡",
+      "欧洲",
       "英国",
       "美国",
       "法国",
